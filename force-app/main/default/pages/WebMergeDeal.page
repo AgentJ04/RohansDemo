@@ -1,0 +1,18 @@
+<apex:page standardController="TSGADX__Deal__c" docType="html-5.0" title="Webmerge Deal: {!TSGADX__Deal__c.Name}">
+<script src= "/soap/ajax/31.0/connection.js" type="text/javascript"></script>
+<script src= "/soap/ajax/31.0/apex.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        sforce.connection.sessionId = '{!$Api.Session_ID}'; 
+    </script>
+
+
+<script>
+var result = sforce.apex.execute("TSGCFG.createShippingDetail","createShipRecords",
+    {dealId:"{!TSGADX__Deal__c.Id}",quoteId:"{!TSGADX__Deal__c.TSGCFG__Quote__c}"}); 
+
+</script>
+    
+    <webm:WebmergeWizard record="{!TSGADX__Deal__c}" />
+    
+</apex:page>

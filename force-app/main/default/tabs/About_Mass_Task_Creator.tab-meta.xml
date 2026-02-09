@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomTab xmlns="http://soap.sforce.com/2006/04/metadata">
+    <frameHeight>600</frameHeight>
+    <hasSidebar>true</hasSidebar>
+    <label>About Mass Task Creator</label>
+    <motif>Custom15: People</motif>
+    <url>http://www.absi.be/solutions/index.aspx?id=1328</url>
+    <urlEncodingKey>UTF-8</urlEncodingKey>
+</CustomTab>

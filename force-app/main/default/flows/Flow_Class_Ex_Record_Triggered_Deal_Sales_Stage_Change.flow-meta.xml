@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <description>Prompt: Customer A wants the Sales Stage on the Deal to Change from Closed Won to Negotiate IF the Amount Changes</description>
+    <environments>Default</environments>
+    <interviewLabel>Flow Class Ex: Record Triggered Deal Sales Stage Change {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Flow Class Ex: Record Triggered Deal Sales Stage Change</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update Sales Stage to Negotiate</description>
+        <name>Update_Sales_Stage</name>
+        <label>Update Sales Stage</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <inputAssignments>
+            <field>TSGADX__Sales_Stage__c</field>
+            <value>
+                <stringValue>Negotiation/Close</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Sales_Stage</targetReference>
+        </connector>
+        <filterFormula>{!$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Flow__c} = TRUE &amp;&amp;
+ISPICKVAL({!$Record.TSGADX__Sales_Stage__c}, &quot;Won&quot;) &amp;&amp;
+ISCHANGED({!$Record.TSGADX__Price__c})</filterFormula>
+        <object>TSGADX__Deal__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

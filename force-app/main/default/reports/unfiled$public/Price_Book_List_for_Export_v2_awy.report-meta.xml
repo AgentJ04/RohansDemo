@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_ID</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>TSGCFG__Price_Book__c.TSGCFG__Manufacturer__c</field>
+    </columns>
+    <columns>
+        <field>TSGCFG__Price_Book__c.TSGCFG__Model__c</field>
+    </columns>
+    <columns>
+        <field>TSGCFG__Price_Book__c.TSGCFG__Manufacturer_Product_Code__c</field>
+    </columns>
+    <description>Use this report for mass updates to export your current price book list</description>
+    <format>Tabular</format>
+    <name>Price Book List = for Export v2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$TSGCFG__Price_Book__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

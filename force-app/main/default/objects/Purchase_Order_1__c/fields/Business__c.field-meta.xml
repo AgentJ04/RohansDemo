@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>Business</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the name of the Business</inlineHelpText>
+    <label>Business</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Purchase Orders</relationshipLabel>
+    <relationshipName>Object_Label</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>54.0</apiVersion>
+    <choices>
+        <name>Cold_Calling</name>
+        <choiceText>Cold Calling</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Cold Calling</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Enter_list_of_choices</name>
+        <choiceText>Enter list of choices</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Enter list of choices</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Marketing_Activity</name>
+        <choiceText>Marketing Activity</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Marketing Activity</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>MPS</name>
+        <choiceText>MPS</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>MPS</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Office_Color</name>
+        <choiceText>Office Color</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Office Color</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Office_Mono</name>
+        <choiceText>Office Mono</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Office Mono</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Printer</name>
+        <choiceText>Printer</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Printer</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Production_Color</name>
+        <choiceText>Production Color</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Production Color</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Production_Mono</name>
+        <choiceText>Production Mono</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Production Mono</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Referral</name>
+        <choiceText>Referral</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Referral</stringValue>
+        </value>
+    </choices>
+    <dynamicChoiceSets>
+        <name>IndustryPicklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Industry</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ProductsandServices</name>
+        <dataType>Multipicklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGADX__ProductServicesInterest__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ProspectSource</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGADX__Prospect_Source__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Quick Add {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Quick Add</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>New_Contact</name>
+        <label>New Contact</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>Contact_Information</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Contact Information&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>FirstandLastName</name>
+            <extensionName>flowruntime:name</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Title</name>
+            <dataType>String</dataType>
+            <fieldText>Title</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Email</name>
+            <extensionName>flowruntime:email</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Phone</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Phone</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>placeholder</name>
+                <value>
+                    <stringValue>Business Phone Number</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>value</name>
+                <value>
+                    <elementReference>Phone.value</elementReference>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Mobile_Phone</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>placeholder</name>
+                <value>
+                    <stringValue>Mobile Phone</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>New_Prospect_Business</name>
+        <label>New Prospect Business</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>New_Contact</targetReference>
+        </connector>
+        <fields>
+            <name>New_Prospect_Business_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>New_Prospect_Business_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>General_Info</name>
+                    <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Business Info&lt;span class=&quot;ql-cursor&quot;&gt;﻿&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>Business_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Business Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>BusinessPhone</name>
+            <extensionName>flowruntime:phone</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>Website</name>
+            <dataType>String</dataType>
+            <fieldText>Website</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>New_Prospect_Business_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>New_Prospect_Business_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>AddressInfo</name>
+                    <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Address&lt;/b&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <fields>
+            <name>BusinessAddress</name>
+            <extensionName>flowruntime:address</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>New_Prospect_Business_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>New_Prospect_Business_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>ProspectingInfo</name>
+                    <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Prospecting Info&lt;/b&gt;&lt;/p&gt;</fieldText>
+                    <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>Products_Services_Interest</name>
+                    <choiceReferences>ProductsandServices</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Products &amp; Services Interest</fieldText>
+                    <fieldType>MultiSelectPicklist</fieldType>
+                    <isRequired>false</isRequired>
+                </fields>
+                <fields>
+                    <name>Industry</name>
+                    <choiceReferences>IndustryPicklist</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Industry</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Prospect_Source</name>
+                    <choiceReferences>ProspectSource</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Prospect Source</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>New_Prospect_Business</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <name>ProductandServices</name>
+        <dataType>Multipicklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>WebsiteAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

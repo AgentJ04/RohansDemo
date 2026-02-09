@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#0070D2</headerColor>
+        <logo>AgentDealer_Alternate_Logo</logo>
+        <logoVersion>1</logoVersion>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>AgentDealer Mobile</label>
+    <navType>Standard</navType>
+    <tabs>standard-MobileHome</tabs>
+    <tabs>TSGADX__TracMap</tabs>
+    <tabs>TSGADX__Business_Search</tabs>
+    <tabs>standard-Event</tabs>
+    <tabs>standard-Task</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>TSGADX__Deal__c</tabs>
+    <tabs>TSGADX__Equipment__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>AgentDealer_Mobile_UtilityBar</utilityBar>
+</CustomApplication>

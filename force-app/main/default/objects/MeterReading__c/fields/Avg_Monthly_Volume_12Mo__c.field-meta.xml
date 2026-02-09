@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Avg_Monthly_Volume_12Mo__c</fullName>
+    <description>Avg Monthly Volume - 12 Month</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Avg Monthly Volume - 12 Month</inlineHelpText>
+    <label>Avg Monthly Volume 12Mo</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

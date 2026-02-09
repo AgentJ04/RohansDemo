@@ -1,0 +1,5 @@
+<apex:page standardController="Account" recordSetVar="records" docType="html-5.0" title="Webmerge Account: {!account.Name}">
+
+    <webm:WebmergeWizard record="{!account}" mappingId="0x00029000kx00" /> 
+
+</apex:page>

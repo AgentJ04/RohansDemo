@@ -1,0 +1,3 @@
+<apex:page standardController="TSGADX__TCO_for_MPS__c" docType="html-5.0" title="Webmerge TCO: {TSGADX__TCO_for_MPS__c.TSGADX__TCO_Business_Name__c}">
+    <webm:WebmergeWizard record="{!TSGADX__TCO_for_MPS__c}" />
+</apex:page>

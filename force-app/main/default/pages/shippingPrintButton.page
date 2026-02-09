@@ -1,0 +1,42 @@
+<apex:page standardController="TSGADX__Deal__c" docType="html-5.0" title="{!TSGADX__Deal__c.Name}" extensions="shippingError" standardStylesheets="false" lightningStylesheets="true">
+    <apex:pageMessages ></apex:pageMessages>
+    <apex:includeLightning ></apex:includeLightning>
+    <script src= "/soap/ajax/31.0/connection.js" type="text/javascript"></script>
+    <script src= "/soap/ajax/31.0/apex.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    sforce.connection.sessionId = '{!$Api.Session_ID}'; 
+   
+    </script>
+    
+    <apex:form >
+        <div align="center" draggable="false" style="margin-top:20px;">
+            <apex:commandButton action="{!Cancel}" value="Back To Deal"/>
+        </div>
+    </apex:form>
+
+    <script>
+    //alert({!hasShippingInfo});
+        var hasShippingInfo = {!hasShippingInfo};
+        function showToast() {
+            if (!hasShippingInfo) {
+                sforce.one.showToast({
+                    "title": "Missing Information",
+                    "message": "You must have shipping information on all configurations",
+                    "type": "Error",
+                    "mode": "pester"
+                });
+            } else {
+                sforce.one.showToast({
+                    "title": "Succeess!",
+                    "message": "Your data has been submitted",
+                    "type": "Success",
+                    "mode": "pester"
+                });
+                var result = sforce.apex.execute("CreateShippingDetailForSync","createShipRecords",
+                                     {dealId:"{!TSGADX__Deal__c.Id}",quoteId:"{!TSGADX__Deal__c.TSGCFG__Quote__c}"});
+                //alert(result);
+            }
+        }
+        window.onload = showToast;
+    </script>
+</apex:page>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>WFR of {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>WFR of ß Signature~</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Update Deal Amount with the current deal amount from the deal
+Update the Deal Name from the current deal name from the deal</description>
+        <name>Deal_Name_and_Amount</name>
+        <label>Deal Name and Amount</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <inputAssignments>
+            <field>Deal_Amount__c</field>
+            <value>
+                <elementReference>$Record.Deal_Amount_Current__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Deal_Name__c</field>
+            <value>
+                <elementReference>$Record.Deal_Name_Current__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Deal_Name_and_Amount</targetReference>
+        </connector>
+        <filterFormula>{!$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Flow__c} &amp;&amp; ISPICKVAL({!$Record.signature__Status__c},&quot;Signed&quot;) &amp;&amp;
+(ISCHANGED({!$Record.signature__Status__c}) || ISNEW())</filterFormula>
+        <object>signature__Signature__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

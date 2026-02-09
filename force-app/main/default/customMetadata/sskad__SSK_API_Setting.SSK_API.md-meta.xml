@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>SSK API</label>
+    <protected>false</protected>
+    <values>
+        <field>sskad__API_URL__c</field>
+        <value xsi:type="xsd:string">https://ssksfapi.salesscorekeeper.com/</value>
+    </values>
+    <values>
+        <field>sskad__applicationusername__c</field>
+        <value xsi:type="xsd:string">acme@acme.ssk</value>
+    </values>
+    <values>
+        <field>sskad__client_id__c</field>
+        <value xsi:type="xsd:string">ACME_SB-3MVG9Nk1FpUrSQHdjgLWv_zoYNFQp2yO0QfLCAruMxYkKbUrvZmY3ZQv_r2Sx6iiMF_inxzT8iO8vccM4U0W3</value>
+    </values>
+    <values>
+        <field>sskad__client_secret__c</field>
+        <value xsi:type="xsd:string">91D2AB30CAD13E3CC1F9BA098C1131AB2DCF1C43AC354ECD808F372E20F7902B</value>
+    </values>
+    <values>
+        <field>sskad__grant_type__c</field>
+        <value xsi:type="xsd:string">password</value>
+    </values>
+    <values>
+        <field>sskad__password__c</field>
+        <value xsi:type="xsd:string">786D4CqoujGBENkqPFqOQgqtvAc/2U+e2EAmtX9Q+3Y=</value>
+    </values>
+    <values>
+        <field>sskad__username__c</field>
+        <value xsi:type="xsd:string">acme@acme.ssk</value>
+    </values>
+</CustomMetadata>

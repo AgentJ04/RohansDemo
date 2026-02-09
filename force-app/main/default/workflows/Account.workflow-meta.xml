@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>TSGADX__Add_Customer_Since_Date</fullName>
+        <description>Add Customer Since Date</description>
+        <field>TSGADX__Customer_Since__c</field>
+        <formula>IF( ISNULL(TSGADX__Customer_Since__c),Today(), TSGADX__Customer_Since__c)</formula>
+        <name>Add Customer Since Date</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Approve_Account_Owner_Change</fullName>
+        <field>TSGADX__Is_Owner_Change_Approve__c</field>
+        <literalValue>1</literalValue>
+        <name>Approve Account Owner Change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Billing_Country_Change_to_US</fullName>
+        <description>Change Billing Country to US</description>
+        <field>BillingCountry</field>
+        <formula>&quot;US&quot;</formula>
+        <name>Billing Country - Change to US</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Business_Add_User_Territory</fullName>
+        <description>Add Users Territory to Business Territory field</description>
+        <field>TSGADX__Territory__c</field>
+        <formula>$User.TSGADX__Territory__c</formula>
+        <name>Business Add User Territory</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Business_Billing_Zip_Code_Correction</fullName>
+        <description>Update Billing Zip Code if it is missing leading zeros</description>
+        <field>BillingPostalCode</field>
+        <formula>IF(LEN(BillingPostalCode) = 1, &quot;0000&quot;&amp;BillingPostalCode, 
+IF(LEN(BillingPostalCode) = 2, &quot;000&quot;&amp;BillingPostalCode, 
+IF(LEN(BillingPostalCode) = 3, &quot;00&quot;&amp;BillingPostalCode, 
+&quot;0&quot;&amp;BillingPostalCode)))</formula>
+        <name>Business Billing Zip Code Correction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Business_Duns_Correction</fullName>
+        <description>Update Duns with Leading Zeros</description>
+        <field>TSGADX__Duns_No__c</field>
+        <formula>IF (Len( TSGADX__Duns_No__c ) = 4 , &quot;00000&quot; &amp; TSGADX__Duns_No__c, 
+IF (Len( TSGADX__Duns_No__c ) = 5 , &quot;0000&quot; &amp; TSGADX__Duns_No__c,
+IF (Len( TSGADX__Duns_No__c ) = 6 , &quot;000&quot; &amp; TSGADX__Duns_No__c,
+IF (Len( TSGADX__Duns_No__c ) = 7 , &quot;00&quot; &amp; TSGADX__Duns_No__c,
+IF (Len( TSGADX__Duns_No__c ) = 8 , &quot;0&quot; &amp; TSGADX__Duns_No__c,
+&quot;000000&quot; &amp; TSGADX__Duns_No__c)))))</formula>
+        <name>Business Duns # Correction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Business_Previous_Cust_Sat_Visit</fullName>
+        <description>Move the Next Customer Sat visit date to previous customer Sat Visit</description>
+        <field>TSGADX__Cust_Sat_Last_Visit__c</field>
+        <formula>IF(ISBLANK(PRIORVALUE( TSGADX__Cust_Sat_Next_Visit__c )),  TSGADX__Cust_Sat_Last_Visit__c , TSGADX__Cust_Sat_Next_Visit__c)</formula>
+        <name>Business Previous Cust Sat Visit</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Business_Shipping_Country_US</fullName>
+        <description>Update Shipping country to US</description>
+        <field>ShippingCountry</field>
+        <formula>&quot;US&quot;</formula>
+        <name>Business Shipping Country US</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Business_Shipping_Zip_Code_Correction</fullName>
+        <description>Update Shipping Zip Codes with leading Zeros</description>
+        <field>ShippingPostalCode</field>
+        <formula>IF(LEN(ShippingPostalCode) = 1, &quot;0000&quot;&amp;ShippingPostalCode, 
+IF(LEN(ShippingPostalCode) = 2, &quot;000&quot;&amp;ShippingPostalCode, 
+IF(LEN(ShippingPostalCode) = 3, &quot;00&quot;&amp;ShippingPostalCode, 
+&quot;0&quot;&amp;ShippingPostalCode)))</formula>
+        <name>Business Shipping Zip Code Correction</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Clear_Deleted_Name</fullName>
+        <description>Clear Deleted Name</description>
+        <field>TSGADX__Deleted_Name__c</field>
+        <name>Clear Deleted Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Clear_Deleted_SIC</fullName>
+        <description>Clear the Deleted SIC field</description>
+        <field>TSGADX__Deleted_SIC__c</field>
+        <name>Clear Deleted SIC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Clear_SIC</fullName>
+        <description>Clear the SIC value</description>
+        <field>Sic</field>
+        <name>Clear SIC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Create_New_Name_Inactive</fullName>
+        <description>Create new name Inactive</description>
+        <field>Name</field>
+        <formula>&quot;Inactive *&quot;</formula>
+        <name>Create New Name Inactive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Id_18_Update</fullName>
+        <description>Update Id 18 with Case Safe Id for reports.</description>
+        <field>TSGADX__Id_18__c</field>
+        <formula>CASESAFEID(Id)</formula>
+        <name>Id 18 Update</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Inactive_Check</fullName>
+        <description>Check the Inactive Checkbox</description>
+        <field>TSGADX__Inactive__c</field>
+        <literalValue>1</literalValue>
+        <name>Inactive - Check</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Inactive_Reason_None</fullName>
+        <description>Set Inactive Reason to none.</description>
+        <field>TSGADX__Inactive_Reason__c</field>
+        <name>Inactive Reason - None</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Inactive_Uncheck</fullName>
+        <description>Uncheck the Inactive checkbox</description>
+        <field>TSGADX__Inactive__c</field>
+        <literalValue>0</literalValue>
+        <name>Inactive - Uncheck</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Territory_from_DTT</fullName>
+        <description>Update Territory with DTT</description>
+        <field>TSGADX__Territory__c</field>
+        <formula>TSGADX__DTT__c</formula>
+        <name>Territory from DTT</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Territory_from_User_Territory</fullName>
+        <description>Update Territory Field from Users Territory Field</description>
+        <field>TSGADX__Territory__c</field>
+        <formula>$User.TSGADX__Territory__c</formula>
+        <name>Territory from User Territory</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Type_Prospect</fullName>
+        <description>Set Type to Prospect for Blank</description>
+        <field>Type</field>
+        <literalValue>Prospect</literalValue>
+        <name>Type: Prospect</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Type_Prospect1</fullName>
+        <description>Update Type to Prospect</description>
+        <field>Type</field>
+        <literalValue>Prospect</literalValue>
+        <name>Type = &quot;Prospect&quot;</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Blank_Record_Type_to_Prospect</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Blank Record Type to Prospect</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Business_Name_From_Deleted_Name</fullName>
+        <description>Move Deleted Name to Business Name</description>
+        <field>Name</field>
+        <formula>IF(NOT(ISBLANK(PRIORVALUE(TSGADX__Deleted_Name__c))),PRIORVALUE(TSGADX__Deleted_Name__c), 
+IF(NOT(ISBLANK(TSGADX__Deleted_Name__c)),TSGADX__Deleted_Name__c,Name))</formula>
+        <name>Update Business Name From Deleted Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Deleted_Name</fullName>
+        <description>Update the deleted name from Business name.</description>
+        <field>TSGADX__Deleted_Name__c</field>
+        <formula>IF(ISNULL(PRIORVALUE( Name )), Name, PRIORVALUE( Name ))</formula>
+        <name>Update Deleted Name</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Deleted_SIC</fullName>
+        <description>Move SIC to Deleted SIC</description>
+        <field>TSGADX__Deleted_SIC__c</field>
+        <formula>Sic</formula>
+        <name>Update Deleted SIC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Main_Parent_Id_Indexed</fullName>
+        <description>Update Main Parent Id (Indexed) from Main Parent Id formula - Used for transfer.</description>
+        <field>TSGADX__MainParentId__c</field>
+        <formula>TSGADX__Main_Parent_Id__c</formula>
+        <name>Update Main Parent Id (Indexed)</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Prospect_Source_Jigsaw</fullName>
+        <field>TSGADX__Prospect_Source__c</field>
+        <literalValue>Jigsaw</literalValue>
+        <name>Update Prospect Source: Jigsaw</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Competitor</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Competitor</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Competitor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Customer</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Customer</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Customer</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Other_Personal</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__OtherPersonal</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Other/Personal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Our_Company</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Our_Company</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Our Company</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Partner</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Partner</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Partner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Prospect</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Prospect</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Vendor</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Vendor</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Vendor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_SIC</fullName>
+        <description>Move Deleted SIC to SIC Code</description>
+        <field>Sic</field>
+        <formula>TSGADX__Deleted_SIC__c</formula>
+        <name>Update SIC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_to_Data_com</fullName>
+        <field>TSGADX__Prospect_Source__c</field>
+        <literalValue>Data.com</literalValue>
+        <name>Update to Data.com</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Prospect Source - Jigsaw</fullName>
+        <actions>
+            <name>Update_to_Data_com</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Account.Phone</field>
+            <operation>startsWith</operation>
+            <value>+1.</value>
+        </criteriaItems>
+        <description>Update Prospect Source to &quot;Data.com&quot; if PHONE starts with &quot;+1.&quot;</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Account Billing Zip Code Correction</fullName>
+        <actions>
+            <name>TSGADX__Business_Billing_Zip_Code_Correction</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>IF Billing Zip Code has less than 5 digits then add leading zeros</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; Len( BillingPostalCode ) &lt; 5 &amp;&amp; NOT(ISBLANK(BillingPostalCode))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Avg%2E Cust Sat Rating</fullName>
+        <active>true</active>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; true</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Business Billing Country US</fullName>
+        <actions>
+            <name>TSGADX__Billing_Country_Change_to_US</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>All USA and United States of America should be entered as US.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;   (BillingCountry = &quot;USA&quot; ||  BillingCountry = &quot;US&quot; || BillingCountry = &quot;United States of America&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Business Duns %23 Correction</fullName>
+        <actions>
+            <name>TSGADX__Business_Duns_Correction</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Add Leading Zeros to Duns Numbers with Less than 9 Numbers</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; LEN( TSGADX__Duns_No__c ) &lt; 9 &amp;&amp; NOT(ISBLANK(TSGADX__Duns_No__c))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Business Shipping Country US</fullName>
+        <actions>
+            <name>TSGADX__Business_Shipping_Country_US</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>All USA and United States of America should be entered as US.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ( ShippingCountry = &quot;US&quot; || ShippingCountry = &quot;USA&quot; || ShippingCountry = &quot;United States of America&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Business Shipping Zip Code Correction</fullName>
+        <actions>
+            <name>TSGADX__Business_Shipping_Zip_Code_Correction</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>IF Shipping Zip Code less than 5 digits add leading Zero&apos;s</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; Len( ShippingPostalCode ) &lt; 5 &amp;&amp; NOT(ISBLANK( ShippingPostalCode ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Business%3A Add Territory</fullName>
+        <actions>
+            <name>TSGADX__Territory_from_User_Territory</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Add Users territory to newly added businesses.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; TSGADX__Territory__c =&quot;&quot;</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Business%3A Next Call Back</fullName>
+        <actions>
+            <name>TSGADX__Call_Back_Business</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Create a call back task based on the Next Call Back date entered by the user.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  (ISNEW() || ISCHANGED(TSGADX__Next_Call_Back__c)) &amp;&amp; NOT(ISBLANK( TSGADX__Next_Call_Back__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Check Inactive Account</fullName>
+        <actions>
+            <name>TSGADX__Clear_SIC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Deleted_SIC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>This is a temporary workflow to check all inactive business where the SIC was not removed.   Only valid for update prior to 3.373</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  TSGADX__Inactive__c &amp;&amp;  TSGADX__Deleted_SIC__c = &quot;&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Id 18</fullName>
+        <actions>
+            <name>TSGADX__Id_18_Update</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Create Id 18 for reports</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  TSGADX__Id_18__c &lt;&gt; CASESAFEID(Id)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Inactive Business Request</fullName>
+        <actions>
+            <name>TSGADX__Clear_SIC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Create_New_Name_Inactive</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Inactive_Check</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Deleted_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Deleted_SIC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Inactive reason is selected. The &quot;Inactive&quot; check box is checked, the &quot;Business Name&quot; is copied to &quot;Deleted Name&quot;, Business Name is updated to &quot;Inactive*&quot;.</description>
+        <formula>(ISCHANGED(TSGADX__Inactive_Reason__c) &amp;&amp;  ISBLANK(PRIORVALUE(TSGADX__Inactive_Reason__c)))  || (ISNEW() &amp;&amp;  (TSGADX__Inactive__c ||  NOT(ISPICKVAL(TSGADX__Inactive_Reason__c,&quot;&quot;) ) )  ) &amp;&amp; (Name &lt;&gt; &quot;Inactive *&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Inactive Unchecked Business Request</fullName>
+        <actions>
+            <name>TSGADX__Clear_Deleted_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Clear_Deleted_SIC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Inactive_Reason_None</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Business_Name_From_Deleted_Name</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_SIC</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>When Inactive check box is unchecked, the Business Name is copied from Deleted Name</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ( PRIORVALUE(TSGADX__Inactive__c ) &lt;&gt; TSGADX__Inactive__c )  &amp;&amp; NOT(TSGADX__Inactive__c)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Main Parent Id %28Index%29 Update</fullName>
+        <actions>
+            <name>TSGADX__Update_Main_Parent_Id_Indexed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update Main Parent Id (Index) from Main Parent Id</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; 	 TSGADX__Main_Parent_Id__c &lt;&gt;  TSGADX__MainParentId__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Territory default DTT</fullName>
+        <actions>
+            <name>TSGADX__Territory_from_DTT</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>If Territory is blank and DTT is entered then move DTT to territory.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  TSGADX__DTT__c != &quot;&quot; &amp;&amp;  TSGADX__Territory__c = &quot;&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Prospect Source - Jigsaw</fullName>
+        <actions>
+            <name>TSGADX__Update_Prospect_Source_Jigsaw</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the phone number starts with &quot;+1.&quot; - update prospect source field to Data.com</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  Left(Phone,3) = &quot;+1.&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Blank</fullName>
+        <actions>
+            <name>TSGADX__Type_Prospect1</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Blank_Record_Type_to_Prospect</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>Update record Type to &quot;Prospect&quot; if NO Record Type exist - happens with New Data.com records.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ISBLANK(RecordType.Name)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Competitor</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Competitor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; (ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Competitor&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Customer</fullName>
+        <actions>
+            <name>TSGADX__Add_Customer_Since_Date</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Customer</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; (ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Customer&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Other%2FPersonal</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Other_Personal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; (ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Other/Personal&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Our Company</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Our_Company</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; (ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Our Company&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Partner</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Partner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; (ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Partner&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Prospect</fullName>
+        <actions>
+            <name>TSGADX__Type_Prospect</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Prospect</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ((ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Prospect&quot;)) || ISPICKVAL(Type,&quot;&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Vendor</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Vendor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; (ISCHANGED( Type ) || ISNEW()) &amp;&amp;  ISPICKVAL(Type,&quot;Vendor&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>TSGADX__Call_Back_Business</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Call Business</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.TSGADX__Next_Call_Back__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Call Back Business</subject>
+    </tasks>
+    <tasks>
+        <fullName>TSGADX__Customer_Satisfaction_Visit</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Complete a customer satisfaction visit for this business.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.TSGADX__Cust_Sat_Next_Visit__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Customer Satisfaction Visit</subject>
+    </tasks>
+</Workflow>

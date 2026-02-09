@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>Handle_Rep_Cost</name>
+        <label>Handle Rep Cost</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <actionName>RepCostConfigurator</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>RepCostScreen</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>costType</name>
+            <value>
+                <elementReference>Cost_Type_Value</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>manufacturer</name>
+            <value>
+                <elementReference>ManufacturerChoice</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>percentageValue</name>
+            <value>
+                <elementReference>Percentage_Uplift_to_Dealer_Cost</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>productType</name>
+            <value>
+                <elementReference>ProductTypeChoice</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>RepCostConfigurator</nameSegment>
+    </actionCalls>
+    <apiVersion>57.0</apiVersion>
+    <choices>
+        <name>EducationCost</name>
+        <choiceText>Education</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Education</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>GovernmentCost</name>
+        <choiceText>Government</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Government</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>LargeQuantityCost</name>
+        <choiceText>Large Quantity</choiceText>
+        <dataType>String</dataType>
+    </choices>
+    <choices>
+        <name>NonProfitCost</name>
+        <choiceText>Non Profit</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Non Profit</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>StandardCost</name>
+        <choiceText>Standard</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Standard</stringValue>
+        </value>
+    </choices>
+    <description>Updated</description>
+    <dynamicChoiceSets>
+        <name>Cost_Type_Value</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGCFG__Price_Book__c</picklistField>
+        <picklistObject>TSGADX__Deal__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ManufacturerChoice</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGCFG__Manufacturer__c</picklistField>
+        <picklistObject>TSGCFG__Price_Book__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ProductTypeChoice</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGCFG__Product_Type__c</picklistField>
+        <picklistObject>TSGCFG__Price_Book__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <interviewLabel>Update Repcost by Manufacturer and Product Type {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Repcost Using Dealer Cost_41323</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <screens>
+        <name>Price_Book_Items</name>
+        <label>Price Book Items</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Handle_Rep_Cost</targetReference>
+        </connector>
+        <fields>
+            <name>Manufacturer</name>
+            <choiceReferences>ManufacturerChoice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Manufacturer</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Product_Type</name>
+            <choiceReferences>ProductTypeChoice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Product Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Price_Book_Selection</name>
+            <choiceReferences>Cost_Type_Value</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Price Book Selection</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Percentage_Uplift_to_Dealer_Cost</name>
+            <dataType>Number</dataType>
+            <fieldText>Percentage Uplift to Dealer Cost</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>2</scale>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>RepCostScreen</name>
+        <label>RepCostScreen</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>RepCostSuccess</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(29, 96, 30);&quot;&gt;The rep cost has been successfully updated!&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Price_Book_Items</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>ItemstoUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>TSGCFG__Price_Book__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_86246794</developerName>
+        <masterLabel>Deal Name</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>CUST_NAME</sourceColumnName>
+        <useOther>false</useOther>
+    </buckets>
+    <columns>
+        <field>TSGADX__Deal__c.TSGADX__Close_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Quantity__c</field>
+    </columns>
+    <columns>
+        <field>FK_$TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Name__c</field>
+    </columns>
+    <columns>
+        <field>FK_$TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Code__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$TSGCFG__Quote_Line_Items__c.TSGCFG__Cost__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>FK_$TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Costx__c</field>
+    </columns>
+    <description>Current and Next FQ Pipeline with line Item details for future order considerations</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_OWNER_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CUST_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_$TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Type__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Deal Pipeline with Line Items</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$TSGADX__Deal__c$TSGCFG__Deal_Line_Items__c@TSGCFG__Deal_Line_Items__c.TSGCFG__Quote_Line_Item__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TSGADX__Deal__c.TSGADX__Close_Date__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

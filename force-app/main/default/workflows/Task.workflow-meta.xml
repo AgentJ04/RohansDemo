@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>TSGADX__Move_Comments_to_Notes</fullName>
+        <description>Move first 250 characters of comments to notes.</description>
+        <field>TSGADX__Notes__c</field>
+        <formula>LEFT(Description, 250)</formula>
+        <name>Move Comments to Notes</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Task_Close_Task_Checked</fullName>
+        <description>Close Task checkbox set to True or Checked</description>
+        <field>TSGADX__Close_Task__c</field>
+        <literalValue>1</literalValue>
+        <name>Task - Close Task Checked</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Task_Close_Task_Uncheck</fullName>
+        <description>Uncheck Close task</description>
+        <field>TSGADX__Close_Task__c</field>
+        <literalValue>0</literalValue>
+        <name>Task - Close Task Uncheck</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Task_Status_to_Completed</fullName>
+        <description>Update Task Status to Completed</description>
+        <field>Status</field>
+        <literalValue>Completed</literalValue>
+        <name>Task Status to Completed</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>TSGADX__Close Tasks</fullName>
+        <actions>
+            <name>TSGADX__Task_Status_to_Completed</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Allows users to mass close tasks</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; NOT(ISPICKVAL(PRIORVALUE(Status),&quot;Completed&quot;)) &amp;&amp;NOT(ISPICKVAL(Status,&quot;Completed&quot;)) &amp;&amp; TSGADX__Close_Task__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Task - Close Task Checkbox</fullName>
+        <actions>
+            <name>TSGADX__Task_Close_Task_Checked</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If task status is completed the check Close Task checkbox.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ISPICKVAL(Status,&quot;Completed&quot;) &amp;&amp; NOT(TSGADX__Close_Task__c )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Task - Close Task Uncheckbox</fullName>
+        <actions>
+            <name>TSGADX__Task_Close_Task_Uncheck</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Allows users to change from completed to not completed and uncheck the task close box.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ISPICKVAL(PRIORVALUE(Status), &quot;Completed&quot; ) &amp;&amp; NOT(ISPICKVAL(Status,&quot;Completed&quot;)) &amp;&amp; TSGADX__Close_Task__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Task Comments to Notes</fullName>
+        <actions>
+            <name>TSGADX__Move_Comments_to_Notes</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If Notes Blank then take first 250 characters of comments and add to notes.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c  &amp;&amp; ISBLANK( TSGADX__Notes__c ) &amp;&amp; NOT(BEGINS( Description, &quot;From:&quot;))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

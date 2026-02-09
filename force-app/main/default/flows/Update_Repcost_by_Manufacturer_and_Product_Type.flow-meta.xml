@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>57.0</apiVersion>
+    <assignments>
+        <name>Add_to_Collection</name>
+        <label>Add to Collection</label>
+        <locationX>264</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>ItemstoUpdate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Update_Multiple_Records</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Multiple_Records</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Update_Rep_Cost</name>
+        <label>Update Rep Cost</label>
+        <locationX>264</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>Update_Multiple_Records.TSGCFG__Sales_Price_Level_1__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RepcostUpliftFormula</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_to_Collection</targetReference>
+        </connector>
+    </assignments>
+    <dynamicChoiceSets>
+        <name>ManufacturerChoice</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGCFG__Manufacturer__c</picklistField>
+        <picklistObject>TSGCFG__Price_Book__c</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>ProducttypeChoice</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TSGCFG__Product_Type__c</picklistField>
+        <picklistObject>TSGCFG__Price_Book__c</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <description>Based on user screen flow defined % for update to Repcost</description>
+        <name>RepcostUpliftFormula</name>
+        <dataType>Currency</dataType>
+        <expression>{!Update_Multiple_Records.TSGCFG__Cost_Price_Level_1__c}*(({!Percentage_Uplift_to_Repcost}/100)+1)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Update Repcost by Manufacturer and Product Type {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update Repcost by Manufacturer and Product Type</label>
+    <loops>
+        <name>Update_Multiple_Records</name>
+        <label>Update Multiple Records</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <collectionReference>Collect_Items_for_Update</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Update_Rep_Cost</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Repcost</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Collect_Items_for_Update</name>
+        <label>Collect Items for Update</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Multiple_Records</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>TSGCFG__Product_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ProducttypeChoice</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>TSGCFG__Manufacturer__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ManufacturerChoice</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>TSGCFG__Price_Book__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>TSGCFG__Cost_Price_Level_1__c</queriedFields>
+        <queriedFields>TSGCFG__Sales_Price_Level_1__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Repcost</name>
+        <label>Update Repcost</label>
+        <locationX>176</locationX>
+        <locationY>854</locationY>
+        <inputReference>ItemstoUpdate</inputReference>
+    </recordUpdates>
+    <screens>
+        <description>Choose which PB Items to update</description>
+        <name>Price_Book_Items</name>
+        <label>Price Book Items</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Collect_Items_for_Update</targetReference>
+        </connector>
+        <fields>
+            <name>Product_Type_Screen</name>
+            <choiceReferences>ProducttypeChoice</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <stringValue>Model</stringValue>
+            </defaultValue>
+            <fieldText>Product Type</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Manufacturer_Screen</name>
+            <choiceReferences>ManufacturerChoice</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Manufacturer</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Percentage_Uplift_to_Repcost</name>
+            <dataType>Number</dataType>
+            <fieldText>Percentage Uplift From Cost to Repcost</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+            <scale>2</scale>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Price_Book_Items</targetReference>
+        </connector>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>ItemstoUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>TSGCFG__Price_Book__c</objectType>
+    </variables>
+    <variables>
+        <name>PercentIncreaseList</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Price Book List</description>
+        <name>Pricebooklist</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>TSGCFG__Price_Book__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EA_Contact_Fields__c</fullName>
+    <description>A list of fields separated by commas that are imported from EAutomate into Salesforce</description>
+    <externalId>false</externalId>
+    <label>EA Contact Fields</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

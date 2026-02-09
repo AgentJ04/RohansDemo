@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Set_Industry_Value</name>
+        <label>Set Industry Value</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>pklstMarketSegment</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>fxSegmentMarket</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Industry</targetReference>
+        </connector>
+    </assignments>
+    <description>Update the Industry Field to match the MGR Segment Field.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>If Segment Market is blank - do nothing. If a value exists, update the Industry field.</description>
+        <name>fxSegmentMarket</name>
+        <dataType>String</dataType>
+        <expression>IF(ISBLANK({!$Record.MGR_MarketSegment__c}), TEXT({!$Record.Industry}), {!$Record.MGR_MarketSegment__c})</expression>
+    </formulas>
+    <interviewLabel>MGR - Segment to Industry Update {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>MGR - Segment to Industry Update</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Industry</name>
+        <label>Update Industry</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>Industry</field>
+            <value>
+                <elementReference>pklstMarketSegment</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_Industry_Value</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Industry</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>MGR_MarketSegment__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>pklstMarketSegment</name>
+        <dataType>Picklist</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

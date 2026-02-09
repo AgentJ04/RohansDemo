@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Blank_Record_Type</fullName>
+        <description>Update to Customer/Prospect Record Type</description>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Customer_Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Blank Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Lead_Source_Jigsaw</fullName>
+        <field>LeadSource</field>
+        <literalValue>Jigsaw</literalValue>
+        <name>Update Lead Source: Jigsaw</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Competitor</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Competitor</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Competitor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Customer_Prospect</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Customer_Prospect</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Customer/Prospect</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Employee_Other</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Employee_Other</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Employee Other</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Employee_Sales</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Employee_Sales</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Employee - Sales</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Employee_Service</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Employee_Service</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Employee - Service</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Partner</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Partner</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Partner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Personal</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Personal</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Personal</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__Update_Record_Type_to_Vendor</fullName>
+        <field>RecordTypeId</field>
+        <lookupValue>TSGADX__Vendor</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Update Record Type to Vendor</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>TSGADX__email_opt_out_true</fullName>
+        <description>Update Email Opt-out to checked</description>
+        <field>HasOptedOutOfEmail</field>
+        <literalValue>1</literalValue>
+        <name>email opt out true</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>TSGADX__Contact Call Back</fullName>
+        <actions>
+            <name>TSGADX__Call_Back_Customer</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <description>Create a task to call back customer.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  (ISNEW() || ISCHANGED(TSGADX__Next_Call_Back__c)) &amp;&amp; NOT(ISBLANK( TSGADX__Next_Call_Back__c ))</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Lead Source - Jigsaw</fullName>
+        <actions>
+            <name>TSGADX__Update_Lead_Source_Jigsaw</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>If the phone number starts with +1.&quot; update Lead Source field to Jigsaw</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;   Left(Phone, 3)=&quot;+1.&quot;</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Blank</fullName>
+        <actions>
+            <name>TSGADX__Update_Blank_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>Update Record Type to &quot;Customer/Prospect&quot; if the record type is Blank - this happens with NEW Jigsaw contacts.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ISBLANK(RecordType.Name)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Competitor</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Competitor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Competitor&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Customer%2FProspect</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Customer_Prospect</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Customer/Prospect&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Employee - Other</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Employee_Other</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp;  ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Employee - Other&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Employee - Sales</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Employee_Sales</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Employee - Sales&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Employee - Service</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Employee_Service</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Employee - Service&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Partner</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Partner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Partner&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Personal</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Personal</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Personal&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__Update Record Type%3A Vendor</fullName>
+        <actions>
+            <name>TSGADX__Update_Record_Type_to_Vendor</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <description>When the &quot;Type&quot; is changed - Update the Record Type to match.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c &amp;&amp; ISCHANGED( TSGADX__Type__c ) &amp;&amp;  ISPICKVAL( TSGADX__Type__c , &quot;Vendor&quot;)</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>TSGADX__lnactive contact checks Email Opt Out</fullName>
+        <actions>
+            <name>TSGADX__email_opt_out_true</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <description>When a contact is marked as inactive, then check the email opt out.</description>
+        <formula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Workflow__c  &amp;&amp; TSGADX__Inactive__c</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <tasks>
+        <fullName>TSGADX__Call_Back_Customer</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Call customer</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Contact.TSGADX__Next_Call_Back__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Call Back Customer</subject>
+    </tasks>
+</Workflow>

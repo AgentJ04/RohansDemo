@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>SlsMgrMarketingShare</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>SlsMgrMarketingShare</label>
+        <sharedTo>
+            <group>SalesManager</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>SalesManager</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Software_Share_with_IT</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Software Share with IT</label>
+        <sharedTo>
+            <role>IT_Support</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Software_Specialist</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

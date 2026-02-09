@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <assignments>
+        <name>Billing_Score_Update</name>
+        <label>Billing Score Update</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.TSGADX__Billing_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BillingScoreUpdate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Sales_Support_Score</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Sales_Support_Score_Field_Update</name>
+        <label>Sales Support Score Field Update</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.TSGADX__Sales_Support_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SalesSupportScore</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.TSGADX__Service_Score__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ServiceScoreUpdate</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Billing_Score</name>
+        <label>Billing Score</label>
+        <locationX>182</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Sales_Support_Score</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Billing_Score1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DoNotUse</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Billing_Score_Update</targetReference>
+            </connector>
+            <label>Billing Score</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sales_Support_Score</name>
+        <label>Sales Support Score &amp; Service Score</label>
+        <locationX>182</locationX>
+        <locationY>587</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Support_Score_Service_Score</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>DoNotUse</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sales_Support_Score_Field_Update</targetReference>
+            </connector>
+            <label>Sales Support Score &amp; Service Score</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>BillingScoreUpdate</name>
+        <dataType>Number</dataType>
+        <expression>CASE( {!$Record.TSGADX__Do_we_invoice_you_correctly__c} ,&quot;Yes&quot;,5,&quot;No&quot;,-5,0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>SalesSupportScore</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.TSGADX__Your_Sales_Representative_del__c} ,
+&quot;1&quot;,1,
+&quot;2&quot;,2,
+&quot;3&quot;,3,
+&quot;4&quot;,4,
+&quot;5&quot;,5,
+0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>ServiceScoreUpdate</name>
+        <dataType>Number</dataType>
+        <expression>CASE({!$Record.TSGADX__Service_Calls__c} ,&quot;&quot;,6,&quot;1&quot;,3,&quot;2&quot;,2,&quot;3&quot;,-1,&quot;4&quot;,-2,&quot;5&quot;,-3,0)+
+CASE({!$Record.TSGADX__Service_Response_Time__c} ,&quot;1&quot;,-2,&quot;2&quot;,-1,&quot;3&quot;,1,&quot;4&quot;,2,&quot;5&quot;,3,0)+
+CASE({!$Record.TSGADX__Overall_Service_Satisfaction__c} ,&quot;1&quot;,-2,&quot;2&quot;,-1,&quot;3&quot;,1,&quot;4&quot;,2,&quot;5&quot;,3,0)+
+CASE({!$Record.TSGADX__Phone_Representative__c} ,&quot;Yes&quot;,1,&quot;No&quot;,-3,0)+
+CASE({!$Record.TSGADX__Technicians__c} ,&quot;Yes&quot;,1,&quot;No&quot;,-3,0)+
+CASE({!$Record.TSGADX__Fixed_the_1st_time__c} ,&quot;Yes&quot;,1,&quot;No&quot;,-3,0)+
+CASE({!$Record.TSGADX__System_Rating__c} ,&quot;1&quot;,-2,&quot;2&quot;,-1,&quot;3&quot;,1,&quot;4&quot;,2,&quot;5&quot;,3,0)</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>WFR of CustomerSAT~Updated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>WFR of CustomerSAT~Updated</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <sourceTemplate>TSGADX__WFR_of_CustomerSAT</sourceTemplate>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Billing_Score</targetReference>
+        </connector>
+        <filterFormula>{!$Setup.TSGADX__ADX_Settings__c.TSGADX__Enable_Flow__c}</filterFormula>
+        <object>TSGADX__Satisfaction_Review__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <variables>
+        <description>To deactivate a specific workflow rule in a flow, Use this boolean variable (DoNotUse) within the decision of that workflow rule (DoNotUse equals True).</description>
+        <name>DoNotUse</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+</Flow>
