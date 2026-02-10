@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Leasing_Rate_Overrride__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Enter Leasing factor to Override the standard Leasing Rate Factor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter Leasing factor to Override the standard Leasing Rate Factor</inlineHelpText>
+    <label>Leasing Rate Override</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>9</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

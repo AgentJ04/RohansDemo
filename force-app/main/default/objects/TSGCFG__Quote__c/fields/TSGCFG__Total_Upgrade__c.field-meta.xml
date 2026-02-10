@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Total_Upgrade__c</fullName>
+    <deprecated>false</deprecated>
+    <description>All Items Accessories where Acc Type = Soft Cost and Category = Upgrade</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Upgrade amount in the quote that is being financed back through the same leasing company.</inlineHelpText>
+    <label>Total Upgrade</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

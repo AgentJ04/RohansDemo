@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Lease_Rate_Options</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Lease Rate Options Classic</masterLabel>
+    <openType>sidebar</openType>
+    <page>TSGCFG__LeasingPricingOption</page>
+    <protected>false</protected>
+</WebLink>

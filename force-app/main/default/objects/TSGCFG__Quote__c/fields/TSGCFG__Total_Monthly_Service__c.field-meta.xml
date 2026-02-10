@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Total_Monthly_Service__c</fullName>
+    <deprecated>false</deprecated>
+    <description>=Sum(QLI.Total Monthly Payments) that are Non-Production</description>
+    <externalId>false</externalId>
+    <inlineHelpText>=Sum(QLI.Total Monthly Payments)s</inlineHelpText>
+    <label>Total Service Monthly</label>
+    <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Monthly_Payments__c</summarizedField>
+    <summaryFilterItems>
+        <field>TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Name__c</field>
+        <operation>contains</operation>
+        <value>CPC,MPS,CPP</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Service</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>TSGCFG__Quote_Line_Items__c.TSGCFG__Is_Production__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Quote_Line_Items__c.TSGCFG__Quote__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

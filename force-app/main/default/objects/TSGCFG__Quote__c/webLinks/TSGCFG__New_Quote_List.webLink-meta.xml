@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__New_Quote_List</fullName>
+    <availability>online</availability>
+    <description>Button for Quote list on Deal.  Create a new quote and opens in the configurator</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>New Quote!</masterLabel>
+    <openType>noSidebar</openType>
+    <page>TSGCFG__NewQuote</page>
+    <protected>false</protected>
+    <requireRowSelection>false</requireRowSelection>
+</WebLink>

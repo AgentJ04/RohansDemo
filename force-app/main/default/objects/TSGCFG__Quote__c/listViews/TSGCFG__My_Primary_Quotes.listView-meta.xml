@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__My_Primary_Quotes</fullName>
+    <columns>NAME</columns>
+    <columns>TSGCFG__Primary__c</columns>
+    <columns>TSGCFG__Warnings__c</columns>
+    <columns>TSGCFG__Total_Amount__c</columns>
+    <columns>TSGCFG__Total_Monthly_Service__c</columns>
+    <columns>TSGCFG__Lease_Monthly_Payment__c</columns>
+    <columns>TSGCFG__Total_Lease_Monthly_Payment__c</columns>
+    <columns>TSGCFG__Total_Rep_Cost__c</columns>
+    <columns>TSGCFG__Total_Rep_Margin__c</columns>
+    <columns>TSGCFG__Deal__c</columns>
+    <columns>TSGCFG__Deal_Sales_Stage__c</columns>
+    <columns>TSGCFG__Deal_Owner__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>TSGCFG__Primary__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Primary Quotes</label>
+    <language>en_US</language>
+</ListView>

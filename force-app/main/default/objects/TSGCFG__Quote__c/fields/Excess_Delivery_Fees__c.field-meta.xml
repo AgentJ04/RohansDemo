@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Excess_Delivery_Fees__c</fullName>
+    <externalId>false</externalId>
+    <label>Excess Delivery Fees</label>
+    <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Sales_Price__c</summarizedField>
+    <summaryFilterItems>
+        <field>TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Code_Text__c</field>
+        <operation>equals</operation>
+        <value>EXCESSDELIVERY</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Quote_Line_Items__c.TSGCFG__Quote__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

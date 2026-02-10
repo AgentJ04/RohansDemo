@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Manage_Quote_Line_Items</fullName>
+    <availability>online</availability>
+    <description>Configurator button for Quote Page Layout</description>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Not Used Configurator</masterLabel>
+    <openType>noSidebar</openType>
+    <page>TSGCFG__ManageQuoteLineItems</page>
+    <protected>false</protected>
+</WebLink>

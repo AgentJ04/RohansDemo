@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Wide_Total_Monthly__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>( TSGCFG__WideTotalMonoVolume__c * TSGCFG__WideSumofCPCBW__c) +
+( TSGCFG__WideTotalColorVolume__c * TSGCFG__WideSumofCPCColor__c) +
+( TSGCFG__WideTotalColor1Volume__c * TSGCFG__WideSumofCPCColor1__c) +
+( TSGCFG__WideTotalColor2Volume__c * TSGCFG__WideSumofCPCColor2__c) +
+( TSGCFG__WideTotalColor3Volume__c * TSGCFG__WideSumofCPCColor3__c) +
+( TSGCFG__WideTotalColor4Volume__c * TSGCFG__WideSumofCPCColor4__c) +
+( TSGCFG__WideTotalColor5Volume__c * TSGCFG__WideSumofCPCColor5__c) +
+TSGCFG__Wide_Color_1_Total_Base_Rate__c + TSGCFG__Wide_B_W_Total_Base_Rate__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Wide Total Monthly</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

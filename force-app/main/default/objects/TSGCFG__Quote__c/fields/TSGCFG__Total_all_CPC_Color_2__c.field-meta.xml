@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Total_all_CPC_Color_2__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Color 2 Service Payment - Monthly Payment (Color 2)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Color 2 Service Payment - Monthly Payment (Color 2)</inlineHelpText>
+    <label>Total all CPC Color 2</label>
+    <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Monthly_Payment_Color_1__c</summarizedField>
+    <summaryFilterItems>
+        <field>TSGCFG__Quote_Line_Items__c.TSGCFG__Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Service</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Quote_Line_Items__c.TSGCFG__Quote__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

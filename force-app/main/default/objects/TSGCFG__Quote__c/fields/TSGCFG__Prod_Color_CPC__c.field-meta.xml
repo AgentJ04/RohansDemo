@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Prod_Color_CPC__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Production This is calculated to offer a blended rate for multiple machines.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp;   TSGCFG__ProdTotalCPCColorLineItem__c   &gt; 0 , 
+  TSGCFG__ProdSumofCPCColor__c   / TSGCFG__ProdTotalCPCColorLineItem__c, 
+IF( ABS(TSGCFG__ProdTotalColorVolume__c - TSGCFG__Prod_Total_Volume_Includes_Color__c)&lt;&gt;0,  TSGCFG__ProdTotalColorMonthlyCost__c   / ABS(TSGCFG__ProdTotalColorVolume__c - TSGCFG__Prod_Total_Volume_Includes_Color__c), 
+IF( TSGCFG__ProdTotalCPCColorLineItem__c &gt; 0,  TSGCFG__ProdSumofCPCColor__c  / TSGCFG__ProdTotalCPCColorLineItem__c, 0 
+) 
+) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Production Total Cost Per Copy for Color</inlineHelpText>
+    <label>Prod Color CPC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

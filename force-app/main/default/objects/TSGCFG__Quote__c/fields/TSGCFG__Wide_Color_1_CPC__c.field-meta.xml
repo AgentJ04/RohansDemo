@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Wide_Color_1_CPC__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL( TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp; TSGCFG__WideTotalCPCColorLineItem__c &gt; 0 ,
+TSGCFG__WideSumofCPCColor1__c / TSGCFG__WideTotalCPCColorLineItem__c,
+IF( ABS(TSGCFG__WideTotalColor1Volume__c-TSGCFG__WideTotalVolumeIncludesColor1__c)&lt;&gt;0, TSGCFG__WideTotalColor1MonthlyCost__c / ABS(TSGCFG__WideTotalColor1Volume__c-TSGCFG__WideTotalVolumeIncludesColor1__c),
+IF( TSGCFG__WideTotalCPCColorLineItem__c &gt; 0, TSGCFG__WideSumofCPCColor1__c / TSGCFG__WideTotalCPCColorLineItem__c, 0
+)
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Wide Color 1 CPC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

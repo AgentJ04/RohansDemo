@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Prod_B_W_CPC__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Production only Black and White cost per copy calculated to offer a blended rate for multiple different values.</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp;   TSGCFG__ProdTotalCPCLineItem__c   &gt; 0, 
+  TSGCFG__ProdSumofCPCBW__c   /  TSGCFG__ProdTotalCPCLineItem__c , 
+IF(  ABS(TSGCFG__ProdTotalMonoVolume__c - TSGCFG__Prod_Total_Volume_Includes_B_W__c)&lt;&gt;0,   TSGCFG__MonthlyMonoPayment__c   / ABS(TSGCFG__ProdTotalMonoVolume__c - TSGCFG__Prod_Total_Volume_Includes_B_W__c), 
+IF(TSGCFG__ProdTotalCPCLineItem__c &gt; 0,  TSGCFG__ProdSumofCPCBW__c   / TSGCFG__ProdTotalCPCLineItem__c, 0) 
+) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Production only Black and White cost per copy calculated to offer a blended rate for multiple different values.</inlineHelpText>
+    <label>Prod B&amp;W CPC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

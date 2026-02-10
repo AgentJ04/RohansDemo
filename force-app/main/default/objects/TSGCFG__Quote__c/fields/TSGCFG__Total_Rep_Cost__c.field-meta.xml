@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Total_Rep_Cost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Summary of Total Rep Cost on Line Items where Lease = True</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Rep Cost of all Lease Items</inlineHelpText>
+    <label>Total Rep Cost</label>
+    <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Rep_Cost__c</summarizedField>
+    <summaryFilterItems>
+        <field>TSGCFG__Quote_Line_Items__c.TSGCFG__Lease__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Quote_Line_Items__c.TSGCFG__Quote__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

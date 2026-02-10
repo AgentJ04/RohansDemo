@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__WideBWCPC__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__WideTotalCPCLineItem__c &gt; 0,
+
+TSGCFG__WideSumofCPCBW__c / TSGCFG__WideTotalCPCLineItem__c ,
+
+IF( ABS(TSGCFG__WideTotalMonoVolume__c-TSGCFG__WideTotalVolumeIncludesBW__c)&lt;&gt;0, TSGCFG__Wide_Total_BW_Monthly_Cost__c / ABS(TSGCFG__WideTotalMonoVolume__c-TSGCFG__WideTotalVolumeIncludesBW__c),
+
+IF(TSGCFG__WideTotalCPCLineItem__c &gt; 0, TSGCFG__WideSumofCPCBW__c / TSGCFG__WideTotalCPCLineItem__c,0))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Wide B&amp;W CPC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

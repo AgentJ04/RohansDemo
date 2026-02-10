@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Warnings__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(  TSGCFG__Total_Rep_Margin__c  &lt;=0 , 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=&quot; &amp; $Setup.TSGCFG__Configurator_Setting__c.TSGCFG__Warning_Neg_Rep_Profit__c , &quot;Negative Sales Rep Margin for this Deal&quot;,20,40) ,&quot;&quot;) &amp;
+IF( TSGCFG__CPCOverrideCount__c&gt; 0, 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=&quot;&amp; $Setup.TSGCFG__Configurator_Setting__c.TSGCFG__Warning_CPC_Override__c , &quot;CPC Rate Override&quot;,20,40) ,&quot;&quot;) &amp;
+IF( TSGCFG__Leasing_Rate_Overrride__c &gt; 0, 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=&quot;&amp; $Setup.TSGCFG__Configurator_Setting__c.TSGCFG__Warning_Lease_Rate_Overrride__c , &quot;Lease Rate Override &quot;,20,60) ,
+&quot;&quot;) &amp;
+IF( TSGCFG__Total_Rep_Cost_Discount_In_Dollar__c &gt; 0, 
+IMAGE(&quot;/servlet/servlet.FileDownload?file=&quot;&amp; $Setup.TSGCFG__Configurator_Setting__c.TSGCFG__Warning_Rep_Cost_Discount__c , &quot;Rep Cost Discount in Dollar &quot;,20,60) ,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Warnings</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

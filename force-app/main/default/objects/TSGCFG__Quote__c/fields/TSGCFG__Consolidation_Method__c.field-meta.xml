@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Consolidation_Method__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Average = Sum all rates and divide by number of times used
+Volume Weighted = Volume x Rate for each machine / Total Volume</description>
+    <externalId>false</externalId>
+    <label>Consolidation Method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Average</fullName>
+                <default>false</default>
+                <label>Average</label>
+            </value>
+            <value>
+                <fullName>Volume Weighted</fullName>
+                <default>true</default>
+                <label>Volume Weighted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

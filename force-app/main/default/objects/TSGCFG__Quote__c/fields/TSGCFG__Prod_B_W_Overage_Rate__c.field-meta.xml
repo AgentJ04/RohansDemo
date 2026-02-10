@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Prod_B_W_Overage_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Production Calculated Overage Rate to allow for multiple services</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp;  TSGCFG__ProdTotalCPCLineItem__c  &gt; 0 , 
+  TSGCFG__ProdSumofCPCOverageBW__c   / TSGCFG__ProdTotalCPCLineItem__c, 
+IF( TSGCFG__ProdTotalMonoVolume__c  &lt;&gt; 0,   TSGCFG__ProdTotalBWOveragePrice__c   / TSGCFG__ProdTotalMonoVolume__c, 
+If(TSGCFG__ProdTotalCPCLineItem__c &gt; 0, TSGCFG__ProdSumofCPCOverageBW__c / TSGCFG__ProdTotalCPCLineItem__c, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Production B&amp;W CPC Overage rate</inlineHelpText>
+    <label>Prod B&amp;W Overage Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

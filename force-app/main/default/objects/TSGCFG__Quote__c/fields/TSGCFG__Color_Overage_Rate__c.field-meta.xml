@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Color_Overage_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Non Production Calculated Overage Rate based to allow for multiple services</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCColorLineItems__c&gt; 0 ,
+     TSGCFG__SumofCPCOverageColor__c/  TSGCFG__TotalCPCColorLineItems__c, 
+    IF(TSGCFG__TotalColorVolume__c&lt;&gt;0,  (TSGCFG__TotalColorOveragePrice__c + TSGCFG__TotalColorOveragePriceVolumeIncludes__c)/  TSGCFG__TotalColorVolume__c,
+	If(TSGCFG__TotalCPCColorLineItems__c &gt; 0, TSGCFG__SumofCPCOverageColor__c/ TSGCFG__TotalCPCColorLineItems__c, 0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Color CPC overage rate</inlineHelpText>
+    <label>Color Overage Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

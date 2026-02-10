@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__MPSBWCPC__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__MPSTotalCPCLineItem__c &gt; 0,
+			
+TSGCFG__MPSSumofCPCBW__c / TSGCFG__MPSTotalCPCLineItem__c ,
+			
+IF( ABS(TSGCFG__MPSTotalMonoVolume__c - TSGCFG__MPSTotalVolumeIncludesBW__c) &lt;&gt;0, TSGCFG__MFP_Total_BW_Monthly_Cost__c  / ABS(TSGCFG__MPSTotalMonoVolume__c - TSGCFG__MPSTotalVolumeIncludesBW__c),
+			
+IF(TSGCFG__MPSTotalCPCLineItem__c &gt; 0, TSGCFG__MPSSumofCPCBW__c / TSGCFG__MPSTotalCPCLineItem__c, 0)
+)
+)
+
+
+/* NOT IN USE
+IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__MPSTotalCPCLineItem__c &gt; 0,
+			
+TSGCFG__MPSSumofCPCBW__c / TSGCFG__MPSTotalCPCLineItem__c ,
+			
+IF( TSGCFG__MPSTotalMonoVolume__c &lt;&gt;0, TSGCFG__MFP_Total_BW_Monthly_Cost__c  / TSGCFG__MPSTotalMonoVolume__c,
+			
+IF(TSGCFG__MPSTotalCPCLineItem__c &gt; 0, TSGCFG__MPSSumofCPCBW__c / TSGCFG__MPSTotalCPCLineItem__c, 0)
+)
+)*/</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MFP B&amp;W CPC</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>6</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
