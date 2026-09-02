@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Product_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Select the Product Category for this deal.  Xerox only.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Office = M20i thru 50 PPM, 
+OSS = 55 PPM thru 250/260,
+PS  =  4127/260/700 and Up</inlineHelpText>
+    <label>Product Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Office</fullName>
+                <default>false</default>
+                <label>Office</label>
+            </value>
+            <value>
+                <fullName>OSS</fullName>
+                <default>false</default>
+                <label>OSS</label>
+            </value>
+            <value>
+                <fullName>PS</fullName>
+                <default>false</default>
+                <label>PS</label>
+            </value>
+            <value>
+                <fullName>Dealer</fullName>
+                <default>false</default>
+                <label>Dealer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Configuration__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Configuration</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Copier Based - MFP</fullName>
+                <default>false</default>
+                <label>Copier Based - MFP</label>
+            </value>
+            <value>
+                <fullName>Printer Based - MFP</fullName>
+                <default>false</default>
+                <label>Printer Based - MFP</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>Wide-Format</fullName>
+                <default>false</default>
+                <label>Wide-Format</label>
+            </value>
+            <value>
+                <fullName>Laser Printer</fullName>
+                <default>false</default>
+                <label>Laser Printer</label>
+            </value>
+            <value>
+                <fullName>Digital Duplicator</fullName>
+                <default>false</default>
+                <label>Digital Duplicator</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

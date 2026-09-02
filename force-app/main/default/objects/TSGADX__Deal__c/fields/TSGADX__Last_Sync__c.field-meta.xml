@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Last_Sync__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used for CEO Juice/Quote sync</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do not modify this field except to clear its value. Any other changes could cause possible duplicated orders if already synced with CEO Juice.</inlineHelpText>
+    <label>Request Sync Date/Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>DateTime</type>
+</CustomField>

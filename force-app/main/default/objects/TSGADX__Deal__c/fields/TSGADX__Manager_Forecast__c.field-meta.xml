@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Manager_Forecast__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Approved for Manager Forecast - This is read only for sales and edit for Sales Manager.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Approved for Manager Forecast (Checked)</inlineHelpText>
+    <label>Manager Forecast</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

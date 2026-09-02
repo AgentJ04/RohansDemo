@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Orders_On_Order</fullName>
+    <columns>NAME</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>TSGADX__Close_Date__c</columns>
+    <columns>EA_Sales_Orders__c</columns>
+    <columns>EA_SO_Status__c</columns>
+    <columns>Order_Status__c</columns>
+    <columns>Submit_to_EA__c</columns>
+    <columns>TSGCFG__Net_Sale_Revenue_Deal__c</columns>
+    <columns>TSGCFG__Net_Sale_GP_Deal__c</columns>
+    <columns>TSGCFG__Net_Sale_Cost_Deal__c</columns>
+    <columns>Commission_Paid__c</columns>
+    <columns>Comp_Paid_Date__c</columns>
+    <columns>Rep_GP_Comp__c</columns>
+    <columns>Total_Standard_Comp__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Live_Order__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TSGADX__Deal__c.TSGADX__Equipment_Deals</value>
+    </filters>
+    <filters>
+        <field>Order_Status__c</field>
+        <operation>equals</operation>
+        <value>Ordered</value>
+    </filters>
+    <label>Live Orders - On Order</label>
+</ListView>

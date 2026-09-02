@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Number_of_deal_splits</fullName>
+    <active>true</active>
+    <description>Limits the number of splits allowed. Default is 3 total. This is primary, and 2 secondary splits.</description>
+    <errorConditionFormula>TSGADX__Total_of_Splits__c &gt; 3</errorConditionFormula>
+    <errorMessage>There can only be two additional reps included on a deal.</errorMessage>
+</ValidationRule>

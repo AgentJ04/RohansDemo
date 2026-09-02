@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Business_Phone__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Phone from Business - When updated, the business phone will be updated by trigger.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Phone for business</inlineHelpText>
+    <label>Business: Phone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Phone</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shred_Rep_Board_Credit__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount of Shred Revenue included in deal revenue that is eligable for Rep Board Credit for Commissions.</inlineHelpText>
+    <label>Shred Rep Board Credit $</label>
+    <precision>8</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

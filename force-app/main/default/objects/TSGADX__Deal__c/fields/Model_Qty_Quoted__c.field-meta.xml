@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Model_Qty_Quoted__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Qty of models quoted in Total Lease Amount.</inlineHelpText>
+    <label>Model Qty Quoted</label>
+    <summarizedField>TSGCFG__Deal_Line_Items__c.TSGCFG__Qty__c</summarizedField>
+    <summaryFilterItems>
+        <field>TSGCFG__Deal_Line_Items__c.TSGCFG__Product_Type__c</field>
+        <operation>equals</operation>
+        <value>Model</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Deal_Line_Items__c.TSGCFG__Deal__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

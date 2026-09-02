@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Deal_Split_Over_100_Percent</fullName>
+    <active>true</active>
+    <description>Assures the total percentage does not exceed 100%</description>
+    <errorConditionFormula>TSGADX__Total_Split_Percent__c &gt; 1</errorConditionFormula>
+    <errorMessage>The total percent split with other reps is greater than 100%. Please change the amount split with other reps.</errorMessage>
+</ValidationRule>

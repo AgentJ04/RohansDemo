@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Lease_Rate_Override__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>TSGCFG__Quote__r.TSGCFG__Leasing_Rate_Overrride__c</formula>
+    <label>Lease Rate Override</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>9</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

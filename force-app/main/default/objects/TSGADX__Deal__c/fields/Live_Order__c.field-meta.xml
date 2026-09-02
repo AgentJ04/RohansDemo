@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Live_Order__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Automatically gets checked after order is closed Won.  Uncheck by Admin Only once order has been completed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>**Don&apos;t Delete-Rohan**  Automatically gets checked after order is closed Won.  Uncheck by Admin Only once order has been completed.</inlineHelpText>
+    <label>Live Order</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

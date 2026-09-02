@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Change_Owner</fullName>
+    <availability>online</availability>
+    <description>Change Owner</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Change Owner</masterLabel>
+    <openType>sidebar</openType>
+    <page>TSGADX__DealChangeOwner</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

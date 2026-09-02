@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Contract_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Contract Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MFP All Inclusive</fullName>
+                <default>false</default>
+                <label>MFP All Inclusive</label>
+            </value>
+            <value>
+                <fullName>Managed Print Services</fullName>
+                <default>false</default>
+                <label>Managed Print Services</label>
+            </value>
+            <value>
+                <fullName>Partner Supplied</fullName>
+                <default>false</default>
+                <label>Partner Supplied</label>
+            </value>
+            <value>
+                <fullName>Managed IT Services</fullName>
+                <default>false</default>
+                <label>Managed IT Services</label>
+            </value>
+            <value>
+                <fullName>Shred Services</fullName>
+                <default>false</default>
+                <label>Shred Services</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

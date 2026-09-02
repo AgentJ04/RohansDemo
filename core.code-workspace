@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "c:/Users/jim/Documents/JCJLLC/sailorgroupp/BackupMetaData/Rohan's Demo/BackUp ROhans Demo"
+    }
+  ],
+  "settings": {
+    "eslint.workingDirectories": [
+      "c:/Users/jim/Documents/JCJLLC/sailorgroupp/BackupMetaData/Rohan's Demo/BackUp ROhans Demo"
+    ],
+    "eslint.validate": [
+      "javascript",
+      "typescript"
+    ],
+    "eslint.options": {
+      "overrideConfigFile": "c:\\Users\\jim\\Documents\\JCJLLC\\sailorgroupp\\BackupMetaData\\Rohan's Demo\\BackUp ROhans Demo\\.eslintrc.json"
+    }
+  }
+}

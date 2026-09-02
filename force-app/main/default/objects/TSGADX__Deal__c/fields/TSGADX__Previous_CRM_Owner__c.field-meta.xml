@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Previous_CRM_Owner__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Owner of this Record from their previous CRM system.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Owner of this Record from their previous CRM system.</inlineHelpText>
+    <label>Previous CRM Owner</label>
+    <length>250</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

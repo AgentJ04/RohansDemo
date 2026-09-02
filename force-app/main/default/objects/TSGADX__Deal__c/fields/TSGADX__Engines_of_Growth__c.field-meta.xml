@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Engines_of_Growth__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Engines of Growth</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A4</fullName>
+                <default>false</default>
+                <label>A4</label>
+            </value>
+            <value>
+                <fullName>Color</fullName>
+                <default>false</default>
+                <label>Color</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>NBS</fullName>
+                <default>false</default>
+                <label>NBS</label>
+            </value>
+            <value>
+                <fullName>XTI</fullName>
+                <default>false</default>
+                <label>XTI</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

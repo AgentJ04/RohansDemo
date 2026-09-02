@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Prospect_Deal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This indicates this deal was a prospect deal.  Used for reporting to determine if a deal was ever a prospect record type.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This indicates this deal was a prospect deal.  Used for reporting to determine if a deal was ever a prospect record type.</inlineHelpText>
+    <label>Prospect Deal</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

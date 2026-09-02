@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Color_CPC_Rate__c</fullName>
+    <deprecated>false</deprecated>
+    <description>For Quick Quote</description>
+    <externalId>false</externalId>
+    <inlineHelpText>For Quick Quote</inlineHelpText>
+    <label>Color CPC Rate</label>
+    <precision>6</precision>
+    <required>false</required>
+    <scale>5</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

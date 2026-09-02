@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MIT_Sale__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates if items sold in deal contained MIT Hardware/MRR</inlineHelpText>
+    <label>MIT Sale</label>
+    <summaryFilterItems>
+        <field>TSGCFG__Deal_Line_Items__c.TSGCFG__Category__c</field>
+        <operation>equals</operation>
+        <value>IT Hardware, IT MRR</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Deal_Line_Items__c.TSGCFG__Deal__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

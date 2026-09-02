@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Print_Speed__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Print Speed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Less than 21 ppm</fullName>
+                <default>false</default>
+                <label>Less than 21 ppm</label>
+            </value>
+            <value>
+                <fullName>21 - 30 ppm</fullName>
+                <default>false</default>
+                <label>21 - 30 ppm</label>
+            </value>
+            <value>
+                <fullName>31 - 45 ppm</fullName>
+                <default>false</default>
+                <label>31 - 45 ppm</label>
+            </value>
+            <value>
+                <fullName>46 - 55 ppm</fullName>
+                <default>false</default>
+                <label>46 - 55 ppm</label>
+            </value>
+            <value>
+                <fullName>56 - 70 ppm</fullName>
+                <default>false</default>
+                <label>56 - 70 ppm</label>
+            </value>
+            <value>
+                <fullName>71 - 85 ppm</fullName>
+                <default>false</default>
+                <label>71 - 85 ppm</label>
+            </value>
+            <value>
+                <fullName>86 - 95 ppm</fullName>
+                <default>false</default>
+                <label>86 - 95 ppm</label>
+            </value>
+            <value>
+                <fullName>95 - 110 ppm</fullName>
+                <default>false</default>
+                <label>95 - 110 ppm</label>
+            </value>
+            <value>
+                <fullName>110 +</fullName>
+                <default>false</default>
+                <label>110 +</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

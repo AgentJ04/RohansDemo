@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Forecast_Category__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Pipeline = Competitive, Working
+
+Upside = 50/50 Competitive
+
+Probable = 80%+ Competition eliminated, verbal
+
+Agreement = 95%+ Awarded- but no signature
+
+Closed = 100% w/signature
+
+Omitted= Not in any Outlook reports</inlineHelpText>
+    <label>Forecast Category</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TSGADX__Sales_Stage__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipeline</fullName>
+                <default>true</default>
+                <label>Pipeline</label>
+            </value>
+            <value>
+                <fullName>Upside</fullName>
+                <default>false</default>
+                <label>Upside</label>
+            </value>
+            <value>
+                <fullName>Probable</fullName>
+                <default>false</default>
+                <label>Probable</label>
+            </value>
+            <value>
+                <fullName>Agreement</fullName>
+                <default>false</default>
+                <label>Agreement</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+                <label>Omitted</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Won</controllingFieldValue>
+            <valueName>Closed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Omitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proof of Concept</controllingFieldValue>
+            <controllingFieldValue>Statement of Work</controllingFieldValue>
+            <controllingFieldValue>No Decision</controllingFieldValue>
+            <controllingFieldValue>Qualify</controllingFieldValue>
+            <controllingFieldValue>Gather Requirments</controllingFieldValue>
+            <controllingFieldValue>Present MPS Business Case</controllingFieldValue>
+            <controllingFieldValue>Sign Letter of Intent</controllingFieldValue>
+            <controllingFieldValue>Conduct Assessment</controllingFieldValue>
+            <controllingFieldValue>Cost Consensus</controllingFieldValue>
+            <controllingFieldValue>Demonstration</controllingFieldValue>
+            <controllingFieldValue>Present Proposal</controllingFieldValue>
+            <controllingFieldValue>Negotiation/Close</controllingFieldValue>
+            <valueName>Pipeline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proof of Concept</controllingFieldValue>
+            <controllingFieldValue>Statement of Work</controllingFieldValue>
+            <controllingFieldValue>Present MPS Business Case</controllingFieldValue>
+            <controllingFieldValue>Sign Letter of Intent</controllingFieldValue>
+            <controllingFieldValue>Conduct Assessment</controllingFieldValue>
+            <controllingFieldValue>Cost Consensus</controllingFieldValue>
+            <controllingFieldValue>Demonstration</controllingFieldValue>
+            <controllingFieldValue>Present Proposal</controllingFieldValue>
+            <controllingFieldValue>Negotiation/Close</controllingFieldValue>
+            <valueName>Upside</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proof of Concept</controllingFieldValue>
+            <controllingFieldValue>Statement of Work</controllingFieldValue>
+            <controllingFieldValue>Sign Letter of Intent</controllingFieldValue>
+            <controllingFieldValue>Conduct Assessment</controllingFieldValue>
+            <controllingFieldValue>Cost Consensus</controllingFieldValue>
+            <controllingFieldValue>Demonstration</controllingFieldValue>
+            <controllingFieldValue>Present Proposal</controllingFieldValue>
+            <controllingFieldValue>Negotiation/Close</controllingFieldValue>
+            <valueName>Probable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Proof of Concept</controllingFieldValue>
+            <controllingFieldValue>Statement of Work</controllingFieldValue>
+            <controllingFieldValue>Conduct Assessment</controllingFieldValue>
+            <controllingFieldValue>Cost Consensus</controllingFieldValue>
+            <controllingFieldValue>Demonstration</controllingFieldValue>
+            <controllingFieldValue>Present Proposal</controllingFieldValue>
+            <controllingFieldValue>Negotiation/Close</controllingFieldValue>
+            <valueName>Agreement</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

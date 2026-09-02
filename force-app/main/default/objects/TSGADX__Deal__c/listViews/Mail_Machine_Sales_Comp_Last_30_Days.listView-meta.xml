@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mail_Machine_Sales_Comp_Last_30_Days</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Total_Hardware_Revenue__c</columns>
+    <columns>Total_Annual_Maintenance__c</columns>
+    <columns>Total_Annual_Subsciption__c</columns>
+    <columns>Total_Monthly_Services__c</columns>
+    <columns>MM_Machine_Comp__c</columns>
+    <columns>MM_Support_Comp__c</columns>
+    <columns>Total_MM_Comp__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>neopost</value>
+    </filters>
+    <filters>
+        <field>TSGADX__Product_Service__c</field>
+        <operation>contains</operation>
+        <value>Neopost</value>
+    </filters>
+    <label>Mail Machine Sales - Comp Last 30 Days</label>
+</ListView>

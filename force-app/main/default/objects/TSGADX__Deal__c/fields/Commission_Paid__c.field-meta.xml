@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Commission_Paid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if Commission has been paid from deal.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>*Dont Delete-Rohan* Check if Commission has been paid from deal.</inlineHelpText>
+    <label>Commission Paid</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

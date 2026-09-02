@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Log_a_Call</fullName>
+    <availability>online</availability>
+    <description>Log a call</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Log-a-Call</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>../00T/e?title=Call&amp;what_id={!TSGADX__Deal__c.Id}&amp;
+who_id={!TSGADX__Deal__c.TSGADX__Main_ContactId__c}&amp;
+followup=1
+&amp;tsk5=Call
+&amp;retURL={!TSGADX__Deal__c.Id}</url>
+</WebLink>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MRR_BOT_Sales_Credit__c</fullName>
+    <externalId>false</externalId>
+    <formula>((IT_MRR__c + Security_Services_MRR__c + Backup_Services_MRR__c+ VOIP_UCC_MRR__c ) *  MRR_Term__c) +  IT_Block_Time__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>MRR-BOT Sales Credit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

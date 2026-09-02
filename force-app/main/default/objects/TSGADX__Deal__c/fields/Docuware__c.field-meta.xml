@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Docuware__c</fullName>
+    <description>Module components needed for the docuware project</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select all that are required for project pricing</inlineHelpText>
+    <label>Docuware</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Docuware Business Server</fullName>
+                <default>false</default>
+                <label>Docuware Business Server</label>
+            </value>
+            <value>
+                <fullName>Docuware Professional Server</fullName>
+                <default>false</default>
+                <label>Docuware Professional Server</label>
+            </value>
+            <value>
+                <fullName>Docuware Enterprise Server</fullName>
+                <default>false</default>
+                <label>Docuware Enterprise Server</label>
+            </value>
+            <value>
+                <fullName>Docuware Client Site License</fullName>
+                <default>false</default>
+                <label>Docuware Client Site License</label>
+            </value>
+            <value>
+                <fullName>Docuware Web Client Read Only</fullName>
+                <default>false</default>
+                <label>Docuware Web Client Read Only</label>
+            </value>
+            <value>
+                <fullName>DW Smart Connect</fullName>
+                <default>false</default>
+                <label>DW Smart Connect</label>
+            </value>
+            <value>
+                <fullName>DW Connect to Outlook</fullName>
+                <default>false</default>
+                <label>DW Connect to Outlook</label>
+            </value>
+            <value>
+                <fullName>DW Mobile</fullName>
+                <default>false</default>
+                <label>DW Mobile</label>
+            </value>
+            <value>
+                <fullName>DW Task Manager</fullName>
+                <default>false</default>
+                <label>DW Task Manager</label>
+            </value>
+            <value>
+                <fullName>DW AutoIndex</fullName>
+                <default>false</default>
+                <label>DW AutoIndex</label>
+            </value>
+            <value>
+                <fullName>DW Workflow Manager</fullName>
+                <default>false</default>
+                <label>DW Workflow Manager</label>
+            </value>
+            <value>
+                <fullName>DW Barcode &amp; Forms</fullName>
+                <default>false</default>
+                <label>DW Barcode &amp; Forms</label>
+            </value>
+            <value>
+                <fullName>DW Import</fullName>
+                <default>false</default>
+                <label>DW Import</label>
+            </value>
+            <value>
+                <fullName>DW Connect to Mail</fullName>
+                <default>false</default>
+                <label>DW Connect to Mail</label>
+            </value>
+            <value>
+                <fullName>DW Intelligent Indexing</fullName>
+                <default>false</default>
+                <label>DW Intelligent Indexing</label>
+            </value>
+            <value>
+                <fullName>DW Forms</fullName>
+                <default>false</default>
+                <label>DW Forms</label>
+            </value>
+            <value>
+                <fullName>DW Connect to SAP</fullName>
+                <default>false</default>
+                <label>DW Connect to SAP</label>
+            </value>
+            <value>
+                <fullName>DW Connect to SharePoint</fullName>
+                <default>false</default>
+                <label>DW Connect to SharePoint</label>
+            </value>
+            <value>
+                <fullName>DW Connect to Ricoh</fullName>
+                <default>false</default>
+                <label>DW Connect to Ricoh</label>
+            </value>
+            <value>
+                <fullName>DW Connect to Toshiba</fullName>
+                <default>false</default>
+                <label>DW Connect to Toshiba</label>
+            </value>
+            <value>
+                <fullName>DW Connect to Sharp</fullName>
+                <default>false</default>
+                <label>DW Connect to Sharp</label>
+            </value>
+            <value>
+                <fullName>DW Connect to Xerox</fullName>
+                <default>false</default>
+                <label>DW Connect to Xerox</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

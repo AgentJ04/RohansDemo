@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__of_Current_Suppliers__c</fullName>
+    <deprecated>false</deprecated>
+    <description>How many current suppliers?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many current suppliers?</inlineHelpText>
+    <label># of Current Suppliers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

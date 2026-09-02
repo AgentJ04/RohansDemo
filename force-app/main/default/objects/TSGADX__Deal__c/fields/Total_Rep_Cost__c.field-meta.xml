@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Rep_Cost__c</fullName>
+    <description>Rollup of QQ line items for total rep deal cost.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Rollup of QQ line items for total rep deal cost.</inlineHelpText>
+    <label>Total Rep Cost</label>
+    <summarizedField>TSGCFG__Deal_Line_Items__c.TSGCFG__Total_Cost__c</summarizedField>
+    <summaryForeignKey>TSGCFG__Deal_Line_Items__c.TSGCFG__Deal__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

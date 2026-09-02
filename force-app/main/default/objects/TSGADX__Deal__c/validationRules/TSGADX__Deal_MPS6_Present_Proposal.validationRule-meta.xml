@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Deal_MPS6_Present_Proposal</fullName>
+    <active>false</active>
+    <description>If the Sales Stage is &quot;Present Proposal&quot; then require Cost Consensus date be entered.</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp; 
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+ISPICKVAL( TSGADX__Sales_Stage__c , &quot;Present Proposal&quot;)&amp;&amp; ISBLANK( TSGADX__Cost_Consensus__c )&amp;&amp; ($RecordType.Name = &quot;MPS Deals&quot;)</errorConditionFormula>
+    <errorDisplayField>TSGADX__Cost_Consensus__c</errorDisplayField>
+    <errorMessage>The sales stage of &quot;Present Proposal&quot; requires the Cost Consensus date to be filled in.</errorMessage>
+</ValidationRule>

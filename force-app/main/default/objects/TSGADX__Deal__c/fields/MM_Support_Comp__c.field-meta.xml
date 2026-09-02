@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MM_Support_Comp__c</fullName>
+    <description>Calculation of Mail Machine Support Comp based on plan sold.</description>
+    <externalId>false</externalId>
+    <formula>IF( Total_Monthly_Services__c = 0,0,
+IF( Standard_MM_Support__c  = TRUE, (Total_Hardware_Revenue__c * 0.10),
+IF( Silver_MM_Support__c  = TRUE, (Total_Hardware_Revenue__c * 0.12), 
+IF( Gold_MM_Support_Plan__c = TRUE, (Total_Hardware_Revenue__c * 0.14),0))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Calculation of Mail Machine Support Comp based on plan sold.</inlineHelpText>
+    <label>MM Support Comp</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

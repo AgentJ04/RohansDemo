@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__TSG_Deal_ID__c</fullName>
+    <deprecated>false</deprecated>
+    <description>TSG Unique ID for Deal Records</description>
+    <displayFormat>D-{0}</displayFormat>
+    <externalId>true</externalId>
+    <inlineHelpText>TSG Unique ID for Deal Records</inlineHelpText>
+    <label>TSG Deal ID</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

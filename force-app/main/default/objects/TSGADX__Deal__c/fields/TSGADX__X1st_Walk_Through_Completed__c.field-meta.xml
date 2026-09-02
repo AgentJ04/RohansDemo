@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__X1st_Walk_Through_Completed__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Enter the date the first walk through was completed.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the date the first walk through was completed.</inlineHelpText>
+    <label>1st Walk Through Completed</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

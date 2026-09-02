@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Alert__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked the alert message will be displayed. Requires that the alert content field contains message in ADX settings</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked the alert message will be displayed. Requires that the alert content field contains message in ADX settings</inlineHelpText>
+    <label>Alert</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Implementation_Template__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Do not select until deal is closed won. What type of Task Ray Project needs to be started for implementation.</inlineHelpText>
+    <label>Implementation Template</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>MPS</fullName>
+                <default>false</default>
+                <label>MPS</label>
+            </value>
+            <value>
+                <fullName>Managed I.T. Services</fullName>
+                <default>false</default>
+                <label>Managed I.T. Services</label>
+            </value>
+            <value>
+                <fullName>Print Management</fullName>
+                <default>false</default>
+                <label>Print Management</label>
+            </value>
+            <value>
+                <fullName>Cost Accounting/Professional Billing</fullName>
+                <default>false</default>
+                <label>Cost Accounting/Professional Billing</label>
+            </value>
+            <value>
+                <fullName>Capture/Scanning</fullName>
+                <default>false</default>
+                <label>Capture/Scanning</label>
+            </value>
+            <value>
+                <fullName>ECM</fullName>
+                <default>false</default>
+                <label>ECM</label>
+            </value>
+            <value>
+                <fullName>eForms</fullName>
+                <default>false</default>
+                <label>eForms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

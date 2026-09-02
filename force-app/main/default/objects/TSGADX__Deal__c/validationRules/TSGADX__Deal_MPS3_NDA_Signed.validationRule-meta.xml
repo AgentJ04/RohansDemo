@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Deal_MPS3_NDA_Signed</fullName>
+    <active>false</active>
+    <description>Signed Letter of Intent requires NDA Signed Date</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp; 
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+$RecordType.Name = &quot;MPS Deals&quot; &amp;&amp; ISPICKVAL(TSGADX__Sales_Stage__c , &quot;Sign Letter of Intent&quot;) &amp;&amp; ISBLANK( TSGADX__NDA_Signed__c )</errorConditionFormula>
+    <errorDisplayField>TSGADX__NDA_Signed__c</errorDisplayField>
+    <errorMessage>The sales stage of &quot;Signed Letter of Intent&quot; requires the NDA Signed date to be filled in.</errorMessage>
+</ValidationRule>

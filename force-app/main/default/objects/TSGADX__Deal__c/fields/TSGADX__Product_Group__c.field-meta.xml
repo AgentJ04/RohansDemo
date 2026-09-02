@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Product_Group__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Product Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A3 CSI MFP</fullName>
+                <default>false</default>
+                <label>A3 CSI MFP</label>
+            </value>
+            <value>
+                <fullName>A4 CSI MFP</fullName>
+                <default>false</default>
+                <label>A4 CSI MFP</label>
+            </value>
+            <value>
+                <fullName>CL LSR MFP</fullName>
+                <default>false</default>
+                <label>CL LSR MFP</label>
+            </value>
+            <value>
+                <fullName>CL LSR PRT</fullName>
+                <default>false</default>
+                <label>CL LSR PRT</label>
+            </value>
+            <value>
+                <fullName>CSI PRINT</fullName>
+                <default>false</default>
+                <label>CSI PRINT</label>
+            </value>
+            <value>
+                <fullName>DEPT DIGIT</fullName>
+                <default>false</default>
+                <label>DEPT DIGIT</label>
+            </value>
+            <value>
+                <fullName>ENTRY PC</fullName>
+                <default>false</default>
+                <label>ENTRY PC</label>
+            </value>
+            <value>
+                <fullName>ENTRY PROD CLR L/M</fullName>
+                <default>false</default>
+                <label>ENTRY PROD CLR L/M</label>
+            </value>
+            <value>
+                <fullName>HECS</fullName>
+                <default>false</default>
+                <label>HECS</label>
+            </value>
+            <value>
+                <fullName>HVR</fullName>
+                <default>false</default>
+                <label>HVR</label>
+            </value>
+            <value>
+                <fullName>MONO ACQ</fullName>
+                <default>false</default>
+                <label>MONO ACQ</label>
+            </value>
+            <value>
+                <fullName>MONO PRINT</fullName>
+                <default>false</default>
+                <label>MONO PRINT</label>
+            </value>
+            <value>
+                <fullName>OEM LT LEN</fullName>
+                <default>false</default>
+                <label>OEM LT LEN</label>
+            </value>
+            <value>
+                <fullName>OFF CL LSR</fullName>
+                <default>false</default>
+                <label>OFF CL LSR</label>
+            </value>
+            <value>
+                <fullName>OFF SOLUTN</fullName>
+                <default>false</default>
+                <label>OFF SOLUTN</label>
+            </value>
+            <value>
+                <fullName>OFFICE DIG</fullName>
+                <default>false</default>
+                <label>OFFICE DIG</label>
+            </value>
+            <value>
+                <fullName>PRO CL SLR</fullName>
+                <default>false</default>
+                <label>PRO CL SLR</label>
+            </value>
+            <value>
+                <fullName>PROD COLOR</fullName>
+                <default>false</default>
+                <label>PROD COLOR</label>
+            </value>
+            <value>
+                <fullName>SYSTEM</fullName>
+                <default>false</default>
+                <label>SYSTEM</label>
+            </value>
+            <value>
+                <fullName>WG FAX</fullName>
+                <default>false</default>
+                <label>WG FAX</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

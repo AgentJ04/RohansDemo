@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__No_Price_Required_if_a_LEAD</fullName>
+    <active>false</active>
+    <description>Requires a PRICE be entered if this deal is anything but a LEAD</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp; 
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+AND (
+  OR (
+     ISPICKVAL( TSGADX__Type__c , &quot;Replacement&quot;),
+     ISPICKVAL(TSGADX__Type__c, &quot;New Placement&quot;)),
+ISBLANK( TSGADX__Price__c )
+)</errorConditionFormula>
+    <errorDisplayField>TSGADX__Price__c</errorDisplayField>
+    <errorMessage>You must enter a Price before you can save this deal.</errorMessage>
+</ValidationRule>

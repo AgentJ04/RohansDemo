@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__MPS_Deals</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Equipment_Compact_Layout</compactLayoutAssignment>
+    <description>Enter MPS Deals</description>
+    <label>MPS Deals</label>
+    <picklistValues>
+        <picklist>Agreement_Type__c</picklist>
+        <values>
+            <fullName>Rental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Book_Type__c</picklist>
+        <values>
+            <fullName>In Book</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Book</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Docuware__c</picklist>
+        <values>
+            <fullName>DW AutoIndex</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Barcode %26 Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to Outlook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to Ricoh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to SharePoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to Sharp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to Toshiba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Connect to Xerox</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Forms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Import</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Intelligent Indexing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Smart Connect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Task Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DW Workflow Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docuware Business Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docuware Client Site License</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docuware Enterprise Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docuware Professional Server</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Docuware Web Client Read Only</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Stage_CyberSec__c</picklist>
+        <values>
+            <fullName>MOM Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MQL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OIT Lead</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Status_CyberSec__c</picklist>
+        <values>
+            <fullName>Dead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stale</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Working</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MPS_MNS_Inclusive__c</picklist>
+        <values>
+            <fullName>MNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shred</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Status__c</picklist>
+        <values>
+            <fullName>Billed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funded</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ordered</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Other_Services__c</picklist>
+        <values>
+            <fullName>VOIP Phones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Filtration</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Base_Billing__c</picklist>
+        <values>
+            <fullName>Base Pass Thru-Internal Overages</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base and Overage Pass Thru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Billing All</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Service_Contract_Type__c</picklist>
+        <values>
+            <fullName>MFP All Inclusive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Managed Print Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Supplied</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subscription_Type__c</picklist>
+        <values>
+            <fullName>Bundled Subscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MRR Subscription</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Accessories__c</picklist>
+        <values>
+            <fullName>11%22 x 17%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12%22 x 18%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%22 x 5%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2E5%22 x 8%2E5%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5%22 x 11%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8%2E5%22 x 14%22</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Special</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Anticipated_Usage__c</picklist>
+        <values>
+            <fullName>Mainly small jobs or personal use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small to large jobs%2C heavy usage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small to light production jobs%2C heavy usage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small to medium jobs%2C frequent usage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small to medium jobs%2C heavy usage</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Average_Mo_Volume__c</picklist>
+        <values>
+            <fullName>%3C 500</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10%2C001 - 20%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20%2C000 %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3%2C001 - 5%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5%2C000 - 10%2C000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>501 - 3%2C000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Channel__c</picklist>
+        <values>
+            <fullName>Brother</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Konica Minolta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyocera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lexmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ricoh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sharp</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toshiba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Xerox</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Configuration__c</picklist>
+        <values>
+            <fullName>Copier Based - MFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Duplicator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Laser Printer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Printer Based - MFP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wide-Format</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Deal_Assignment__c</picklist>
+        <values>
+            <fullName>Install Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order%2FInstaller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Deal_Source__c</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jigsaw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of Mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Finishing_Options__c</picklist>
+        <values>
+            <fullName>2 - 3 Hole Punching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Hole Punching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Folder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Bin Sorter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Bin Stacker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offset Catch Tray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Post-Process Inserter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saddle Stitch Finisher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stacking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stapler %2F Finisher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stapling</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Forecast_Category__c</picklist>
+        <values>
+            <fullName>Agreement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Probable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upside</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Other_Options__c</picklist>
+        <values>
+            <fullName>Access Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B%26W Scanning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biometric Authentication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color Scanning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Security Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Document Storage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplex ADF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fax Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hard Drive Encryption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High Capacity Feeder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-line editing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LDAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Printing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scan to PC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vend Station</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Output__c</picklist>
+        <values>
+            <fullName>Black %26 White Only</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color and Black %26 White</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Professional Color</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Print_Speed__c</picklist>
+        <values>
+            <fullName>110 %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 - 30 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31 - 45 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 - 55 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56 - 70 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71 - 85 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86 - 95 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>95 - 110 ppm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than 21 ppm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Sales_Stage__c</picklist>
+        <values>
+            <fullName>Conduct Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cost Consensus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demonstration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gather Requirments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negotiation%2FClose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Present MPS Business Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Present Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qualify</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign Letter of Intent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Won</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>installed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Type__c</picklist>
+        <values>
+            <fullName>New Placement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replacement</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__Why_Lost__c</picklist>
+        <values>
+            <fullName>Features %28Spec%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No-Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Coverage Area</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Relationship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGADX__lastActivityObjType__c</picklist>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Task</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TSGCFG__Price_Book__c</picklist>
+        <values>
+            <fullName>AEPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Quantity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Used</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TaskRay_Project_Template__c</picklist>
+        <values>
+            <fullName>Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Software</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

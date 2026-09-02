@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Sync__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Used for CEO Juice/Quote sync
+
+/* Last_Sync__c &gt; NOW() - (15 / 1440) old formula */
+formula replaced by james
+IF(Last_Sync__c &gt; NOW(),FALSE,Last_Sync__c &gt; NOW() - (5 / 1440)) */</description>
+    <externalId>false</externalId>
+    <formula>/* This allows for the instant iPush To achieve its goal.*/
+
+IF(
+  TSGADX__iPush_Initiated__c,
+  TRUE,
+  IF(
+    TSGADX__Last_Sync__c &gt; NOW(),
+    FALSE,
+    TSGADX__Last_Sync__c &gt; NOW() - (5 / 1440)
+  )
+)</formula>
+    <label>Sync</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

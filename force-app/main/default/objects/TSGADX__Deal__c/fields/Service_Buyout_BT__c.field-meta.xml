@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Buyout_BT__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the amount of Service to be bought out in new deal.</inlineHelpText>
+    <label>Service Buyout</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

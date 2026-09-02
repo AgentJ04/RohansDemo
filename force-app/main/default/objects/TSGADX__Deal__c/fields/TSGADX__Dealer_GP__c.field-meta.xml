@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Dealer_GP__c</fullName>
+    <defaultValue>0</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Dealer Gross Profit = Dealer Margin + Dealer 3rd Party Profit</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Dealer Gross Profit = Dealer Margin + Dealer 3rd Party Profit</inlineHelpText>
+    <label>Dealer GP $</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

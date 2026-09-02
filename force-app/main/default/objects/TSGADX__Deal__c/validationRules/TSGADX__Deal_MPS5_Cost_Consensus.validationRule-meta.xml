@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Deal_MPS5_Cost_Consensus</fullName>
+    <active>false</active>
+    <description>Cost Consensus requires 2nd Walk Through Date</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp; 
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+$RecordType.Name = &quot;MPS Deals&quot; &amp;&amp; ISPICKVAL(TSGADX__Sales_Stage__c , &quot;Cost Consensus&quot;) &amp;&amp; ISBLANK( TSGADX__X2nd_Walk_Through__c )</errorConditionFormula>
+    <errorDisplayField>TSGADX__X2nd_Walk_Through__c</errorDisplayField>
+    <errorMessage>The sales stage of &quot;Cost Consensus&quot; requires the 2nd Walk Through date to be filled in.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Hardware__c</fullName>
+    <externalId>false</externalId>
+    <label>IT Hardware</label>
+    <summarizedField>TSGCFG__Deal_Line_Items__c.TSGCFG__Total__c</summarizedField>
+    <summaryFilterItems>
+        <field>TSGCFG__Deal_Line_Items__c.TSGCFG__Category__c</field>
+        <operation>equals</operation>
+        <value>IT Hardware</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TSGCFG__Deal_Line_Items__c.TSGCFG__Deal__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

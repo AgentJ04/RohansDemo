@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Valid_Price</fullName>
+    <active>false</active>
+    <description>Assures that price is equal to the sum of other price fields if those fields aren&apos;t empty</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp;
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+ (   NOT(ISNULL(TSGADX__Achieved_Price__c))
+    || NOT(ISNULL(TSGADX__Dealer_Achieved_Price__c))
+    || NOT(ISNULL(TSGADX__Multi_Site_Credit__c))
+)
+&amp;&amp;
+(TSGADX__Price__c  &lt;&gt; (TSGADX__Achieved_Price__c + TSGADX__Dealer_Achieved_Price__c + 
+TSGADX__Multi_Site_Credit__c))</errorConditionFormula>
+    <errorMessage>Price must be equal to the sum of Achieved Price, Dealer Achieved Price, and Multi Site Credit unless these three fields are empty.</errorMessage>
+</ValidationRule>

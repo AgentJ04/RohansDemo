@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Office Color</fullName>
+                <default>false</default>
+                <label>Office Color</label>
+            </value>
+            <value>
+                <fullName>Production Mono</fullName>
+                <default>false</default>
+                <label>Production Mono</label>
+            </value>
+            <value>
+                <fullName>Production Color</fullName>
+                <default>false</default>
+                <label>Production Color</label>
+            </value>
+            <value>
+                <fullName>Low End Mono (&lt;30)</fullName>
+                <default>false</default>
+                <label>Low End Mono (&lt;30)</label>
+            </value>
+            <value>
+                <fullName>Mid Volume Mono (30-50)</fullName>
+                <default>false</default>
+                <label>Mid Volume Mono (30-50)</label>
+            </value>
+            <value>
+                <fullName>Departmental Mono (50+)</fullName>
+                <default>false</default>
+                <label>Departmental Mono (50+)</label>
+            </value>
+            <value>
+                <fullName>Managed Print Services (&lt;25,000)</fullName>
+                <default>false</default>
+                <label>Managed Print Services (&lt;25,000)</label>
+            </value>
+            <value>
+                <fullName>Managed Print Services (&gt;25,000)</fullName>
+                <default>false</default>
+                <label>Managed Print Services (&gt;25,000)</label>
+            </value>
+            <value>
+                <fullName>Postage/Mailing</fullName>
+                <default>false</default>
+                <label>Postage/Mailing</label>
+            </value>
+            <value>
+                <fullName>Smart Search</fullName>
+                <default>false</default>
+                <label>Smart Search</label>
+            </value>
+            <value>
+                <fullName>Wide Format</fullName>
+                <default>false</default>
+                <label>Wide Format</label>
+            </value>
+            <value>
+                <fullName>3rd Party Product</fullName>
+                <default>false</default>
+                <label>3rd Party Product</label>
+            </value>
+            <value>
+                <fullName>Managed Network Services</fullName>
+                <default>false</default>
+                <label>Managed Network Services</label>
+            </value>
+            <value>
+                <fullName>Audio Visual</fullName>
+                <default>false</default>
+                <label>Audio Visual</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

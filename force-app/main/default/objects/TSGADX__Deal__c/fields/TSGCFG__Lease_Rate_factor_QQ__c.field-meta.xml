@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__Lease_Rate_factor_QQ__c</fullName>
+    <deprecated>false</deprecated>
+    <description>For Quick Quote Only</description>
+    <externalId>false</externalId>
+    <label>Lease Rate Factor</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>9</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

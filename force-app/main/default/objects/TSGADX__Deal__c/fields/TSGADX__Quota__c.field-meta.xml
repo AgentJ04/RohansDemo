@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Quota__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>This is updated by the deal trigger any time the close date changes.  It will find the users employee-sales person record and lookup the quota based on person.quota_type, match the deal.close_date with connections.quota_year/quarter/month.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Which quota record is applied to this deal.  This is automatically updated by the AgentDealerX system</inlineHelpText>
+    <label>Quota</label>
+    <referenceTo>TSGADX__Connections__c</referenceTo>
+    <relationshipLabel>Deals</relationshipLabel>
+    <relationshipName>Deals</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

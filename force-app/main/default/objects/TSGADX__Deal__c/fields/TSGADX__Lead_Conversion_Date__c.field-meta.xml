@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Lead_Conversion_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Date the prospect was converted to Equipment, MPS, .... Deal</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date prospect was converted to Equipment, MPS,.... Deal</inlineHelpText>
+    <label>Prospect Conversion Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

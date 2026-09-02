@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Finishing_Options__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Finishing Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2 - Hole Punching</fullName>
+                <default>false</default>
+                <label>2 - Hole Punching</label>
+            </value>
+            <value>
+                <fullName>2 - 3 Hole Punching</fullName>
+                <default>false</default>
+                <label>2 - 3 Hole Punching</label>
+            </value>
+            <value>
+                <fullName>Post-Process Inserter</fullName>
+                <default>false</default>
+                <label>Post-Process Inserter</label>
+            </value>
+            <value>
+                <fullName>Mail Bin Sorter</fullName>
+                <default>false</default>
+                <label>Mail Bin Sorter</label>
+            </value>
+            <value>
+                <fullName>Mail Bin Stacker</fullName>
+                <default>false</default>
+                <label>Mail Bin Stacker</label>
+            </value>
+            <value>
+                <fullName>Saddle Stitch Finisher</fullName>
+                <default>false</default>
+                <label>Saddle Stitch Finisher</label>
+            </value>
+            <value>
+                <fullName>Stapler / Finisher</fullName>
+                <default>false</default>
+                <label>Stapler / Finisher</label>
+            </value>
+            <value>
+                <fullName>Folder</fullName>
+                <default>false</default>
+                <label>Folder</label>
+            </value>
+            <value>
+                <fullName>Stapling</fullName>
+                <default>false</default>
+                <label>Stapling</label>
+            </value>
+            <value>
+                <fullName>Offset Catch Tray</fullName>
+                <default>false</default>
+                <label>Offset Catch Tray</label>
+            </value>
+            <value>
+                <fullName>Stacking</fullName>
+                <default>false</default>
+                <label>Stacking</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Lost_to_Competition</fullName>
+    <active>false</active>
+    <description>Require competitors lease expiration date &gt; Today</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp; 
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+( $RecordType.Name = &quot;Equipment Deals&quot; ||  $RecordType.Name = &quot;MPS Deal&quot; )
+&amp;&amp;( ISBLANK( TSGADX__Competitor_Lease_Expiration_Date__c ) || TSGADX__Competitor_Lease_Expiration_Date__c &lt;= Today() +360) &amp;&amp; ISPICKVAL(TSGADX__Sales_Stage__c, &quot;Lost to Competition&quot;)</errorConditionFormula>
+    <errorDisplayField>TSGADX__Competitor_Lease_Expiration_Date__c</errorDisplayField>
+    <errorMessage>You must enter the competitors lease expiration date and it must be greater than 1 year from today.  This will automatically create a future deal with a close date of 1 year minus the competitors lease expiration date.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__QuoteLocked</fullName>
+    <active>false</active>
+    <errorConditionFormula>And( TSGCFG__Quote__r.TSGCFG__Locked__c == true) &amp;&amp; ISCHANGED( TSGCFG__Price_Book__c )</errorConditionFormula>
+    <errorDisplayField>TSGCFG__Price_Book__c</errorDisplayField>
+    <errorMessage>You cannot change Price Book as Quote is Locked</errorMessage>
+</ValidationRule>

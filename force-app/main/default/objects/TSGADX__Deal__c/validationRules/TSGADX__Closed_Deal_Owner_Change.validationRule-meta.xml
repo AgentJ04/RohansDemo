@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Closed_Deal_Owner_Change</fullName>
+    <active>true</active>
+    <description>You can not change the owner of a closed deal</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp;
+TSGADX__Closed__c &amp;&amp;
+ISCHANGED(OwnerId)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>You can not change the owner of a closed deal.</errorMessage>
+</ValidationRule>

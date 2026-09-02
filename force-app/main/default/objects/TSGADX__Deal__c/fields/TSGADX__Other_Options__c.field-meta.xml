@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Other_Options__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Other Options</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Duplex ADF</fullName>
+                <default>false</default>
+                <label>Duplex ADF</label>
+            </value>
+            <value>
+                <fullName>Fax</fullName>
+                <default>false</default>
+                <label>Fax</label>
+            </value>
+            <value>
+                <fullName>High Capacity Feeder</fullName>
+                <default>false</default>
+                <label>High Capacity Feeder</label>
+            </value>
+            <value>
+                <fullName>Fax Distribution</fullName>
+                <default>false</default>
+                <label>Fax Distribution</label>
+            </value>
+            <value>
+                <fullName>B&amp;W Scanning</fullName>
+                <default>false</default>
+                <label>B&amp;W Scanning</label>
+            </value>
+            <value>
+                <fullName>Color Scanning</fullName>
+                <default>false</default>
+                <label>Color Scanning</label>
+            </value>
+            <value>
+                <fullName>Scan to PC</fullName>
+                <default>false</default>
+                <label>Scan to PC</label>
+            </value>
+            <value>
+                <fullName>Document Storage</fullName>
+                <default>false</default>
+                <label>Document Storage</label>
+            </value>
+            <value>
+                <fullName>LDAP</fullName>
+                <default>false</default>
+                <label>LDAP</label>
+            </value>
+            <value>
+                <fullName>In-line editing</fullName>
+                <default>false</default>
+                <label>In-line editing</label>
+            </value>
+            <value>
+                <fullName>Data Security Kit</fullName>
+                <default>false</default>
+                <label>Data Security Kit</label>
+            </value>
+            <value>
+                <fullName>Hard Drive Encryption</fullName>
+                <default>false</default>
+                <label>Hard Drive Encryption</label>
+            </value>
+            <value>
+                <fullName>Access Card</fullName>
+                <default>false</default>
+                <label>Access Card</label>
+            </value>
+            <value>
+                <fullName>Biometric Authentication</fullName>
+                <default>false</default>
+                <label>Biometric Authentication</label>
+            </value>
+            <value>
+                <fullName>Vend Station</fullName>
+                <default>false</default>
+                <label>Vend Station</label>
+            </value>
+            <value>
+                <fullName>Network Printing</fullName>
+                <default>false</default>
+                <label>Network Printing</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

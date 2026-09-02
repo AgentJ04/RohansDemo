@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Competitor_Lease_Expiration_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>When a deal is closed lost, you must enter the competitor expiration date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When a deal is closed lost, you must enter the competitor lease expiration date.</inlineHelpText>
+    <label>Competitor Expiration Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

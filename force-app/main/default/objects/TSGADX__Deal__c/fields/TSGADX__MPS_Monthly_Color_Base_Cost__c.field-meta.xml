@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__MPS_Monthly_Color_Base_Cost__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Color Base Cost monthly from TCO RMP for all printers on program.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Color Base Cost monthly from TCO RMP for all printers on program.</inlineHelpText>
+    <label>MPS Monthly Color Base Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

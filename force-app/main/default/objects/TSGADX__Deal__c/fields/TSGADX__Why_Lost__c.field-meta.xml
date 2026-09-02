@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Why_Lost__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Why Lost?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TSGADX__Sales_Stage__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Features (Spec)</fullName>
+                <default>false</default>
+                <label>Features (Spec)</label>
+            </value>
+            <value>
+                <fullName>Relationship</fullName>
+                <default>false</default>
+                <label>Relationship</label>
+            </value>
+            <value>
+                <fullName>No-Decision</fullName>
+                <default>false</default>
+                <label>No-Decision</label>
+            </value>
+            <value>
+                <fullName>Out of Coverage Area</fullName>
+                <default>false</default>
+                <label>Out of Coverage Area</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Price</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Features (Spec)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Relationship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>No-Decision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Out of Coverage Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Lost</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

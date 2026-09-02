@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Customer_Servers__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <inlineHelpText>Select which server customer has in place to accommodate solution or if we are providing hardware.</inlineHelpText>
+    <label>Customer Servers</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central Print Server</fullName>
+                <default>false</default>
+                <label>Central Print Server</label>
+            </value>
+            <value>
+                <fullName>Central App Server</fullName>
+                <default>false</default>
+                <label>Central App Server</label>
+            </value>
+            <value>
+                <fullName>Central SQL Server</fullName>
+                <default>false</default>
+                <label>Central SQL Server</label>
+            </value>
+            <value>
+                <fullName>We Are Providing Server</fullName>
+                <default>false</default>
+                <label>We Are Providing Server</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

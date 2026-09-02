@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGEsync__EA_Customer_Number__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>TSGADX__Company__r.AccountNumber</formula>
+    <label>EA Customer Number</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

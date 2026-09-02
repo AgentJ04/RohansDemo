@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Forecast_Price__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Converts revenue on Lost (Omitted) deals to negative revenue. Used for Deal Trending Reports.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(TSGADX__Forecast_Category__c , &quot;Omitted&quot;),( TSGADX__Price__c *-1),TSGADX__Price__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Converts revenue on Lost (Omitted) deals to negative revenue. Used for Deal Trending Reports.</inlineHelpText>
+    <label>Forecast Price $</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

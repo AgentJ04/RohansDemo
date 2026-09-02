@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipment_Compact_Layout</fullName>
+    <fields>TSGADX__Company__c</fields>
+    <fields>RecordTypeId</fields>
+    <fields>Name</fields>
+    <fields>TSGADX__Close_Date__c</fields>
+    <fields>TSGADX__Forecast_Category__c</fields>
+    <fields>TSGADX__Price__c</fields>
+    <fields>TSGADX__Closed__c</fields>
+    <label>Equipment Compact Layout</label>
+</CompactLayout>

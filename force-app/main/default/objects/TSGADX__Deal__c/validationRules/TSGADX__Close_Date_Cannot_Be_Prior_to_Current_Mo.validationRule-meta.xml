@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Close_Date_Cannot_Be_Prior_to_Current_Mo</fullName>
+    <active>false</active>
+    <description>Validates that the Close Date of an opportunity is not within a month prior to the current month.</description>
+    <errorConditionFormula>$Setup.TSGADX__ADX_Settings__c.TSGADX__Validation_Rules__c &amp;&amp; 
+NOT($Setup.TSGADX__ADX_Settings__c.TSGADX__Executing__c) &amp;&amp;
+AND(
+  OR (
+     ISNEW(), 
+     ISCHANGED(  TSGADX__Close_Date__c  )), 
+   TSGADX__Close_Date__c  &lt; DATE( YEAR(TODAY()), MONTH(TODAY()), 1) )</errorConditionFormula>
+    <errorDisplayField>TSGADX__Close_Date__c</errorDisplayField>
+    <errorMessage>Close Date cannot be prior to current month.</errorMessage>
+</ValidationRule>

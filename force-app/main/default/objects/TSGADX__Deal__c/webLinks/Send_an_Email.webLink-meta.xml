@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_an_Email</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send an Email</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/_ui/core/email/author/EmailAuthor?
+p2_lkid={!TSGADX__Deal__c.TSGADX__Main_ContactId__c}
+&amp;p3_lkid={!TSGADX__Deal__c.Id}
+&amp;template_id={!$Setup.TSGADX__ADX_Settings__c.TSGADX__Company_Email_Template_Id__c}
+&amp;retURL=%2F{!TSGADX__Deal__c.Id}</url>
+</WebLink>

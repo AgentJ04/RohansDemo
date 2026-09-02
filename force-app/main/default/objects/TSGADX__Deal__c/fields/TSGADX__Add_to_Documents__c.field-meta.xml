@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Add_to_Documents__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>When Checked, TCO for MPS program data will be exported to your related deal documents, along with your equipment deal data.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When Checked, TCO for MPS program data will be exported to your related deal documents, along with your equipment deal data.</inlineHelpText>
+    <label>Add to Documents</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

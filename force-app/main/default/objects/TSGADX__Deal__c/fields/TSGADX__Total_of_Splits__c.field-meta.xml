@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Total_of_Splits__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Use this field for validation rules to limit the number of splits allowed</description>
+    <externalId>false</externalId>
+    <inlineHelpText>A total number of split records created.</inlineHelpText>
+    <label>Total # of Splits</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

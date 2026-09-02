@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_TCO__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check to use in a Total TCO Report so that this Deal&apos;s Primary Quote Details can be used.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check to use in a Total TCO Report so that this Deal&apos;s Primary Quote Details can be used.</inlineHelpText>
+    <label>Total TCO</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

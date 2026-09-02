@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGCFG__US_Bank</fullName>
+    <description>It is used in US bank Application</description>
+    <displayedFields>
+        <field>TSGADX__Contact_Email__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>TSGADX__Contact_Phone__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>US Bank</label>
+</FieldSet>

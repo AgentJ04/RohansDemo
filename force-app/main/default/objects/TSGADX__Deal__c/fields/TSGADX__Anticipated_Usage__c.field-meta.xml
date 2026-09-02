@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSGADX__Anticipated_Usage__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Anticipated Usage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mainly small jobs or personal use</fullName>
+                <default>false</default>
+                <label>Mainly small jobs or personal use</label>
+            </value>
+            <value>
+                <fullName>Small to medium jobs, frequent usage</fullName>
+                <default>false</default>
+                <label>Small to medium jobs, frequent usage</label>
+            </value>
+            <value>
+                <fullName>Small to medium jobs, heavy usage</fullName>
+                <default>false</default>
+                <label>Small to medium jobs, heavy usage</label>
+            </value>
+            <value>
+                <fullName>Small to large jobs, heavy usage</fullName>
+                <default>false</default>
+                <label>Small to large jobs, heavy usage</label>
+            </value>
+            <value>
+                <fullName>Small to light production jobs, heavy usage</fullName>
+                <default>false</default>
+                <label>Small to light production jobs, heavy usage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
