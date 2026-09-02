@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Purchase_Option__c</fullName>
     <deprecated>false</deprecated>
     <description>End of Lease Purchase Option:$1 or Fair Market Value (FMV)</description>
-    <externalId>false</externalId>
     <inlineHelpText>End of Lease Purchase Option:$1 or Fair Market Value (FMV)</inlineHelpText>
     <label>Purchase Option</label>
     <required>false</required>

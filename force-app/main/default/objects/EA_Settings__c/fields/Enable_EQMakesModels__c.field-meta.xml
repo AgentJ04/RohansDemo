@@ -3,7 +3,6 @@
     <fullName>Enable_EQMakesModels__c</fullName>
     <defaultValue>true</defaultValue>
     <description>Controls the EqMakesModels trigger</description>
-    <externalId>false</externalId>
     <inlineHelpText>Controls the EqMakesModels trigger</inlineHelpText>
     <label>Enable EQMakesModels</label>
     <trackTrending>false</trackTrending>

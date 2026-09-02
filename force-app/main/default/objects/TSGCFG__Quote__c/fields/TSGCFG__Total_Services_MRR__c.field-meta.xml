@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Services_MRR__c</fullName>
     <deprecated>false</deprecated>
     <description>Category contains IT MRR, VOIP MRR, Software MRR</description>
-    <externalId>false</externalId>
     <label>Total Services MRR</label>
     <precision>18</precision>
     <required>false</required>

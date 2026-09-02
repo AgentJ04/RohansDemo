@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Promo__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Promo</description>
-    <externalId>false</externalId>
     <label>Total Promo</label>
     <precision>18</precision>
     <required>false</required>

@@ -2,13 +2,21 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__B_W_CPC__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
-    <formula>TSGCFG__Quote__r.TSGCFG__B_W_CPC__c</formula>
+    <formula>TSGCFG__Quote__r.TSGCFG__B_W_CPC__c
+
+/*
+IF( ISPICKVAL(TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c &gt; 0,
+TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__SumofCPCBW__c/ TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c,
+IF(ABS(TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalBWVolume__c - TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__Total_Volume_Includes_B_W__c )&lt;&gt;0, TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalBWMonthlyCost__c / ABS(TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalBWVolume__c - TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__Total_Volume_Includes_B_W__c ),
+IF(TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c &gt; 0, TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__SumofCPCBW__c/ TSGCFG__Quote__r.TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c , 0)
+)
+)
+*/</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>B&amp;W CPC</label>
     <precision>18</precision>
     <required>false</required>
-    <scale>5</scale>
+    <scale>6</scale>
     <trackHistory>false</trackHistory>
     <type>Currency</type>
 </CustomField>

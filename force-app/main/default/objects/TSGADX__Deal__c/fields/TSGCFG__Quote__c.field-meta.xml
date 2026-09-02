@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>Read only at the page layout level</description>
-    <externalId>false</externalId>
     <inlineHelpText>This is the Quote reflected in the Deal Line Items.</inlineHelpText>
     <label>Quote</label>
     <referenceTo>TSGCFG__Quote__c</referenceTo>

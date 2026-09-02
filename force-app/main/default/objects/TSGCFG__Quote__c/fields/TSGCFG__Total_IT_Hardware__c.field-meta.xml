@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_IT_Hardware__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = IT Hardware</description>
-    <externalId>false</externalId>
     <label>Total IT Hardware</label>
     <precision>18</precision>
     <required>false</required>

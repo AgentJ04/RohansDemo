@@ -3,7 +3,6 @@
     <fullName>Total_TCO__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Check to use in a Total TCO Report so that this Deal&apos;s Primary Quote Details can be used.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Check to use in a Total TCO Report so that this Deal&apos;s Primary Quote Details can be used.</inlineHelpText>
     <label>Total TCO</label>
     <trackFeedHistory>false</trackFeedHistory>

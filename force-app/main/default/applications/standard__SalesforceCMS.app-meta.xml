@@ -13,10 +13,14 @@
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
     <tabs>TSGADX__R_U_R__c</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
             <tab>TSGADX__R_U_R__c</tab>
+        </mappings>
+        <mappings>
+            <tab>TSGCFG__Credit_Application_Item__c</tab>
         </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>

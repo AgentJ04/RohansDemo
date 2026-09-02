@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Split__c</fullName>
     <description>Enter Split %</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Split %</inlineHelpText>
     <label>Split %</label>
     <precision>5</precision>

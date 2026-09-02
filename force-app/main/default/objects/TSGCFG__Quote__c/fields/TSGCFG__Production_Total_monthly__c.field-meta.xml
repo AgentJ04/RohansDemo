@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Production_Total_monthly__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>( TSGCFG__ProdTotalMonoVolume__c * TSGCFG__Prod_B_W_CPC__c) +
 ( TSGCFG__ProdTotalColorVolume__c * TSGCFG__ProdSumofCPCColor__c) +
 ( TSGCFG__ProdTotalColor1Volume__c * TSGCFG__ProdSumofCPCColor1__c) +

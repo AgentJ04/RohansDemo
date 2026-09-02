@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>Stake holder interviews completed?</description>
-    <externalId>false</externalId>
     <inlineHelpText>Stake holder interviews completed?</inlineHelpText>
     <label>Stakeholder Interviews</label>
     <trackFeedHistory>false</trackFeedHistory>

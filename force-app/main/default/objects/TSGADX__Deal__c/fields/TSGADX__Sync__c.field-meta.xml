@@ -7,7 +7,6 @@
 /* Last_Sync__c &gt; NOW() - (15 / 1440) old formula */
 formula replaced by james
 IF(Last_Sync__c &gt; NOW(),FALSE,Last_Sync__c &gt; NOW() - (5 / 1440)) */</description>
-    <externalId>false</externalId>
     <formula>/* This allows for the instant iPush To achieve its goal.*/
 
 IF(

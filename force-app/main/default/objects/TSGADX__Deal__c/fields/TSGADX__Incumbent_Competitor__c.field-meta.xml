@@ -3,7 +3,6 @@
     <fullName>TSGADX__Incumbent_Competitor__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Lookup the name of the Incumbent Competitor</inlineHelpText>
     <label>Incumbent Competitor</label>
     <lookupFilter>

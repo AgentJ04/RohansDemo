@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MFPTotalMonthlyService__c</fullName>
-    <externalId>false</externalId>
     <label>MFP Total Monthly Service</label>
     <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Monthly_Payments__c</summarizedField>
     <summaryFilterItems>

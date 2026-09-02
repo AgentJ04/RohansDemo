@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Vendor_Partner_s__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Select one or several vendor partners for this deal</inlineHelpText>
     <label>Vendor Partner(s)</label>
     <required>false</required>

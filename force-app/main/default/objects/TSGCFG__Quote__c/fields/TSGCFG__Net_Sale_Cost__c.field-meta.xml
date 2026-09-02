@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Net_Sale_Cost__c</fullName>
     <deprecated>false</deprecated>
     <description>Total Cost of all items where Sales Rep Credit checkbox is True</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total Sale Cost of all items for Sales Rep outside all Soft Costs or non sales credit items.</inlineHelpText>
     <label>Net Sale Cost</label>
     <precision>18</precision>

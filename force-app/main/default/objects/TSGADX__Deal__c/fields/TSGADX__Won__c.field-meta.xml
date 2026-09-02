@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>Won - Updated by Work Flow</description>
-    <externalId>false</externalId>
     <inlineHelpText>Deal is won</inlineHelpText>
     <label>Won</label>
     <trackFeedHistory>false</trackFeedHistory>

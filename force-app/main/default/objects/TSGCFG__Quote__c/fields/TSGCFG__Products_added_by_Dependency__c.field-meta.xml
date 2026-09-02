@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Products_added_by_Dependency__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Products added by Dependency</label>
     <length>32768</length>
     <trackFeedHistory>false</trackFeedHistory>

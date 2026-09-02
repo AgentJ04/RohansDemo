@@ -3,7 +3,6 @@
     <fullName>TSGADX__X3rd_Party_Financing__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Financing $</label>
     <precision>18</precision>
     <required>false</required>

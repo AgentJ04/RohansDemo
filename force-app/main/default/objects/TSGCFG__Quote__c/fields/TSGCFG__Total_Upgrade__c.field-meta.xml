@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Upgrade__c</fullName>
     <deprecated>false</deprecated>
     <description>All Items Accessories where Acc Type = Soft Cost and Category = Upgrade</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total Upgrade amount in the quote that is being financed back through the same leasing company.</inlineHelpText>
     <label>Total Upgrade</label>
     <precision>18</precision>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Upside_Dollars__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>IF(ISPICKVAL( TSGADX__Forecast_Category__c , &quot;Upside&quot;),  TSGADX__Total_Dollars__c  ,0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Upside $</label>

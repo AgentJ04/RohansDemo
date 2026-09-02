@@ -3,7 +3,6 @@
     <fullName>TSGCFG__CPC_Overridden__c</fullName>
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>If true, CPC Rates have been overridden on one or more CPC Service QLI</inlineHelpText>
     <label>CPC Overridden</label>
     <trackFeedHistory>false</trackFeedHistory>

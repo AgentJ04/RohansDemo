@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Support_Term__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>How Many Years of Software Maintenance and Support need to be included in Pricing. Remember to also reflect this end term date in the Renewal Date field in Sales Stage.</inlineHelpText>
     <label>Support Term</label>
     <required>false</required>

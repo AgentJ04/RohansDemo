@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Application_Integrations__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Are there any customer applications needing workflow integration? ie; Great Plains for accounting Workflow.</inlineHelpText>
     <label>Application Integrations</label>
     <required>false</required>

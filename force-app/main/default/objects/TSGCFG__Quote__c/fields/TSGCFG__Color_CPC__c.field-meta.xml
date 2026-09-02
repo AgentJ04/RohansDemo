@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Color_CPC__c</fullName>
     <deprecated>false</deprecated>
     <description>Non Production This is calculated to offer a blended rate for multiple machines.</description>
-    <externalId>false</externalId>
     <formula>IF(ISPICKVAL( TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCColorLineItems__c &gt; 0 ,
      TSGCFG__SumofCPCColor__c/  TSGCFG__TotalCPCColorLineItems__c, 
      IF(ABS( TSGCFG__TotalColorVolume__c - TSGCFG__Total_Volume_Includes_Color__c)&lt;&gt;0, TSGCFG__TotalColorMonthlyCost__c / ABS( TSGCFG__TotalColorVolume__c - TSGCFG__Total_Volume_Includes_Color__c) ,

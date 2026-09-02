@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Buyout__c</fullName>
     <deprecated>false</deprecated>
     <description>Total all items where Category = Buyout</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total Buyout Items in a quote that need to be funded in the lease and paid out to a customer or competitive leasing company. Not an Upgrade with the current lease company.</inlineHelpText>
     <label>Total Buyout</label>
     <precision>18</precision>

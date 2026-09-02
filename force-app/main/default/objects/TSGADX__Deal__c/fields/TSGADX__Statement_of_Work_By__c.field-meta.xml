@@ -3,7 +3,6 @@
     <fullName>TSGADX__Statement_of_Work_By__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Who completed the statement of work that was presented to the customer.</inlineHelpText>
     <label>Statement of Work By</label>
     <referenceTo>User</referenceTo>

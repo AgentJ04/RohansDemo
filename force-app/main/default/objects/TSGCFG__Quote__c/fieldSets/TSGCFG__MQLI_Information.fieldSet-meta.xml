@@ -497,6 +497,41 @@
         <isRequired>false</isRequired>
     </availableFields>
     <availableFields>
+        <field>TSGCFG__Total_all_BW_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>TSGCFG__Total_all_color_1_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>TSGCFG__Total_all_color_2_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>TSGCFG__Total_all_color_3_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>TSGCFG__Total_all_color_4_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>TSGCFG__Total_all_color_5_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
+        <field>TSGCFG__Total_all_color_6_volume__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </availableFields>
+    <availableFields>
         <field>TSGCFG__Trade_In__c</field>
         <isFieldManaged>false</isFieldManaged>
         <isRequired>false</isRequired>

@@ -3,7 +3,6 @@
     <fullName>TSGADX__Cost_Consensus__c</fullName>
     <deprecated>false</deprecated>
     <description>Date Cost consensus signed by customer</description>
-    <externalId>false</externalId>
     <inlineHelpText>Date Cost consensus signed by customer</inlineHelpText>
     <label>Cost Consensus</label>
     <required>false</required>

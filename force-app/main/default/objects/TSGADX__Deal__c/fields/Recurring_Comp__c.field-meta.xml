@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Recurring_Comp__c</fullName>
-    <externalId>false</externalId>
     <formula>IF( Recurring_End_Date__c &lt; TODAY(), 0, (TSGADX__IT_Services_Revenue__c * 0.01)+(MPS_Board_Credit__c * 0.01)+( Shred_Rep_Board_Credit__c * 0.01))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Amount to be paid on a monthly Recurring Basis as commission for this deal until Recurring End Date.</inlineHelpText>

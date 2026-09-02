@@ -3,7 +3,6 @@
     <fullName>TSGCFG__CPC_Base_Rate__c</fullName>
     <deprecated>false</deprecated>
     <description>CPC Base Rate for Quick Quotes</description>
-    <externalId>false</externalId>
     <inlineHelpText>CPC Base Rate for Quick Quotes</inlineHelpText>
     <label>CPC Base Rate</label>
     <precision>18</precision>

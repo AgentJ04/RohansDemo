@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Current_Date_Time__c</fullName>
-    <externalId>false</externalId>
     <formula>DATETIMEVALUE(NOW())</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Current Date/Time, used for Unique Number export on Lease ESign doc.</inlineHelpText>

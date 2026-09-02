@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>**Create an MPS Program section on the Deal Record if customer requests to Select the TCO Analysis record to be used with this Equipment deal and it&apos;s deal Costing information for reporting or exporting.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Select the TCO Analysis record to be used with this Equipment deal and it&apos;s deal Costing information for reporting or exporting.</inlineHelpText>
     <label>TCO for MPS</label>
     <lookupFilter>

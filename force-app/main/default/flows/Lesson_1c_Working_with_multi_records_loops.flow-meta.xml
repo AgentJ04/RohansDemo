@@ -32,6 +32,7 @@
         <nameSegment>emailSimple</nameSegment>
     </actionCalls>
     <apiVersion>49.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <interviewLabel>Lesson 1c - Working with multi records &amp; loops {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Lesson 1c - Working with multi records &amp; loops</label>
     <loops>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Production_Color_6_Total_Base_Rate__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Production Color 6 Total Base Rate</label>
     <precision>18</precision>
     <required>false</required>

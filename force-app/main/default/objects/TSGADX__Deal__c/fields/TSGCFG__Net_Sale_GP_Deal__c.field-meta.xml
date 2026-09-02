@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Net_Sale_GP_Deal__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>IF( TSGCFG__Quote__r.TSGCFG__Net_Sale_GP__c &gt;0, TSGCFG__Quote__r.TSGCFG__Net_Sale_GP__c, TSGCFG__Rep_Margin__c )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Sales Rep GP</inlineHelpText>

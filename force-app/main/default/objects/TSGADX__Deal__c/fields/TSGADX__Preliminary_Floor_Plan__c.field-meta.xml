@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>Preliminary Floor Plan Completed?</description>
-    <externalId>false</externalId>
     <inlineHelpText>Preliminary Floor Plan Completed?</inlineHelpText>
     <label>Preliminary Floor Plan</label>
     <trackFeedHistory>false</trackFeedHistory>

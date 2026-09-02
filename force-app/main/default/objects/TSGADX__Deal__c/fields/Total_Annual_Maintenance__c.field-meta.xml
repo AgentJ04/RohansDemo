@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Annual_Maintenance__c</fullName>
     <description>Total of Mail Machine Annual Maintenance included in Deal</description>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.MM_Annual_Maintenance__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Total of Mail Machine Annual Maintenance included in Deal</inlineHelpText>

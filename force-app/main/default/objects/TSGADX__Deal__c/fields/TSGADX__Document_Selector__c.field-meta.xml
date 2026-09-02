@@ -3,7 +3,6 @@
     <fullName>TSGADX__Document_Selector__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Document Selector</label>
     <referenceTo>TSGADX__documentSelector__c</referenceTo>
     <relationshipLabel>Deals</relationshipLabel>

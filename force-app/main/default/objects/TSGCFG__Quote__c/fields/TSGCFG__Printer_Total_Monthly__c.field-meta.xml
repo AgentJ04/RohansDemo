@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Printer_Total_Monthly__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
-    <formula>( TSGCFG__PrinterTotalMonoVolume__c * TSGCFG__PrinterSumofCPCBW__c) +
+    <formula>/* 
+( TSGCFG__PrinterTotalMonoVolume__c * TSGCFG__PrinterSumofCPCBW__c) +
 ( TSGCFG__PrinterTotalColorVolume__c * TSGCFG__PrinterSumofCPCColor__c) +
 ( TSGCFG__PrinterTotalColor1Volume__c* TSGCFG__PrinterSumofCPCColor1__c) +
 ( TSGCFG__PrinterTotalColor2Volume__c* TSGCFG__PrinterSumofCPCColor2__c) +
@@ -17,16 +17,21 @@ TSGCFG__Printer_Color_4_Total_Base_Rate__c +
 TSGCFG__Printer_Color_5_Total_Base_Rate__c +
 TSGCFG__Printer_B_W_Total_Base_Rate__c +
 TSGCFG__Printer_Color_Total_Base_Rate__c
-
-/* Updated 30-05-2023
-( TSGCFG__PrinterTotalMonoVolume__c * TSGCFG__PrinterSumofCPCBW__c) +
-( TSGCFG__PrinterTotalColorVolume__c * TSGCFG__PrinterSumofCPCColor__c) +
-( TSGCFG__PrinterTotalColor1Volume__c* TSGCFG__PrinterSumofCPCColor1__c) +
-( TSGCFG__PrinterTotalColor2Volume__c* TSGCFG__PrinterSumofCPCColor2__c) +
-( TSGCFG__PrinterTotalColor3Volume__c* TSGCFG__PrinterSumofCPCColor3__c) +
-( TSGCFG__PrinterTotalColor4Volume__c* TSGCFG__PrinterSumofCPCColor4__c) +
-( TSGCFG__PrinterTotalColor5Volume__c* TSGCFG__PrinterSumofCPCColor5__c) +
-TSGCFG__Printer_Color_1_Total_Base_Rate__c + TSGCFG__Printer_B_W_Total_Base_Rate__c */</formula>
+*/
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalMonoVolume__c * TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCBW__c) +
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColorVolume__c * TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor__c) +
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor1Volume__c* TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor1__c) +
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor2Volume__c* TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor2__c) +
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor3Volume__c* TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor3__c) +
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor4Volume__c* TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor4__c) +
+( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5Volume__c* TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor5__c) +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_Color_1_Total_Base_Rate__c +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_Color_2_Total_Base_Rate__c +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_Color_3_Total_Base_Rate__c +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_Color_4_Total_Base_Rate__c +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_Color_5_Total_Base_Rate__c +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_B_W_Total_Base_Rate__c +
+TSGCFG__CPC_Consolidation__r.TSGCFG__Printer_Color_Total_Base_Rate__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Printer Total Monthly</label>
     <precision>18</precision>

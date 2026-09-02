@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Total_for_Commission_Calculation__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>TSGADX__Amount_for_Commission_Calculations__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Total of Commission Amount (ea) x Quantity - Used by Commission Calculator to determine total commission calculation for this deal.</inlineHelpText>

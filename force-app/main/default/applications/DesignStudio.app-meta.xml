@@ -30,6 +30,7 @@
     <tabs>TSGADX__Equipment__c</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>DesignStudio_UtilityBar</utilityBar>
 </CustomApplication>

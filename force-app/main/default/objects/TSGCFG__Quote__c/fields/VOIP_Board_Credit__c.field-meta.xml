@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>VOIP_Board_Credit__c</fullName>
-    <externalId>false</externalId>
     <formula>(TSGCFG__Total_VOIP_MRR__c *  TSGCFG__Term__c) +  (TSGCFG__Total_VOIP_Hardware__c +  TSGCFG__Total_VOIP_Install__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Net Sale Revenue including VOIP MRR</inlineHelpText>

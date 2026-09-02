@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Mapping_JSON__c</fullName>
     <description>Mapping JSON</description>
-    <externalId>false</externalId>
     <inlineHelpText>Mapping JSON</inlineHelpText>
     <label>Mapping JSON</label>
     <length>131072</length>

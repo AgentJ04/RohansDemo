@@ -3,7 +3,6 @@
     <fullName>TSGADX__Contact_Phone__c</fullName>
     <deprecated>false</deprecated>
     <description>Phone Number from Main Contact - When updated, it will update the contact phone number by trigger.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Phone Number for Main Contact</inlineHelpText>
     <label>Contact: Phone</label>
     <required>false</required>

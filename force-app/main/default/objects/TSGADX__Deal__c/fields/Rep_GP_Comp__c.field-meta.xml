@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Rep_GP_Comp__c</fullName>
     <description>Calculates Sales Rep GP Commission based on Rep GP Comp % rate.</description>
-    <externalId>false</externalId>
     <formula>IF(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c &lt;= 0, 0,  IF(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c /  TSGCFG__Quote__r.TSGCFG__Total_Rep_Cost__c  &gt;= 0.30 ,(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c * 0.30), IF(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c /  TSGCFG__Quote__r.TSGCFG__Total_Rep_Cost__c  &gt;= 0.20 ,(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c * 0.20), IF(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c /  TSGCFG__Quote__r.TSGCFG__Total_Rep_Cost__c  &gt;= 0.10 ,(TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c * 0.10),TSGCFG__Quote__r.TSGCFG__Total_Rep_Margin__c * 0.05))))</formula>
     <inlineHelpText>**Don&apos;t Delete-Rohan**  Calculates Sales Rep GP Commission based on Rep GP Comp % rate.</inlineHelpText>
     <label>Rep GP Comp</label>

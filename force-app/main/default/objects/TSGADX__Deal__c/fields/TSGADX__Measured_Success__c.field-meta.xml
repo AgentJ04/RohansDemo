@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Measured_Success__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>How will the client measure the success of this deal?</inlineHelpText>
     <label>Measured Success</label>
     <required>false</required>

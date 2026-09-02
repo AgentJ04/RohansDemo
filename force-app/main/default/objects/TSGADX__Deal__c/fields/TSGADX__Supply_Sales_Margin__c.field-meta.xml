@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Supply_Sales_Margin__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Supply Margin $</label>
     <precision>18</precision>
     <required>false</required>

@@ -3,7 +3,6 @@
     <fullName>Submit_to_EA__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Admin Only, check box to send quote line item details to EAutomate as a Quote.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Admin Only, check box to send quote line item details to EAutomate as a Quote.</inlineHelpText>
     <label>Submit to EA</label>
     <trackFeedHistory>false</trackFeedHistory>

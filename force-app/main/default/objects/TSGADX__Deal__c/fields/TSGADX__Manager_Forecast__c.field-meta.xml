@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>Approved for Manager Forecast - This is read only for sales and edit for Sales Manager.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Approved for Manager Forecast (Checked)</inlineHelpText>
     <label>Manager Forecast</label>
     <trackFeedHistory>false</trackFeedHistory>

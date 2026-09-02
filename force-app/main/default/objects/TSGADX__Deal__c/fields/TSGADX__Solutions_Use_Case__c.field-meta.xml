@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Solutions_Use_Case__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Give brief overview of customer expectation for solution use case to be delivered.</inlineHelpText>
     <label>Solutions Use Case</label>
     <required>false</required>

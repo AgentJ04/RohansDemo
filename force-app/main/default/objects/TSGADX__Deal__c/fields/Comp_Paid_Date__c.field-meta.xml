@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Comp_Paid_Date__c</fullName>
     <description>Date the commission was paid, to be filled in by Admin.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Date Commission was paid.</inlineHelpText>
     <label>Comp Paid Date</label>
     <required>false</required>

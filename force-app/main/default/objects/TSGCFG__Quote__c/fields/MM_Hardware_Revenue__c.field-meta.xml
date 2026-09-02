@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MM_Hardware_Revenue__c</fullName>
     <description>Mail Machine Hardware and Accessory Revenue Only for deal</description>
-    <externalId>false</externalId>
     <inlineHelpText>Mail Machine Hardware and Accessory Revenue Only for deal</inlineHelpText>
     <label>MM Hardware Revenue</label>
     <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Sales_Price__c</summarizedField>

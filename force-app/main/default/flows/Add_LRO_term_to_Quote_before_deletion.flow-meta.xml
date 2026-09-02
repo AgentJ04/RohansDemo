@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <description>Adds the Term from the primary LRO when it is being deleted to bypass the &quot;Bad_Term_on_Quote&quot; Validation rule on the QLI</description>
     <environments>Default</environments>
     <interviewLabel>Add LRO term to Quote before deletion {!$Flow.CurrentDateTime}</interviewLabel>

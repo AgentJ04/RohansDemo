@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Rep_Cost_Discount_In_Dollar__c</fullName>
     <deprecated>false</deprecated>
     <description>Total Discount $ in QLI</description>
-    <externalId>false</externalId>
     <label>Total Rep Cost Discount $</label>
     <precision>18</precision>
     <required>false</required>

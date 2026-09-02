@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Make flat % update to Standard Rep Cost using Dealer Cost</description>
+    <flowDefinition>Update_Repcost_by_Manufacturer_and_Product_Type_New</flowDefinition>
+    <label>Update by Dealer Cost</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

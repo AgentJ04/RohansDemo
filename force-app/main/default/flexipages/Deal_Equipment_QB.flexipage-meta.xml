@@ -4,15 +4,79 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>FeedItem.TextPost</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.TSGADX__Log_a_Call_RT</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.TSGADX__New_Task_RT</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Global.TSGADX__New_Event_RT</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>TSGADX__Deal__c.TSGCFG__ProCPQ</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.TSGADX__Deal__c.TSGCFG__Configurator</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.TSGADX__Deal__c.Document</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>TSGADX__Deal__c.TSGCFG__Submit_Application</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Submit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Edit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>TSGADX__Deal__c.Add_Installation</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.TSGADX__Deal__c.TSGADX__Create_R_U_R</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>TSGADX__Deal__c.Sales_Order_Documents</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Share</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Delete</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Clone</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CustomButton.TSGADX__Deal__c.Group_Report</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>collapsed</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableActionsConfiguration</name>
-                    <value>false</value>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>enableActionsInNative</name>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>hideChatterActions</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>hideSlackAction</name>
                     <value>false</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -391,7 +455,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>title</name>
-                    <value>Simple Commission</value>
+                    <value>Deal Commission</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab4</identifier>
@@ -413,6 +477,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>facet-03e52175-cd3b-4412-8f86-53bb39ba6df0</value>
@@ -527,6 +595,13 @@
                 </componentInstanceProperties>
                 <componentName>mg_nav:customLinkButton</componentName>
                 <identifier>mg_nav_customLinkButton</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.TSGADX__Record_Type_Name__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Equipment</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -553,6 +628,13 @@
                 </componentInstanceProperties>
                 <componentName>mg_nav:customLinkButton</componentName>
                 <identifier>mg_nav_customLinkButton2</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.TSGADX__Record_Type_Name__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Equipment</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -579,6 +661,13 @@
                 </componentInstanceProperties>
                 <componentName>mg_nav:customLinkButton</componentName>
                 <identifier>mg_nav_customLinkButton3</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.TSGADX__Record_Type_Name__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Equipment</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -597,6 +686,38 @@
                 </componentInstanceProperties>
                 <componentName>console:relatedRecord</componentName>
                 <identifier>console_relatedRecord6</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.TSGADX__Record_Type_Name__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>Equipment</rightValue>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>lookupFieldName</name>
+                    <value>Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>titleFieldName</name>
+                    <value>Quote Details</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>updateQuickActionName</name>
+                    <value>TSGADX__Deal__c.Quote_Details_IT</value>
+                </componentInstanceProperties>
+                <componentName>console:relatedRecord</componentName>
+                <identifier>console_relatedRecord4</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.TSGADX__Record_Type_Name__c}</leftValue>
+                        <operator>CONTAINS</operator>
+                        <rightValue>IT Services</rightValue>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -623,6 +744,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-8d3922a1-bc5e-4d33-8814-6e2e294d0c0b</value>

@@ -3,7 +3,6 @@
     <fullName>TSGADX__Prospect_Status__c</fullName>
     <deprecated>false</deprecated>
     <description>Prospect Status from Business - When updated, the business prospect status will be updated by trigger.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Prospect Status of Business</inlineHelpText>
     <label>Prospect Status</label>
     <required>false</required>

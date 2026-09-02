@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Buy_Out__c</fullName>
     <deprecated>false</deprecated>
     <description>Credit for Customer Trade-In</description>
-    <externalId>false</externalId>
     <inlineHelpText>Credit for Customer Trade-In</inlineHelpText>
     <label>Buy-Out $</label>
     <precision>18</precision>

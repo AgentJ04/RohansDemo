@@ -1,0 +1,158 @@
+.ar-root {
+    position: relative;
+    padding: 0.5rem;
+}
+
+/* Account header */
+.ar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(180deg, #f3f8ff 0%, #ffffff 100%);
+    border-bottom: 2px solid #e5f0ff;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.ar-header-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0176d3;
+}
+
+.ar-header-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Badges */
+.ar-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.65rem;
+    border-radius: 1rem;
+    white-space: nowrap;
+}
+
+.ar-badge-outline {
+    color: #0176d3;
+    border: 1px solid #b6d7ff;
+    background: #f3f8ff;
+}
+
+.ar-badge-solid {
+    color: #514f4d;
+    border: 1px solid #dddbda;
+    background: #f3f2f2;
+}
+
+/* Equipment block */
+.ar-equipment {
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.ar-equip-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #eef1f4;
+}
+
+.ar-equip-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.ar-toggle {
+    margin-right: 0.25rem;
+}
+
+.ar-equip-id {
+    font-weight: 700;
+    color: #16325c;
+}
+
+.ar-equip-rt {
+    color: #706e6b;
+    font-size: 0.85rem;
+}
+
+/* 5-column grid */
+.ar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 1px;
+    background: #eef1f4;
+}
+
+@media (max-width: 1100px) {
+    .ar-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .ar-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.ar-col {
+    background: #ffffff;
+    padding: 1rem;
+}
+
+.ar-col-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #16325c;
+    border-bottom: 2px solid #e5f0ff;
+    padding-bottom: 0.35rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Sub-groups (meter type, csma coverage) */
+.ar-subgroup {
+    margin-bottom: 0.85rem;
+}
+
+.ar-subgroup-title {
+    font-weight: 700;
+    color: #16325c;
+    text-align: center;
+    border-bottom: 1px solid #eef1f4;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Accessories */
+.ar-acc-list {
+    list-style: disc;
+    padding-left: 1.1rem;
+    margin: 0;
+}
+
+.ar-acc-item {
+    margin-bottom: 0.5rem;
+}
+
+.ar-acc-name {
+    color: #0176d3;
+    font-weight: 600;
+}

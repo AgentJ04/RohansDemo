@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Target_Customer_Monthly__c</fullName>
     <deprecated>false</deprecated>
     <description>Preferred Customer Monthly Payment (Includes Lease and Services)</description>
-    <externalId>false</externalId>
     <inlineHelpText>Preferred Customer Monthly Payment (Includes Lease and Services)</inlineHelpText>
     <label>Target Customer Monthly</label>
     <precision>18</precision>

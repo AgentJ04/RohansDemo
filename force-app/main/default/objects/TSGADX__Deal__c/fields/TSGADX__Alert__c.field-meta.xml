@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>If checked the alert message will be displayed. Requires that the alert content field contains message in ADX settings</description>
-    <externalId>false</externalId>
     <inlineHelpText>If checked the alert message will be displayed. Requires that the alert content field contains message in ADX settings</inlineHelpText>
     <label>Alert</label>
     <trackFeedHistory>false</trackFeedHistory>

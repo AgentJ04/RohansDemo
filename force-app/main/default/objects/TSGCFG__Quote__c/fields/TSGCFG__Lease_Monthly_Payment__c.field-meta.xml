@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Lease_Monthly_Payment__c</fullName>
     <deprecated>false</deprecated>
     <description>Monthly Leasing Payment based on (Total Hardware + Software) * Leasing Rate</description>
-    <externalId>false</externalId>
     <formula>IF (BLANKVALUE(TSGCFG__Leasing_Rate_Overrride__c,0)=0, 
    TSGCFG__Total_Equipment_Lease__c *  TSGCFG__Leasing_Rate_Factor__c, 
    TSGCFG__Total_Equipment_Lease__c *  TSGCFG__Leasing_Rate_Overrride__c)</formula>

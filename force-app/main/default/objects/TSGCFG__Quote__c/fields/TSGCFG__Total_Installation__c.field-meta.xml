@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Installation__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Installation</description>
-    <externalId>false</externalId>
     <label>Total Installation</label>
     <precision>18</precision>
     <required>false</required>

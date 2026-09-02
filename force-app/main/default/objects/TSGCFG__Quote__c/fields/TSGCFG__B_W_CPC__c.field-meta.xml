@@ -2,24 +2,19 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__B_W_CPC__c</fullName>
     <deprecated>false</deprecated>
-    <description>Non-Production Black and White cost per copy  calculated to offer a blended rate for multiple different values.</description>
-    <externalId>false</externalId>
-    <formula>IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCLineItems__c &gt; 0,
+    <formula>/*IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCLineItems__c &gt; 0,
     TSGCFG__SumofCPCBW__c/  TSGCFG__TotalCPCLineItems__c,
     IF(ABS(TSGCFG__TotalBWVolume__c - TSGCFG__Total_Volume_Includes_B_W__c )&lt;&gt;0, TSGCFG__TotalBWMonthlyCost__c / ABS(TSGCFG__TotalBWVolume__c - TSGCFG__Total_Volume_Includes_B_W__c ),
         IF(TSGCFG__TotalCPCLineItems__c &gt; 0,  TSGCFG__SumofCPCBW__c/  TSGCFG__TotalCPCLineItems__c , 0)
        )
    )
-
-
-
-/*NOT IN USE 
- IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCLineItems__c &gt; 0,
-    TSGCFG__SumofCPCBW__c/  TSGCFG__TotalCPCLineItems__c,
-    IF(TSGCFG__TotalBWVolume__c&lt;&gt;0, (TSGCFG__TotalBWMonthlyCost__c + TSGCFG__TotalBWMonthlyCostVolumeIncludes__c) / TSGCFG__TotalBWVolume__c,
-        IF(TSGCFG__TotalCPCLineItems__c &gt; 0,  TSGCFG__SumofCPCBW__c/  TSGCFG__TotalCPCLineItems__c , 0)
+*/
+IF( ISPICKVAL(TSGCFG__CPC_Consolidation__r.TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c &gt; 0,
+    TSGCFG__CPC_Consolidation__r.TSGCFG__SumofCPCBW__c/  TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c,
+    IF(ABS(TSGCFG__CPC_Consolidation__r.TSGCFG__TotalBWVolume__c - TSGCFG__CPC_Consolidation__r.TSGCFG__Total_Volume_Includes_B_W__c )&lt;&gt;0, TSGCFG__CPC_Consolidation__r.TSGCFG__TotalBWMonthlyCost__c / ABS(TSGCFG__CPC_Consolidation__r.TSGCFG__TotalBWVolume__c - TSGCFG__CPC_Consolidation__r.TSGCFG__Total_Volume_Includes_B_W__c ),
+        IF(TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c &gt; 0,  TSGCFG__CPC_Consolidation__r.TSGCFG__SumofCPCBW__c/  TSGCFG__CPC_Consolidation__r.TSGCFG__TotalCPCLineItems__c , 0)
        )
-   )*/</formula>
+   )</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Black and White cost per copy  calculated to offer a blended rate for multiple different values.</inlineHelpText>
     <label>B&amp;W CPC</label>

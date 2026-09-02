@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>Select Leasing Company</description>
-    <externalId>false</externalId>
     <inlineHelpText>Select Leasing Company</inlineHelpText>
     <label>Leasing Company</label>
     <lookupFilter>

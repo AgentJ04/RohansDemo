@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Total_Soft_Costs_Deal__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.TSGCFG__Total_Soft_Costs__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Total of all items from configurator where Sales Rep Credit is False on price book item. Buyouts, Upgrades, Shipping, etc.</inlineHelpText>

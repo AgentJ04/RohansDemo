@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__MFP_Models_Qty__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>List MFP Models and Qty of each that will require solution software integration. Ex: BH458-4, IR4555-2</inlineHelpText>
     <label>MFP Models &amp; Qty</label>
     <required>false</required>

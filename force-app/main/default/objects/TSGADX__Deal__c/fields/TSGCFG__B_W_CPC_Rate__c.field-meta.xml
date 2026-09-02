@@ -3,7 +3,6 @@
     <fullName>TSGCFG__B_W_CPC_Rate__c</fullName>
     <deprecated>false</deprecated>
     <description>For Quick Quote only</description>
-    <externalId>false</externalId>
     <inlineHelpText>Black and White CPC Rate</inlineHelpText>
     <label>B/W CPC Rate</label>
     <precision>6</precision>

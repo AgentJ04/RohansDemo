@@ -3,7 +3,6 @@
     <fullName>TSGADX__Total_Dollars__c</fullName>
     <deprecated>false</deprecated>
     <description>Total Revenue = Equipment Sales Amount + MPS Revenue + IT Service Revenue + Supply Sales Amount</description>
-    <externalId>false</externalId>
     <formula>Blankvalue( TSGADX__Equipment_Sales_Amount__c ,0)  + BlankValue( TSGADX__MPS_Revenue__c ,0) + BlankValue(TSGADX__IT_Services_Revenue__c ,0)+ BlankValue( TSGADX__Supply_Sales_Amount__c ,0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Total Revenue $</label>

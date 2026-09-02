@@ -3,7 +3,6 @@
     <fullName>TSGADX__Close_Probability__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Enter your probability percentage of closing this deal</inlineHelpText>
     <label>Close Probability (%)</label>
     <precision>18</precision>

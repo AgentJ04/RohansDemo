@@ -4,7 +4,6 @@
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
     <description>Dealer Gross Profit = Dealer Margin + Dealer 3rd Party Profit</description>
-    <externalId>false</externalId>
     <inlineHelpText>Dealer Gross Profit = Dealer Margin + Dealer 3rd Party Profit</inlineHelpText>
     <label>Dealer GP $</label>
     <precision>18</precision>

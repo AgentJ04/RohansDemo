@@ -3,7 +3,6 @@
     <fullName>Commission_Paid__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Check if Commission has been paid from deal.</description>
-    <externalId>false</externalId>
     <inlineHelpText>*Dont Delete-Rohan* Check if Commission has been paid from deal.</inlineHelpText>
     <label>Commission Paid</label>
     <trackFeedHistory>false</trackFeedHistory>

@@ -3,7 +3,6 @@
     <fullName>TSGADX__Other_Agent_Margin__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Other Agent Margin $</label>
     <precision>18</precision>
     <required>false</required>

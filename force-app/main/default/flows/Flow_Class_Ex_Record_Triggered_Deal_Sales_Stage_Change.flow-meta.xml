@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>57.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <description>Prompt: Customer A wants the Sales Stage on the Deal to Change from Closed Won to Negotiate IF the Amount Changes</description>
     <environments>Default</environments>
     <interviewLabel>Flow Class Ex: Record Triggered Deal Sales Stage Change {!$Flow.CurrentDateTime}</interviewLabel>

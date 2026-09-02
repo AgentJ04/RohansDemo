@@ -10,6 +10,14 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>Tab</actionName>
+        <content>Home_Page_Executive_Sales</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>standard-home</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>Tab</actionName>
         <content>AD_Support_Home_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
@@ -32,15 +40,8 @@
         <type>Flexipage</type>
         <profile>AD - Sales</profile>
     </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_Page_Executive_Sales</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
     <tabs>standard-LightningInstrumentation</tabs>
     <tabs>TSGADX__R_U_R__c</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

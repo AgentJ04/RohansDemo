@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Color_Monthly_Service__c</fullName>
-    <externalId>false</externalId>
     <formula>IF(Target_Color_CPP__c == 0,TSGCFG__Quote__r.TSGCFG__MPSTotalColorMonthlyCost__c+(TSGCFG__Quote__r.TSGCFG__PrinterTotalColorVolume__c*TSGCFG__Quote__r.TSGCFG__PrinterColorCPC__c)+(TSGCFG__Quote__r.TSGCFG__ProdTotalColorVolume__c*TSGCFG__Quote__r.TSGCFG__Prod_Color_CPC__c), (Target_Color_CPP__c*TotalColorMonthlyVolume__c))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Monthly Total of ALL Color Service</inlineHelpText>

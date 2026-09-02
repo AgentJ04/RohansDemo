@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Docuware__c</fullName>
     <description>Module components needed for the docuware project</description>
-    <externalId>false</externalId>
     <inlineHelpText>Select all that are required for project pricing</inlineHelpText>
     <label>Docuware</label>
     <required>false</required>

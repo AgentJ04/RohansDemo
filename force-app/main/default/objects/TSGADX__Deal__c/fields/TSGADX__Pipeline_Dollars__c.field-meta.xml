@@ -3,7 +3,6 @@
     <fullName>TSGADX__Pipeline_Dollars__c</fullName>
     <deprecated>false</deprecated>
     <description>Used for forecast reporting - Do not put on page layout</description>
-    <externalId>false</externalId>
     <formula>IF( ISPICKVAL(TSGADX__Forecast_Category__c, &quot;Pipeline&quot;),  TSGADX__Total_Dollars__c , 0)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Pipeline $</label>

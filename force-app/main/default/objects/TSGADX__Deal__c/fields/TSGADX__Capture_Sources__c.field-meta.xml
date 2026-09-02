@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Capture_Sources__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Besides MFP Scanners, what other sources will there be document or data capture from for solution. ie: Email, eForms, Mobile, Desktop Scanners, etc.</inlineHelpText>
     <label>Capture Sources</label>
     <required>false</required>

@@ -3,7 +3,6 @@
     <fullName>Enable_Lease_Email__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Enable the Lease Email</description>
-    <externalId>false</externalId>
     <inlineHelpText>Check here to enable the Lease Email feature.</inlineHelpText>
     <label>Enable Lease Email</label>
     <trackTrending>false</trackTrending>

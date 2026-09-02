@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Discount__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.TSGCFG__Total_Discount__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Discount</label>

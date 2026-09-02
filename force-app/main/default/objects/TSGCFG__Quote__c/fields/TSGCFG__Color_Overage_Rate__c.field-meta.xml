@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Color_Overage_Rate__c</fullName>
     <deprecated>false</deprecated>
     <description>Non Production Calculated Overage Rate based to allow for multiple services</description>
-    <externalId>false</externalId>
     <formula>IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCColorLineItems__c&gt; 0 ,
      TSGCFG__SumofCPCOverageColor__c/  TSGCFG__TotalCPCColorLineItems__c, 
     IF(TSGCFG__TotalColorVolume__c&lt;&gt;0,  (TSGCFG__TotalColorOveragePrice__c + TSGCFG__TotalColorOveragePriceVolumeIncludes__c)/  TSGCFG__TotalColorVolume__c,

@@ -3,7 +3,6 @@
     <fullName>TSGADX__Multi_Site_Margin_Dollars__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Multi-Site Margin $</inlineHelpText>
     <label>NoEd Margin $</label>
     <precision>18</precision>

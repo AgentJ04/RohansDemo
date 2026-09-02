@@ -3,7 +3,6 @@
     <fullName>Lease_Bundle__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Check if all Hardware, Monthly Services, and Annual Subscriptions/Maintenance are to be included in a single monthly payment with hardware lease.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Check if all Hardware, Monthly Services, and Annual Subscriptions/Maintenance are to be included in a single monthly payment with hardware lease.</inlineHelpText>
     <label>Lease Bundle</label>
     <trackFeedHistory>false</trackFeedHistory>

@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Shipping__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Shipping</description>
-    <externalId>false</externalId>
     <label>Total Shipping</label>
     <precision>18</precision>
     <required>false</required>

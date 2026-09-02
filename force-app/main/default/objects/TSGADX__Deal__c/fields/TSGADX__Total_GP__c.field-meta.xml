@@ -4,7 +4,6 @@
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
     <description>Gross Profit for the deal = Dealer GP + Agent GP</description>
-    <externalId>false</externalId>
     <inlineHelpText>Gross Profit for the deal = Dealer GP + Agent GP</inlineHelpText>
     <label>Total GP $</label>
     <precision>18</precision>

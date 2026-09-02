@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Accessories__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Paper Size Requirements</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

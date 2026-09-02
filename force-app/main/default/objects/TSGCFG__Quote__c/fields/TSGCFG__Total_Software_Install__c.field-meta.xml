@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Software_Install__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Software Install</description>
-    <externalId>false</externalId>
     <label>Total Software Install</label>
     <precision>18</precision>
     <required>false</required>

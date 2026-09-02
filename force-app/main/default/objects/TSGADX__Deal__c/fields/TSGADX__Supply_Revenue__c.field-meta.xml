@@ -3,7 +3,6 @@
     <fullName>TSGADX__Supply_Revenue__c</fullName>
     <deprecated>false</deprecated>
     <description>Supply Revenue</description>
-    <externalId>false</externalId>
     <inlineHelpText>Supply Revenue</inlineHelpText>
     <label>Supply Revenue $</label>
     <precision>18</precision>

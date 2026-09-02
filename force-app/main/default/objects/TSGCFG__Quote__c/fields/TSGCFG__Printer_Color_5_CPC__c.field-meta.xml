@@ -3,10 +3,20 @@
     <fullName>TSGCFG__Printer_Color_5_CPC__c</fullName>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
-    <formula>IF(ISPICKVAL( TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp; TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0 ,
+    <formula>/* 
+IF(ISPICKVAL( TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp; TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0 ,
 TSGCFG__PrinterSumofCPCColor5__c / TSGCFG__PrinterTotalCPCColorLineItem__c,
 IF( ABS(TSGCFG__PrinterTotalColor5Volume__c - TSGCFG__PrinterTotalVolumeIncludesColor5__c)&lt;&gt; 0, TSGCFG__PrinterTotalColor5MonthlyCost__c / ABS(TSGCFG__PrinterTotalColor5Volume__c - TSGCFG__PrinterTotalVolumeIncludesColor5__c),
 IF( TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0, TSGCFG__PrinterSumofCPCColor5__c / TSGCFG__PrinterTotalCPCColorLineItem__c, 0
+)
+)
+)
+*/
+
+IF(ISPICKVAL( TSGCFG__CPC_Consolidation__r.TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp; TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0 ,
+TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor5__c / TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c,
+IF( ABS(TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5Volume__c - TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalVolumeIncludesColor5__c)&lt;&gt; 0, TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5MonthlyCost__c / ABS(TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5Volume__c - TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalVolumeIncludesColor5__c),
+IF( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0, TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCColor5__c / TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c, 0
 )
 )
 )</formula>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__ProdTotalColor1MonthlyCost__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Prod Total Color 1 Monthly Cost</label>
     <precision>18</precision>
     <required>false</required>

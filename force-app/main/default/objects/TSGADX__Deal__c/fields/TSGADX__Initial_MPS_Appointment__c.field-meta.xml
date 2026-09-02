@@ -3,7 +3,6 @@
     <fullName>TSGADX__Initial_MPS_Appointment__c</fullName>
     <deprecated>false</deprecated>
     <description>Enter Initial MPS Appointment Date</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Initial MPS Appointment Date</inlineHelpText>
     <label>Initial MPS Appointment</label>
     <required>false</required>

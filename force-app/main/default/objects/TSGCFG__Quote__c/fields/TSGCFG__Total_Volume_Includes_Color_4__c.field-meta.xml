@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Total_Volume_Includes_Color_4__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
     <deprecated>false</deprecated>
     <externalId>false</externalId>
     <label>Total Volume Includes (Color) 4</label>

@@ -3,7 +3,6 @@
     <fullName>TSGADX__Business_Industry__c</fullName>
     <deprecated>false</deprecated>
     <description>Industry from Business - When updated, it will update the business industry by trigger.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Industry from Business - When updated, it will update the business industry by trigger.</inlineHelpText>
     <label>Business: Industry</label>
     <required>false</required>

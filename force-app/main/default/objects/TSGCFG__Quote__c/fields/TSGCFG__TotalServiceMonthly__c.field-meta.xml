@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__TotalServiceMonthly__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
     <deprecated>false</deprecated>
     <description>=Sum(QLI.Total Monthly Payments) that are Non-Production</description>
-    <externalId>false</externalId>
     <inlineHelpText>=Sum(QLI.Total Monthly Payments) that are Non-Production</inlineHelpText>
     <label>Total Service Monthly</label>
     <precision>18</precision>

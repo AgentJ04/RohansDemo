@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Notes__c</fullName>
     <deprecated>false</deprecated>
     <description>Notes about this configuration - i.e. financial, Equipment, ...</description>
-    <externalId>false</externalId>
     <inlineHelpText>Notes about this configuration - i.e. financial, Equipment, ...</inlineHelpText>
     <label>Notes</label>
     <length>32768</length>

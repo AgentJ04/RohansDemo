@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Lease_Amount__c</fullName>
     <deprecated>false</deprecated>
     <description>Total Lease Amount - Total of all PriceBook List items and Misc items where the lease check box is checked.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total Lease Amount - Total of all PriceBook List items and Misc items where the lease check box is checked.</inlineHelpText>
     <label>Total Lease Amount</label>
     <precision>18</precision>

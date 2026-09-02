@@ -3,7 +3,6 @@
     <fullName>TSGADX__NDA_Signed__c</fullName>
     <deprecated>false</deprecated>
     <description>Enter the date when the signed NDA was received.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter the date when the signed NDA was received.</inlineHelpText>
     <label>Letter of Intent</label>
     <required>false</required>

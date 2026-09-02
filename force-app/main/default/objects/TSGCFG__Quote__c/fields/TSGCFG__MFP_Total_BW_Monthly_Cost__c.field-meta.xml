@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__MFP_Total_BW_Monthly_Cost__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>MFP Total B&amp;W Monthly Cost</label>
     <precision>18</precision>
     <required>false</required>

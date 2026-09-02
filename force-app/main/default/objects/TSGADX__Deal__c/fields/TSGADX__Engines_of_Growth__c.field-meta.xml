@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Engines_of_Growth__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Engines of Growth</label>
     <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>

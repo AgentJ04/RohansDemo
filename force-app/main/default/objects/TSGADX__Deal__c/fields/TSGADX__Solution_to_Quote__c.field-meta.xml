@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Solution_to_Quote__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Which Solution types are being included in the deal pricing.</inlineHelpText>
     <label>Solution to Quote</label>
     <required>false</required>

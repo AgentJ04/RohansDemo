@@ -108,7 +108,7 @@
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>urlNav</name>
-                    <value>https://demoagentdealer--tsgadx.visualforce.com/apex/QuickAdd</value>
+                    <value>https://demoagentdealer--tsgadx.vf.force.com/apex/QuickAdd</value>
                 </componentInstanceProperties>
                 <componentName>mg_nav:customLinkButton</componentName>
                 <identifier>mg_nav_customLinkButton</identifier>

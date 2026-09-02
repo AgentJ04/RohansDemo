@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Lease_Funding_Amount__c</fullName>
-    <externalId>false</externalId>
     <formula>TSGCFG__Deal__r.Total_Lease_Funding__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Total Funding for deal (Total Lease Items - Buyouts/Upgrades)</inlineHelpText>

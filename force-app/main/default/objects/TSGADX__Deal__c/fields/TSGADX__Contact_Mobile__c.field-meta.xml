@@ -3,7 +3,6 @@
     <fullName>TSGADX__Contact_Mobile__c</fullName>
     <deprecated>false</deprecated>
     <description>Mobile Number from Main Contact - When updated, it will update the Contact Mobile.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Mobile (Cell) for Main Contact</inlineHelpText>
     <label>Contact: Mobile</label>
     <required>false</required>

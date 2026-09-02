@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_all_CPC_Color_1__c</fullName>
     <deprecated>false</deprecated>
     <description>Color 1 Service Payment - Monthly Payment (Color 1)</description>
-    <externalId>false</externalId>
     <inlineHelpText>Color 1 Service Payment - Monthly Payment (Color 1)</inlineHelpText>
     <label>Total all CPC Color 1</label>
     <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Monthly_Payment_Color__c</summarizedField>

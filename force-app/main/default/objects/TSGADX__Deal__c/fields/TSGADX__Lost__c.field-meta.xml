@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>Lost is updated by work flow</description>
-    <externalId>false</externalId>
     <inlineHelpText>Lost</inlineHelpText>
     <label>Lost</label>
     <trackFeedHistory>false</trackFeedHistory>

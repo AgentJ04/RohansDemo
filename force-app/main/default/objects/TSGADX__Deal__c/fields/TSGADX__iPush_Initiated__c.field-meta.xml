@@ -3,7 +3,6 @@
     <fullName>TSGADX__iPush_Initiated__c</fullName>
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>iPush Initiated</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

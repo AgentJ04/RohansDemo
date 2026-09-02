@@ -2,11 +2,16 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Printer_Color_5_Overage_Rate__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
-    <formula>IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0 ,
+    <formula>/* 
+IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0 ,
 TSGCFG__PrinterSumofCPCOverageColor5__c / TSGCFG__PrinterTotalCPCColorLineItem__c,
 IF( TSGCFG__PrinterTotalColor5Volume__c &lt;&gt;0, TSGCFG__PrinterTotalColor5OveragePrice__c / TSGCFG__PrinterTotalColor5Volume__c ,
-If(TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0, TSGCFG__PrinterSumofCPCOverageColor5__c / TSGCFG__PrinterTotalCPCColorLineItem__c, 0)))</formula>
+If(TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0, TSGCFG__PrinterSumofCPCOverageColor5__c / TSGCFG__PrinterTotalCPCColorLineItem__c, 0)))
+*/
+IF( ISPICKVAL( TSGCFG__CPC_Consolidation__r.TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0 ,
+TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCOverageColor5__c / TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c,
+IF( TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5Volume__c &lt;&gt;0, TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5OveragePrice__c / TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalColor5Volume__c ,
+If(TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c &gt; 0, TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterSumofCPCOverageColor5__c / TSGCFG__CPC_Consolidation__r.TSGCFG__PrinterTotalCPCColorLineItem__c, 0)))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Printer Color 5 Overage Rate</label>
     <precision>18</precision>

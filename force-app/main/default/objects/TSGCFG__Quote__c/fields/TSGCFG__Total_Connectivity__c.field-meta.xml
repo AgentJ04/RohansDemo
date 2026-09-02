@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Connectivity__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Connectivity</description>
-    <externalId>false</externalId>
     <label>Total Connectivity</label>
     <precision>18</precision>
     <required>false</required>

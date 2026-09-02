@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>This indicates this deal was a prospect deal.  Used for reporting to determine if a deal was ever a prospect record type.</description>
-    <externalId>false</externalId>
     <inlineHelpText>This indicates this deal was a prospect deal.  Used for reporting to determine if a deal was ever a prospect record type.</inlineHelpText>
     <label>Prospect Deal</label>
     <trackFeedHistory>false</trackFeedHistory>

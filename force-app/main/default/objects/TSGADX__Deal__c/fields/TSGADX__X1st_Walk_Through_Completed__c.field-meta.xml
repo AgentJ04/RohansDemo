@@ -3,7 +3,6 @@
     <fullName>TSGADX__X1st_Walk_Through_Completed__c</fullName>
     <deprecated>false</deprecated>
     <description>Enter the date the first walk through was completed.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter the date the first walk through was completed.</inlineHelpText>
     <label>1st Walk Through Completed</label>
     <required>false</required>

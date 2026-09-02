@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>Enter the 2nd Customer Contact for electronic signature</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter the 2nd Customer Contact for electronic signature</inlineHelpText>
     <label>E-Sign 3</label>
     <referenceTo>Contact</referenceTo>

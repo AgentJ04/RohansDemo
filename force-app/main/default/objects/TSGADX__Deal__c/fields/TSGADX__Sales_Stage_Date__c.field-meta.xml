@@ -3,7 +3,6 @@
     <fullName>TSGADX__Sales_Stage_Date__c</fullName>
     <deprecated>false</deprecated>
     <description>Number of Days in current sales stage.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Number of Days in current sales stage.</inlineHelpText>
     <label>Sales Stage Date</label>
     <summarizedField>TSGADX__Deal_Analysis__c.CreatedDate</summarizedField>

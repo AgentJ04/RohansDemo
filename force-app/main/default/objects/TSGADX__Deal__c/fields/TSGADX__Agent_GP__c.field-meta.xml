@@ -4,7 +4,6 @@
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
     <description>Agent Gross Profit = Agent Margin + Multi-site Margin + Finance Margin</description>
-    <externalId>false</externalId>
     <inlineHelpText>Agent Gross Profit = Agent Margin + Multi-site Margin + Finance Margin</inlineHelpText>
     <label>Agent GP $</label>
     <precision>18</precision>

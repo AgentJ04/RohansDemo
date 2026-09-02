@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Prod_Color_4_Overage_Rate__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__ProdTotalCPCColorLineItem__c &gt; 0 ,
 TSGCFG__ProdSumofCPCOverageColor4__c / TSGCFG__ProdTotalCPCColorLineItem__c,
 IF( TSGCFG__ProdTotalColor4Volume__c &lt;&gt; 0, TSGCFG__ProdTotalColor4OveragePrice__c / TSGCFG__ProdTotalColor4Volume__c ,

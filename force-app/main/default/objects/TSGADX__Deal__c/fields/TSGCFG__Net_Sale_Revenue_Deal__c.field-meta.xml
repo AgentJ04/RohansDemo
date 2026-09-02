@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Net_Sale_Revenue_Deal__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>IF( TSGCFG__Quote__r.TSGCFG__Net_Sale_Revenue__c &gt;0,TSGCFG__Quote__r.TSGCFG__Net_Sale_Revenue__c, TSGADX__Price__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Sales Rep Revenue Credit from all applicable items in configurator or from manual input in Amount $ if configurator was not used.</inlineHelpText>

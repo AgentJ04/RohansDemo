@@ -25,6 +25,123 @@
     <navType>Standard</navType>
     <profileActionOverrides>
         <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Evolved Office</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Dealer_Equipment_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
+        <recordType>TSGADX__Equipment__c.TSGADX__Dealer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
         <content>Dealer_Equipment_Record_Page</content>
         <formFactor>Large</formFactor>
         <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
@@ -111,7 +228,7 @@
         <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
         <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
         <type>Flexipage</type>
-        <profile>Admin</profile>
+        <profile>AD - Sales</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -120,7 +237,7 @@
         <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
         <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
         <type>Flexipage</type>
-        <profile>AD - Sales</profile>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>Tab</actionName>
@@ -364,7 +481,169 @@
     <profileActionOverrides>
         <actionName>View</actionName>
         <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Prospect_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Prospect</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Agent_Equipment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
+        <recordType>TSGADX__Equipment__c.TSGADX__Agent</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Competitive_Equipment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
+        <recordType>TSGADX__Equipment__c.TSGADX__Competitive</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QuickQuote</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_ECM_Solutions</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Prospect</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Dealer_Equipment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
+        <recordType>TSGADX__Equipment__c.TSGADX__Dealer</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Marketing</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_ECM_Solutions</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Competitive_Equipment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
+        <recordType>TSGADX__Equipment__c.TSGADX__Competitive</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Agent_Equipment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
+        <recordType>TSGADX__Equipment__c.TSGADX__Agent</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Prospect</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QuickQuote</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Prospect_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Prospect</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Prospect</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Small</formFactor>
         <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
         <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
         <type>Flexipage</type>
@@ -372,172 +651,10 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - System Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Dealer_Equipment_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
-        <recordType>TSGADX__Equipment__c.TSGADX__Dealer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_ECM_Solutions</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>Deal_Equipment_QuickQuote</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
         <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_ECM_Solutions</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Competitive_Equipment_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
-        <recordType>TSGADX__Equipment__c.TSGADX__Competitive</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Agent_Equipment_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
-        <recordType>TSGADX__Equipment__c.TSGADX__Agent</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Prospect</recordType>
         <type>Flexipage</type>
         <profile>AD - Sales</profile>
     </profileActionOverrides>
@@ -547,6 +664,33 @@
         <formFactor>Small</formFactor>
         <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
         <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Equipment_QB</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_ECM_Solutions</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Support</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Business_Customer_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Account</pageOrSobjectType>
+        <recordType>Account.TSGADX__Customer</recordType>
         <type>Flexipage</type>
         <profile>AD - Support</profile>
     </profileActionOverrides>
@@ -557,97 +701,7 @@
         <pageOrSobjectType>Account</pageOrSobjectType>
         <recordType>Account.TSGADX__Prospect</recordType>
         <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Prospect</recordType>
-        <type>Flexipage</type>
         <profile>AD - Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Prospect</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Prospect_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Prospect</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Executive Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Agent_Equipment_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
-        <recordType>TSGADX__Equipment__c.TSGADX__Agent</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Competitive_Equipment_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
-        <recordType>TSGADX__Equipment__c.TSGADX__Competitive</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QuickQuote</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_ECM_Solutions</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Sales</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -656,7 +710,7 @@
         <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
         <recordType>TSGADX__Equipment__c.TSGADX__Dealer</recordType>
         <type>Flexipage</type>
-        <profile>AD - Marketing</profile>
+        <profile>AD - Executive Sales</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -831,75 +885,93 @@
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Evolved Office</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QuickQuote</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QuickQuote</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
-        <type>Flexipage</type>
-        <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Deal_Equipment_QB</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
-        <recordType>TSGADX__Deal__c.TSGADX__Equipment_Deals</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Sales</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
         <content>Deal_ECM_Solutions</content>
         <formFactor>Small</formFactor>
         <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
         <recordType>TSGADX__Deal__c.TSGADX__ECM_Solutions</recordType>
         <type>Flexipage</type>
-        <profile>AD - Support</profile>
+        <profile>AD - Marketing</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
-        <content>Business_Customer_Record_Page</content>
+        <content>Deal_Equipment_QuickQuote</content>
         <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Customer</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Prospect_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Account</pageOrSobjectType>
-        <recordType>Account.TSGADX__Prospect</recordType>
-        <type>Flexipage</type>
-        <profile>AD - Support</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Dealer_Equipment_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>TSGADX__Equipment__c</pageOrSobjectType>
-        <recordType>TSGADX__Equipment__c.TSGADX__Dealer</recordType>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
         <type>Flexipage</type>
         <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Executive Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>AD - Sales</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>AD - System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>AD - System Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Deal_Record_Page3</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>TSGADX__Deal__c</pageOrSobjectType>
+        <recordType>TSGADX__Deal__c.TSGADX__IT_Services</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
     </profileActionOverrides>
     <setupExperience>all</setupExperience>
     <tabs>standard-home</tabs>
@@ -914,8 +986,8 @@
     <tabs>standard-Feed</tabs>
     <tabs>standard-Task</tabs>
     <tabs>standard-Event</tabs>
-    <tabs>standard-WaveHomeLightningEacFree</tabs>
     <tabs>TSGADX__R_U_R__c</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>AD_Sales_Lightning_UtilityBar</utilityBar>
 </CustomApplication>

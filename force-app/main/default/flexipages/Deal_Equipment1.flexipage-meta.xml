@@ -151,24 +151,40 @@
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.VOIP_UCC_MRR__c</fieldItem>
                 <identifier>RecordVOIP_UCC_MRR__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Total_ARR__c</fieldItem>
                 <identifier>RecordTotal_ARR__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Pull_Through_Ratio__c</fieldItem>
                 <identifier>RecordPull_Through_Ratio__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.PTR_Monitor__c</fieldItem>
                 <identifier>RecordPTR_Monitor__cField</identifier>
             </fieldInstance>
@@ -201,10 +217,10 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
+                    <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Net_Sale_Revenue_Deal__c</fieldItem>
-                <identifier>RecordNet_Sale_Revenue_Deal_cField</identifier>
+                <fieldItem>Record.TSGCFG__Net_Sale_Revenue_Deal__c</fieldItem>
+                <identifier>RecordTSGCFG_Net_Sale_Revenue_Deal_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -791,16 +807,6 @@
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Net_Lease_BT__c</fieldItem>
-                <identifier>RecordNet_Lease_BT_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Book_Type__c</fieldItem>
@@ -815,26 +821,6 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.Deal_Rate_BT__c</fieldItem>
                 <identifier>RecordDeal_Rate_BT_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Revenue_BT_c__c</fieldItem>
-                <identifier>RecordRevenue_BT_c_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Total_Rep_Comp_BT__c</fieldItem>
-                <identifier>RecordTotal_Rep_Comp_BT_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2587b6b0-cf67-4d92-99c2-819b8d3077f3</name>
@@ -1230,6 +1216,10 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
                     <name>tabs</name>
                     <value>facet-4a23e7db-511f-45dc-b006-f818cd81e173</value>
                 </componentInstanceProperties>
@@ -1315,6 +1305,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>tabs</name>
                     <value>Facet-2af518ee-25b6-4d5f-bd4d-a2b1484aae71</value>

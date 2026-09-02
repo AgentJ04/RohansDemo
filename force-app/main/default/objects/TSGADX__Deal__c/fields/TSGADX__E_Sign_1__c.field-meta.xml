@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>Select the customer contact who will provide the electronic signature for this document</description>
-    <externalId>false</externalId>
     <inlineHelpText>Select the customer contact who will provide the electronic signature for this document</inlineHelpText>
     <label>E-Sign 1</label>
     <referenceTo>Contact</referenceTo>

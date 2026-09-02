@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>This is updated by the deal trigger any time the close date changes.  It will find the users employee-sales person record and lookup the quota based on person.quota_type, match the deal.close_date with connections.quota_year/quarter/month.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Which quota record is applied to this deal.  This is automatically updated by the AgentDealerX system</inlineHelpText>
     <label>Quota</label>
     <referenceTo>TSGADX__Connections__c</referenceTo>

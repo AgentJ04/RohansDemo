@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Implementation_Template__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Do not select until deal is closed won. What type of Task Ray Project needs to be started for implementation.</inlineHelpText>
     <label>Implementation Template</label>
     <required>false</required>

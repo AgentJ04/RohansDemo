@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Obstacles__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>What obstacles do you or the prospect see in you winning this deal?</inlineHelpText>
     <label>Obstacles</label>
     <required>false</required>

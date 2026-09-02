@@ -3,7 +3,6 @@
     <fullName>TSGADX__Multi_Site_Credit__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>NoEd Credit $</label>
     <precision>18</precision>
     <required>false</required>

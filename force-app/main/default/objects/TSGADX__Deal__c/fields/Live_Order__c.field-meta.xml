@@ -3,7 +3,6 @@
     <fullName>Live_Order__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Automatically gets checked after order is closed Won.  Uncheck by Admin Only once order has been completed.</description>
-    <externalId>false</externalId>
     <inlineHelpText>**Don&apos;t Delete-Rohan**  Automatically gets checked after order is closed Won.  Uncheck by Admin Only once order has been completed.</inlineHelpText>
     <label>Live Order</label>
     <trackFeedHistory>false</trackFeedHistory>

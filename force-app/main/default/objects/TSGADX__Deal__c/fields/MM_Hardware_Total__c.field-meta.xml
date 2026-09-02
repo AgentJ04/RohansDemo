@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>MM_Hardware_Total__c</fullName>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.MM_Hardware_Revenue__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>MM Hardware Total</label>

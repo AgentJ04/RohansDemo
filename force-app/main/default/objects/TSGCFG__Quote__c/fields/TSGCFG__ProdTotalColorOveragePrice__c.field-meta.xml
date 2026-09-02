@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__ProdTotalColorOveragePrice__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
     <deprecated>false</deprecated>
     <description>Production only Total Overage * Volume = Overage Monthly Cost(Color)</description>
-    <externalId>false</externalId>
     <inlineHelpText>Production only Total Overage * Volume = Overage Monthly Cost(Color)</inlineHelpText>
     <label>Prod Total Color Overage Price</label>
     <precision>18</precision>

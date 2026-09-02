@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Software_MRR__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Software MRR</description>
-    <externalId>false</externalId>
     <label>Total Software MRR</label>
     <precision>18</precision>
     <required>false</required>

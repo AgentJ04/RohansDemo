@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LRO_Cost__c</fullName>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.TSGCFG__Leasing_Rate_Cost__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>This is the raw dealer rate used for total funding, not the rep rate used in selling calculations.</inlineHelpText>

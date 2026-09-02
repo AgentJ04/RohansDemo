@@ -8,8 +8,12 @@
     <label>Optimizer</label>
     <navType>Console</navType>
     <tabs>standard-OrgMetric</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>TSGCFG__Credit_Application_Item__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-OrgMetric</tab>
         </mappings>

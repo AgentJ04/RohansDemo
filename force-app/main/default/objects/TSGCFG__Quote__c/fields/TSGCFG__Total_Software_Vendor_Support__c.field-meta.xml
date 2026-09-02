@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Software_Vendor_Support__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Software Vendor Support</description>
-    <externalId>false</externalId>
     <label>Total Software Vendor Support</label>
     <precision>18</precision>
     <required>false</required>

@@ -3,7 +3,6 @@
     <fullName>Gold_MM_Support_Plan__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Gold Level Mail Machine Support Plan</description>
-    <externalId>false</externalId>
     <inlineHelpText>Gold Level Mail Machine Support Plan</inlineHelpText>
     <label>Gold MM Support Plan</label>
     <trackFeedHistory>false</trackFeedHistory>

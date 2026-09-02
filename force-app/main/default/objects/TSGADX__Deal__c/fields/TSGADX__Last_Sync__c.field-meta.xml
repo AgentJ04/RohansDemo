@@ -3,7 +3,6 @@
     <fullName>TSGADX__Last_Sync__c</fullName>
     <deprecated>false</deprecated>
     <description>Used for CEO Juice/Quote sync</description>
-    <externalId>false</externalId>
     <inlineHelpText>Do not modify this field except to clear its value. Any other changes could cause possible duplicated orders if already synced with CEO Juice.</inlineHelpText>
     <label>Request Sync Date/Time</label>
     <required>false</required>

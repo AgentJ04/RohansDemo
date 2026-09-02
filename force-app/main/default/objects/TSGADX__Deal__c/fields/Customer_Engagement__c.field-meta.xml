@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Customer_Engagement__c</fullName>
     <description>Use to record and export text in this area to proposal template.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Use to record and export text in this area to proposal template.</inlineHelpText>
     <label>Customer Engagement</label>
     <length>32768</length>

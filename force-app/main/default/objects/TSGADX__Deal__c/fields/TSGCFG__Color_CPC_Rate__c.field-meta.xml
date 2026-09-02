@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Color_CPC_Rate__c</fullName>
     <deprecated>false</deprecated>
     <description>For Quick Quote</description>
-    <externalId>false</externalId>
     <inlineHelpText>For Quick Quote</inlineHelpText>
     <label>Color CPC Rate</label>
     <precision>6</precision>

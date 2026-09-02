@@ -3,7 +3,6 @@
     <fullName>TSGADX__All_Sites_Same_Network__c</fullName>
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Check Box if all customer sites for proposed solutions are on the same network as where main Solution App server will be located.</inlineHelpText>
     <label>All Sites Same Network</label>
     <trackFeedHistory>false</trackFeedHistory>

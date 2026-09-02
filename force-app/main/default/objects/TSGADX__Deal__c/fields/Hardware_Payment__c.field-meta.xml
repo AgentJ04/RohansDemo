@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Hardware_Payment__c</fullName>
-    <externalId>false</externalId>
     <formula>IF(TSGCFG__Lease_Rate_Override__c &gt;0.0,IT_Hardware__c * TSGCFG__Lease_Rate_Override__c,  TSGCFG__Lease_Rate_Factor__c*IT_Hardware__c)</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Hardware Payment</label>

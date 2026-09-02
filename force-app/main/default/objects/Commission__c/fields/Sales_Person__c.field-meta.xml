@@ -3,7 +3,6 @@
     <fullName>Sales_Person__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <description>Enter Sales Person</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Sales Person</inlineHelpText>
     <label>Sales Person</label>
     <referenceTo>User</referenceTo>

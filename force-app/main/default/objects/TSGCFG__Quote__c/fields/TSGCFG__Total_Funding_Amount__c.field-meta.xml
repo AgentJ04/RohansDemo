@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Funding_Amount__c</fullName>
     <deprecated>false</deprecated>
     <description>Total of all items where Funding checkbox is True</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total amount of lease funding for this quote, after all, Upgrade $.</inlineHelpText>
     <label>Total Funding Amount</label>
     <precision>18</precision>

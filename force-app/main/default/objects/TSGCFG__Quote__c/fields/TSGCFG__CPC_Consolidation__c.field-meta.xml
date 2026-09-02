@@ -3,7 +3,6 @@
     <fullName>TSGCFG__CPC_Consolidation__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>CPC Consolidation</label>
     <referenceTo>TSGCFG__CPC_Consolidation__c</referenceTo>
     <relationshipLabel>Quotes</relationshipLabel>

@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Workflows__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>What workflows will need to be built as part of solutions SOW.</inlineHelpText>
     <label>Workflows</label>
     <required>false</required>

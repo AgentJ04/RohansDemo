@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Total_all_color_1_volume__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Total all color 1 volume</label>
     <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Volume_Color__c</summarizedField>
     <summaryFilterItems>

@@ -3,7 +3,6 @@
     <fullName>TSGADX__Product_Category__c</fullName>
     <deprecated>false</deprecated>
     <description>Select the Product Category for this deal.  Xerox only.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Office = M20i thru 50 PPM, 
 OSS = 55 PPM thru 250/260,
 PS  =  4127/260/700 and Up</inlineHelpText>

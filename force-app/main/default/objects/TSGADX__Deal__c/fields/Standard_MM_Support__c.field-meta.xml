@@ -3,7 +3,6 @@
     <fullName>Standard_MM_Support__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Base Level Mail Machine Support Plan</description>
-    <externalId>false</externalId>
     <inlineHelpText>Base Level Mail Machine Support Plan</inlineHelpText>
     <label>Standard MM Support</label>
     <trackFeedHistory>false</trackFeedHistory>

@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Cloned_Quote__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Cloned Quote</label>
     <referenceTo>TSGCFG__Quote__c</referenceTo>
     <relationshipLabel>Quotes</relationshipLabel>

@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Software_Dealer_Support__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Software Dealer Support</description>
-    <externalId>false</externalId>
     <label>Total Software Dealer Support</label>
     <precision>18</precision>
     <required>false</required>

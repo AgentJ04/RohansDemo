@@ -33,6 +33,7 @@
     <tabs>standard-CollaborationGroup</tabs>
     <tabs>standard-File</tabs>
     <tabs>standard-Event</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Marketing_UtilityBar</utilityBar>
 </CustomApplication>

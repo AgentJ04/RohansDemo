@@ -3,7 +3,6 @@
     <fullName>TSGADX__Competitor_Lease_Expiration_Date__c</fullName>
     <deprecated>false</deprecated>
     <description>When a deal is closed lost, you must enter the competitor expiration date.</description>
-    <externalId>false</externalId>
     <inlineHelpText>When a deal is closed lost, you must enter the competitor lease expiration date.</inlineHelpText>
     <label>Competitor Expiration Date</label>
     <required>false</required>

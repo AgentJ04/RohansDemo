@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Professional_Services__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Professional Services</description>
-    <externalId>false</externalId>
     <label>Total Professional Services</label>
     <precision>18</precision>
     <required>false</required>

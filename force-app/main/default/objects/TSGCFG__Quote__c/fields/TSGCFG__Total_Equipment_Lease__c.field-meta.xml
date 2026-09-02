@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Equipment_Lease__c</fullName>
     <deprecated>false</deprecated>
     <description>= Total Equipment Lease Sub Total - Total Discount</description>
-    <externalId>false</externalId>
     <formula>TSGCFG__EquipmentLeaseSubtotal__c - TSGCFG__Total_Discount__c
 
 

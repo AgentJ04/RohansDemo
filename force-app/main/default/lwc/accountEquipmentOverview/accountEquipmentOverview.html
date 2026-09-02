@@ -1,0 +1,140 @@
+<template>
+    <lightning-card>
+        <div class="ar-root">
+            <template lwc:if={isLoading}>
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </template>
+
+            <template lwc:if={error}>
+                <div class="slds-var-p-around_medium slds-text-color_error">{error}</div>
+            </template>
+
+            <template lwc:if={data}>
+                <!-- Account header -->
+                <div class="ar-header">
+                    <div class="ar-header-title">{headerTitle}</div>
+                    <div class="ar-header-badges">
+                        <template lwc:if={hasEquipment}>
+                            <lightning-button-group class="ar-bulk-toggle">
+                                <lightning-button
+                                    label="Expand All"
+                                    icon-name="utility:expand_all"
+                                    onclick={handleExpandAll}
+                                ></lightning-button>
+                                <lightning-button
+                                    label="Collapse All"
+                                    icon-name="utility:collapse_all"
+                                    onclick={handleCollapseAll}
+                                ></lightning-button>
+                            </lightning-button-group>
+                        </template>
+                        <template lwc:if={data.isParentAccount}>
+                            <span class="ar-badge ar-badge-outline">Parent Account</span>
+                        </template>
+                        <span class="ar-badge ar-badge-solid">{equipmentBadgeLabel}</span>
+                    </div>
+                </div>
+
+                <template lwc:if={hasEquipment}>
+                    <template for:each={equipmentCards} for:item="eq">
+                        <div key={eq.id} class="ar-equipment">
+                            <!-- Equipment sub-header (click to collapse/expand) -->
+                            <div class="ar-equip-header">
+                                <div class="ar-equip-heading">
+                                    <lightning-button-icon
+                                        icon-name={eq.toggleIcon}
+                                        variant="bare"
+                                        size="small"
+                                        alternative-text={eq.toggleTitle}
+                                        title={eq.toggleTitle}
+                                        data-id={eq.id}
+                                        onclick={handleToggle}
+                                        class="ar-toggle"
+                                    ></lightning-button-icon>
+                                    <span class="ar-equip-id">ID #: </span>
+                                    <a href="#" data-id={eq.id} onclick={handleEquipmentNav}>{eq.name}</a>
+                                    <template lwc:if={eq.recordTypeName}>
+                                        <span class="ar-equip-rt">&nbsp;&middot;&nbsp;{eq.recordTypeName}</span>
+                                    </template>
+                                </div>
+                                <span class="ar-badge ar-badge-outline">
+                                    <lightning-formatted-number value={eq.serviceRequestCount}></lightning-formatted-number>
+                                    &nbsp;Service Requests
+                                </span>
+                            </div>
+
+                            <!-- 5-column detail grid -->
+                            <div lwc:if={eq.expanded} class="ar-grid">
+                                <!-- Equipment Details -->
+                                <div class="ar-col">
+                                    <div class="ar-col-title">Equipment Details</div>
+                                    <template for:each={eq.equipmentFields} for:item="f">
+                                        <c-ar-field-cell key={f.name} field={f}></c-ar-field-cell>
+                                    </template>
+                                </div>
+
+                                <!-- Accessories -->
+                                <div class="ar-col">
+                                    <div class="ar-col-title">Accessories</div>
+                                    <template lwc:if={eq.accessories.length}>
+                                        <ul class="ar-acc-list">
+                                            <template for:each={eq.accessories} for:item="acc">
+                                                <li key={acc.id} class="ar-acc-item">
+                                                    <span class="ar-acc-name">{acc.label}</span>
+                                                    <template for:each={acc.fields} for:item="af">
+                                                        <c-ar-field-cell key={af.name} field={af}></c-ar-field-cell>
+                                                    </template>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </template>
+                                </div>
+
+                                <!-- Lease Details -->
+                                <div class="ar-col">
+                                    <div class="ar-col-title">Lease Details</div>
+                                    <template for:each={eq.leaseFields} for:item="f">
+                                        <c-ar-field-cell key={f.name} field={f}></c-ar-field-cell>
+                                    </template>
+                                </div>
+
+                                <!-- Meter Readings -->
+                                <div class="ar-col">
+                                    <div class="ar-col-title">Meter Readings</div>
+                                    <template for:each={eq.meterGroups} for:item="mg">
+                                        <div key={mg.groupLabel} class="ar-subgroup">
+                                            <div class="ar-subgroup-title">{mg.groupLabel}</div>
+                                            <template for:each={mg.fields} for:item="f">
+                                                <c-ar-field-cell key={f.name} field={f}></c-ar-field-cell>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <!-- CSMA Details -->
+                                <div class="ar-col">
+                                    <div class="ar-col-title">CSMA Details</div>
+                                    <template for:each={eq.csmaFields} for:item="f">
+                                        <c-ar-field-cell key={f.name} field={f}></c-ar-field-cell>
+                                    </template>
+                                    <template for:each={eq.csmaGroups} for:item="cg">
+                                        <div key={cg.groupLabel} class="ar-subgroup">
+                                            <div class="ar-subgroup-title">{cg.groupLabel}</div>
+                                            <template for:each={cg.fields} for:item="f">
+                                                <c-ar-field-cell key={f.name} field={f}></c-ar-field-cell>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+
+                <template lwc:if={showEmpty}>
+                    <div class="slds-var-p-around_medium slds-text-color_weak">No equipment found for this account.</div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

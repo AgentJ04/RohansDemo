@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>If the prospect was a lead, please check this box.</description>
-    <externalId>false</externalId>
     <inlineHelpText>If the prospect was a lead, please check this box.</inlineHelpText>
     <label>Lead</label>
     <trackFeedHistory>false</trackFeedHistory>

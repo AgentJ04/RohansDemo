@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__TotalBWMonthlyCostVolumeIncludes__c</fullName>
+    <businessStatus>DeprecateCandidate</businessStatus>
     <deprecated>false</deprecated>
     <description>This field calculate the cost for Volume Includes and used for Consolidated</description>
-    <externalId>false</externalId>
     <label>Total B&amp;W Monthly Cost Volume Includes</label>
     <precision>18</precision>
     <required>false</required>

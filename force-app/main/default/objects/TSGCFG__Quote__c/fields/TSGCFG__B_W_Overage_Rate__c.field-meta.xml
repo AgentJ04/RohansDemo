@@ -3,7 +3,6 @@
     <fullName>TSGCFG__B_W_Overage_Rate__c</fullName>
     <deprecated>false</deprecated>
     <description>Non Production Calculated Overage Rate to allow for multiple services</description>
-    <externalId>false</externalId>
     <formula>IF( ISPICKVAL(TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__TotalCPCLineItems__c &gt; 0 ,
      TSGCFG__SumofCPCOverageBW__c/  TSGCFG__TotalCPCLineItems__c,
      IF(TSGCFG__TotalBWVolume__c&lt;&gt; 0,  TSGCFG__TotalBWOveragePrice__c   /  TSGCFG__TotalBWVolume__c,

@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>When Checked, TCO for MPS program data will be exported to your related deal documents, along with your equipment deal data.</description>
-    <externalId>false</externalId>
     <inlineHelpText>When Checked, TCO for MPS program data will be exported to your related deal documents, along with your equipment deal data.</inlineHelpText>
     <label>Add to Documents</label>
     <trackFeedHistory>false</trackFeedHistory>

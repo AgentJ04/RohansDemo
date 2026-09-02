@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Subscription_Type__c</fullName>
     <description>Is the subscription for the term bundled into sales price/lease or will it be billed as MRR monthly.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Is the subscription for the term bundled into sales price/lease or will it be billed as MRR monthly.</inlineHelpText>
     <label>Subscription Type</label>
     <required>false</required>

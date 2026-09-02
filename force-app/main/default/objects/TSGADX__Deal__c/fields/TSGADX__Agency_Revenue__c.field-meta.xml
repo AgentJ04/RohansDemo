@@ -3,7 +3,6 @@
     <fullName>TSGADX__Agency_Revenue__c</fullName>
     <deprecated>false</deprecated>
     <description>This can be added entered by Sales Rep or Auto Calculated with Workflow.  Typically Achieved + Finance + Customer Education + Analyst + Multi-Site.</description>
-    <externalId>false</externalId>
     <inlineHelpText>This can be added entered by Sales Rep or Auto Calculated with Workflow.  Typically Achieved + Finance + Customer Education + Analyst + Multi-Site.</inlineHelpText>
     <label>Agency Revenue $</label>
     <precision>18</precision>

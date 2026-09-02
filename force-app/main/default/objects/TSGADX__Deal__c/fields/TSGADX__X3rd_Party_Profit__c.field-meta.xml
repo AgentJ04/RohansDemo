@@ -3,7 +3,6 @@
     <fullName>TSGADX__X3rd_Party_Profit__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Finance Profit $</label>
     <precision>18</precision>
     <required>false</required>

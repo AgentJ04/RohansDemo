@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__WideTotalColor5OveragePrice__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Wide Total Color 5 Overage Price</label>
     <precision>18</precision>
     <required>false</required>

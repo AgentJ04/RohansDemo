@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Color_1_CPC__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>IF(ISPICKVAL( TSGCFG__Consolidation_Method__c , &apos;Average&apos;) &amp;&amp; TSGCFG__Total_CPC_Color_1_Line_Items__c &gt; 0 , 
 TSGCFG__Sum_of_CPC_Color_1__c / TSGCFG__Total_CPC_Color_1_Line_Items__c, 
 IF(ABS(TSGCFG__Total_Color_Volume_1__c - TSGCFG__Total_Volume_Includes_Color_1__c)&lt;&gt;0,TSGCFG__Total_Color_1_Monthly_Cost__c / ABS(TSGCFG__Total_Color_Volume_1__c - TSGCFG__Total_Volume_Includes_Color_1__c), 

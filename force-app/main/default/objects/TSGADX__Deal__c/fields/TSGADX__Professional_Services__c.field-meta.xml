@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Professional_Services__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Amount of solution pricing that accounts for Professional Services items or hours, Vendor and Internal.</inlineHelpText>
     <label>Professional Services</label>
     <precision>18</precision>

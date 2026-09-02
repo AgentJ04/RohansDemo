@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesIncludeBosses>true</doesIncludeBosses>
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>New</name>
+    <queueMembers>
+        <users>
+            <user>addemo@agentdealer.com</user>
+            <user>mgrdemo@agentdealer.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>TSGADX__adiTicket__c</sobjectType>
+    </queueSobject>
+</Queue>

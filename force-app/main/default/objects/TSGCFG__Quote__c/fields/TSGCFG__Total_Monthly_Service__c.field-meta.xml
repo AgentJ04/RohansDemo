@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Monthly_Service__c</fullName>
     <deprecated>false</deprecated>
     <description>=Sum(QLI.Total Monthly Payments) that are Non-Production</description>
-    <externalId>false</externalId>
     <inlineHelpText>=Sum(QLI.Total Monthly Payments)s</inlineHelpText>
     <label>Total Service Monthly</label>
     <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Monthly_Payments__c</summarizedField>

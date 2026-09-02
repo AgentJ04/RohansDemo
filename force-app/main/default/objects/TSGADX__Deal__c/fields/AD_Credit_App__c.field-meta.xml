@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>AD_Credit_App__c</fullName>
     <defaultValue>false</defaultValue>
-    <externalId>false</externalId>
     <label>AD Credit App</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

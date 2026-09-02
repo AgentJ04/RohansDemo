@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Net_Sale_Cost_Deal__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.TSGCFG__Net_Sale_Cost__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Rep Cost for all related Net Sale Revenue items in configurator</inlineHelpText>

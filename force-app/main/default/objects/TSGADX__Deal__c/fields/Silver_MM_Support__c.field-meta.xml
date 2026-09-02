@@ -3,7 +3,6 @@
     <fullName>Silver_MM_Support__c</fullName>
     <defaultValue>false</defaultValue>
     <description>Silver Level Mail Machine Support Plan</description>
-    <externalId>false</externalId>
     <inlineHelpText>Silver Level Mail Machine Support Plan</inlineHelpText>
     <label>Silver MM Support</label>
     <trackFeedHistory>false</trackFeedHistory>

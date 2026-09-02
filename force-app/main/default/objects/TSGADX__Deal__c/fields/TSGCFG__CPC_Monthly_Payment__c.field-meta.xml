@@ -3,7 +3,6 @@
     <fullName>TSGCFG__CPC_Monthly_Payment__c</fullName>
     <deprecated>false</deprecated>
     <description>Base Rate + (B/W CPC Rate x B/W Volume) + (Color CPC Rate x Color Volume) Used for Quick Quotes</description>
-    <externalId>false</externalId>
     <inlineHelpText>Base Rate + (B/W CPC Rate x B/W Volume) + (Color CPC Rate x Color Volume)</inlineHelpText>
     <label>CPC Monthly Payment</label>
     <precision>18</precision>

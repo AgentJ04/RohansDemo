@@ -2,8 +2,9 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Total_Lease_Monthly_Payment__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
-    <formula>TSGCFG__Lease_Monthly_Payment__c</formula>
+    <formula>TSGCFG__Lease_Monthly_Payment__c + TSGCFG__Total_Monthly_Service__c 
+
+/*added TSGCFG__Total_Monthly_Service__c  on 25-march-2026*/</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Total Lease Monthly Payment</label>
     <precision>18</precision>

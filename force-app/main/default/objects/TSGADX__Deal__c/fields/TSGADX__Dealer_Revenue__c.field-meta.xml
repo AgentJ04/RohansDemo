@@ -3,7 +3,6 @@
     <fullName>TSGADX__Dealer_Revenue__c</fullName>
     <deprecated>false</deprecated>
     <description>Total Dealer Revenue is either entered by Sales Rep or Auto-Calculated.  Typically Dealer Achieved Price + Dealer Customer Ed + Dealer Analyst + Dealer 3rd Party Finance.</description>
-    <externalId>false</externalId>
     <label>Dealer Revenue $</label>
     <precision>18</precision>
     <required>false</required>

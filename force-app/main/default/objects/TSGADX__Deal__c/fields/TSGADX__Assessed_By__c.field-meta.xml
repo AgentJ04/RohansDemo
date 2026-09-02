@@ -3,7 +3,6 @@
     <fullName>TSGADX__Assessed_By__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>To Look up overlay/specialist or other internal user who performed the solution assessment.</inlineHelpText>
     <label>Assessed By</label>
     <referenceTo>User</referenceTo>

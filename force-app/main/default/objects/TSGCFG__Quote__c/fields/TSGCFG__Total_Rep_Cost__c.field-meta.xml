@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Rep_Cost__c</fullName>
     <deprecated>false</deprecated>
     <description>Summary of Total Rep Cost on Line Items where Lease = True</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total Rep Cost of all Lease Items</inlineHelpText>
     <label>Total Rep Cost</label>
     <summarizedField>TSGCFG__Quote_Line_Items__c.TSGCFG__Total_Rep_Cost__c</summarizedField>

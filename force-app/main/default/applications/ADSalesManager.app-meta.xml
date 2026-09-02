@@ -27,6 +27,7 @@
     <tabs>TSGADX__Business_Search</tabs>
     <tabs>standard-Event</tabs>
     <tabs>TSGADX__R_U_R__c</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Sales_Manager_UtilityBar</utilityBar>
 </CustomApplication>

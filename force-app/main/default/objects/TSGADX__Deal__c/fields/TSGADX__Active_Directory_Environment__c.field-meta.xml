@@ -3,7 +3,6 @@
     <fullName>TSGADX__Active_Directory_Environment__c</fullName>
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Check box if network environment for the solution is Windows Active Directory.</inlineHelpText>
     <label>Active Directory Environment</label>
     <trackFeedHistory>false</trackFeedHistory>

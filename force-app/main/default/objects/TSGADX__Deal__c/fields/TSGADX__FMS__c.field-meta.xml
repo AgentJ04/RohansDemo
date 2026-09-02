@@ -3,7 +3,6 @@
     <fullName>TSGADX__FMS__c</fullName>
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>FMS Commission Revenue</inlineHelpText>
     <label>FMS $</label>
     <precision>18</precision>

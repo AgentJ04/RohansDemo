@@ -3,7 +3,6 @@
     <fullName>TSGADX__Lead_Created_Date__c</fullName>
     <deprecated>false</deprecated>
     <description>The date the lead was created.</description>
-    <externalId>false</externalId>
     <inlineHelpText>The date the lead was created.</inlineHelpText>
     <label>Lead Created Date</label>
     <required>false</required>

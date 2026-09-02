@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_VOIP_Vendor_Support__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = VOIP Vendor Support</description>
-    <externalId>false</externalId>
     <label>Total VOIP Vendor Support</label>
     <precision>18</precision>
     <required>false</required>

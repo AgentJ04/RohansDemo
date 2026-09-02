@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_IT_MRR__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = IT MRR</description>
-    <externalId>false</externalId>
     <label>Total IT MRR</label>
     <precision>18</precision>
     <required>false</required>

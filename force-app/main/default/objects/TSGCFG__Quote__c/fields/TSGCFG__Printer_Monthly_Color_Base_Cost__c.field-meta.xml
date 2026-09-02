@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Printer_Monthly_Color_Base_Cost__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Printer Monthly Color Base Cost</label>
     <precision>18</precision>
     <required>false</required>

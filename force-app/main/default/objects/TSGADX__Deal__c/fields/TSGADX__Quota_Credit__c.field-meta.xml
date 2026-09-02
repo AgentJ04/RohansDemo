@@ -3,7 +3,6 @@
     <fullName>TSGADX__Quota_Credit__c</fullName>
     <deprecated>false</deprecated>
     <description>Allows the User to Specify the Quota Credit.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Allows the User to Specify the Quota Credit.</inlineHelpText>
     <label>Quota Credit</label>
     <precision>18</precision>

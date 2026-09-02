@@ -2,13 +2,12 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Color_2_CPC__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>TSGCFG__Quote__r.TSGCFG__Color_2_CPC__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Color 2 CPC</label>
     <precision>18</precision>
     <required>false</required>
-    <scale>5</scale>
+    <scale>6</scale>
     <trackHistory>false</trackHistory>
     <type>Currency</type>
 </CustomField>

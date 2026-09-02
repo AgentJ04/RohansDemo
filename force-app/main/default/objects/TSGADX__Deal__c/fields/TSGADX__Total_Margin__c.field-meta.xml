@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Total_Margin__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <formula>TSGADX__Equipment_Margin__c + TSGADX__IT_Services_Margin__c + TSGADX__MPS_Margin__c + TSGADX__Supply_Sales_Margin__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Total Margin $</label>

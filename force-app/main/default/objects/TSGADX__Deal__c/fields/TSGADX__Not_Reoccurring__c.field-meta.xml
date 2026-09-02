@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>If this is checked, the system will not create a reoccurring deal.  The AgentDealer setup must still have the Won or Lost deal to new future deal turned on.</description>
-    <externalId>false</externalId>
     <inlineHelpText>If this is checked, the system will not create a reoccurring deal.  Overrides the option of automatically creating a future deal.</inlineHelpText>
     <label>Not Reoccurring</label>
     <trackFeedHistory>false</trackFeedHistory>

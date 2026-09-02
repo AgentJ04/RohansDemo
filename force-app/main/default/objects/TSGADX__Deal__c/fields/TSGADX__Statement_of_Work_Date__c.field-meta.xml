@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Statement_of_Work_Date__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>When was the Statement of Work presented to the customer.</inlineHelpText>
     <label>Statement of Work Date</label>
     <required>false</required>

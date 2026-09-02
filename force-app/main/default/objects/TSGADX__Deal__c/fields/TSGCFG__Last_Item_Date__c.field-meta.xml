@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Last_Item_Date__c</fullName>
     <deprecated>false</deprecated>
     <description>The last date and time the deal line items were updated.</description>
-    <externalId>false</externalId>
     <inlineHelpText>The last date and time the deal line items were updated.</inlineHelpText>
     <label>Last Item Date</label>
     <required>false</required>

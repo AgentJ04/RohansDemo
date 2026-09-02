@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>LBO_Payment_BT__c</fullName>
-    <externalId>false</externalId>
     <inlineHelpText>Enter the monthly payment of the buyout for calculation with the remaining term.</inlineHelpText>
     <label>LBO Payment</label>
     <precision>18</precision>

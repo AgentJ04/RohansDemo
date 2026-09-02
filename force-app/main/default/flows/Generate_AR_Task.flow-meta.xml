@@ -54,6 +54,7 @@
         <nameSegment>TSGADX__NewTask</nameSegment>
     </actionCalls>
     <apiVersion>55.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <description>Create and complete task for AR document.</description>
     <environments>Default</environments>
     <interviewLabel>Generate AR Task {!$Flow.CurrentDateTime}</interviewLabel>

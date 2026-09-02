@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Service_Buy_Down__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Service Buy Down</description>
-    <externalId>false</externalId>
     <label>Total Service Buy Down</label>
     <precision>18</precision>
     <required>false</required>

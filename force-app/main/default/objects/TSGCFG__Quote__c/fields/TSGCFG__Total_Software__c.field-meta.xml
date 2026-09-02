@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Software__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Software</description>
-    <externalId>false</externalId>
     <label>Total Software</label>
     <precision>18</precision>
     <required>false</required>

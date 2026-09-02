@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>Once &quot;Special Term&quot; is selected - the reps can then ad-hoc a custom term length, select the purchase option of FMV or $1 out and add their custom lease rate in the traditional lease override area.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Once &quot;Special Term&quot; is selected - the reps can then ad-hoc a custom term length, select the purchase option of FMV or $1 out and add their custom lease rate in the traditional lease override area.</inlineHelpText>
     <label>Special Term</label>
     <trackFeedHistory>false</trackFeedHistory>

@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_Block_Time__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = Block Time</description>
-    <externalId>false</externalId>
     <label>Total Block Time</label>
     <precision>18</precision>
     <required>false</required>

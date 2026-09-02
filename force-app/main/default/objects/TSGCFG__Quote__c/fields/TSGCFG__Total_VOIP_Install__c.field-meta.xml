@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Total_VOIP_Install__c</fullName>
     <deprecated>false</deprecated>
     <description>Category = VOIP Install</description>
-    <externalId>false</externalId>
     <label>Total VOIP Install</label>
     <precision>18</precision>
     <required>false</required>

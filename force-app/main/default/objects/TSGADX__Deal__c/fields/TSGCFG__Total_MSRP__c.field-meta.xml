@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Total_MSRP__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>Total MSRP</label>
     <summarizedField>TSGCFG__Deal_Line_Items__c.TSGCFG__Total_MSRP__c</summarizedField>
     <summaryForeignKey>TSGCFG__Deal_Line_Items__c.TSGCFG__Deal__c</summaryForeignKey>

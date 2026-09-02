@@ -3,7 +3,6 @@
     <fullName>TSGADX__MPS_Monthly_Mono_Base_Cost__c</fullName>
     <deprecated>false</deprecated>
     <description>Mono Base Cost monthly from TCO RMP for all printers on program.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Mono Base Cost monthly from TCO RMP for all printers on program.</inlineHelpText>
     <label>MPS Monthly Mono Base Cost</label>
     <precision>18</precision>

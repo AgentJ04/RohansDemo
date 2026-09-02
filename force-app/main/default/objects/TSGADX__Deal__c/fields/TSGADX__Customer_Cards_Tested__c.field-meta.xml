@@ -3,7 +3,6 @@
     <fullName>TSGADX__Customer_Cards_Tested__c</fullName>
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Have the customers authentication cards been tested successfully for the readers included in solution order.</inlineHelpText>
     <label>Customer Cards Tested</label>
     <trackFeedHistory>false</trackFeedHistory>

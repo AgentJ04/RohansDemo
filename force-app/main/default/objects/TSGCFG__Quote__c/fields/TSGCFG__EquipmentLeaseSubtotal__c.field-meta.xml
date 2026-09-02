@@ -3,7 +3,6 @@
     <fullName>TSGCFG__EquipmentLeaseSubtotal__c</fullName>
     <deprecated>false</deprecated>
     <description>= SUM(QLI.Total Price) where Lease = true</description>
-    <externalId>false</externalId>
     <inlineHelpText>This is the total of all quote line items which are leased (Prior to the discount)</inlineHelpText>
     <label>Equipment Lease Subtotal</label>
     <precision>18</precision>

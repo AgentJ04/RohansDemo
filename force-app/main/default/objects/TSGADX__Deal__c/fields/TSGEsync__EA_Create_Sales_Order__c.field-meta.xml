@@ -3,7 +3,6 @@
     <fullName>TSGEsync__EA_Create_Sales_Order__c</fullName>
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <label>EA Create Sales Order</label>
     <trackFeedHistory>false</trackFeedHistory>
     <trackHistory>false</trackHistory>

@@ -2,8 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Monthly_BW_Base_Cost__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
-    <label>Monthly BW Base Cost</label>
+    <label>Non-Production Monthly BW Base Cost</label>
     <precision>18</precision>
     <required>false</required>
     <scale>2</scale>

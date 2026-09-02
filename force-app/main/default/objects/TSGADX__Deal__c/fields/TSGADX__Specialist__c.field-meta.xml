@@ -3,7 +3,6 @@
     <fullName>TSGADX__Specialist__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>Lookup name of Specialist - must be a user on the system</inlineHelpText>
     <label>Specialist</label>
     <referenceTo>User</referenceTo>

@@ -3,7 +3,6 @@
     <fullName>TSGCFG__Pool_Group__c</fullName>
     <deprecated>false</deprecated>
     <description>Allows users to select a pooling group for each configuration</description>
-    <externalId>false</externalId>
     <inlineHelpText>Allows users to select a pooling group for each configuration</inlineHelpText>
     <label>Pool Group</label>
     <required>false</required>

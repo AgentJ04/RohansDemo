@@ -22,6 +22,7 @@
     <tabs>standard-Contact</tabs>
     <tabs>TSGADX__Deal__c</tabs>
     <tabs>TSGADX__Equipment__c</tabs>
+    <tabs>TSGCFG__Credit_Application_Item__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>AgentDealer_Mobile_UtilityBar</utilityBar>
 </CustomApplication>

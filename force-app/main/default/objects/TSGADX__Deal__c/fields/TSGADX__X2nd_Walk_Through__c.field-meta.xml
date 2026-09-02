@@ -3,7 +3,6 @@
     <fullName>TSGADX__X2nd_Walk_Through__c</fullName>
     <deprecated>false</deprecated>
     <description>2nd Walk Through completion date.</description>
-    <externalId>false</externalId>
     <inlineHelpText>2nd Walk Through completion date.</inlineHelpText>
     <label>2nd Walk Through</label>
     <required>false</required>

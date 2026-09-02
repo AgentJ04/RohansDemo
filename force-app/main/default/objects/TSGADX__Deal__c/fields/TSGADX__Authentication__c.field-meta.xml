@@ -2,7 +2,6 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGADX__Authentication__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
     <inlineHelpText>What types of authentication at the MFP are needed for solution integration.</inlineHelpText>
     <label>MFP Authentication</label>
     <required>false</required>

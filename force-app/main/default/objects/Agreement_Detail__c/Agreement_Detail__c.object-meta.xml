@@ -172,8 +172,8 @@
         <customTabListAdditionalFields>Lease_Financed_Amount__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>Lease_Payment_Amount__c</customTabListAdditionalFields>
         <excludedStandardButtons>New</excludedStandardButtons>
-        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
         <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
         <lookupDialogsAdditionalFields>Agreement__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Equipment__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>EA_Contract_Id__c</lookupDialogsAdditionalFields>

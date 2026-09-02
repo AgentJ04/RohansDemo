@@ -2,11 +2,16 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>TSGCFG__Wide_Color_Overage_Rate__c</fullName>
     <deprecated>false</deprecated>
-    <externalId>false</externalId>
-    <formula>IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__WideTotalCPCColorLineItem__c &gt; 0 ,
+    <formula>/* 
+IF( ISPICKVAL( TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__WideTotalCPCColorLineItem__c &gt; 0 ,
 TSGCFG__WideSumofCPCOverageColor__c / TSGCFG__WideTotalCPCColorLineItem__c,
 IF( TSGCFG__WideTotalColorVolume__c &lt;&gt;0, TSGCFG__WideTotalColorOveragePrice__c / TSGCFG__WideTotalColorVolume__c ,
-If(TSGCFG__WideTotalCPCColorLineItem__c &gt; 0, TSGCFG__WideSumofCPCOverageColor__c / TSGCFG__WideTotalCPCColorLineItem__c, 0)))</formula>
+If(TSGCFG__WideTotalCPCColorLineItem__c &gt; 0, TSGCFG__WideSumofCPCOverageColor__c / TSGCFG__WideTotalCPCColorLineItem__c, 0)))
+*/
+IF( ISPICKVAL( TSGCFG__CPC_Consolidation__r.TSGCFG__Consolidation_Method__c, &apos;Average&apos;) &amp;&amp; TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalCPCColorLineItem__c &gt; 0 ,
+TSGCFG__CPC_Consolidation__r.TSGCFG__WideSumofCPCOverageColor__c / TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalCPCColorLineItem__c,
+IF( TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalColorVolume__c &lt;&gt;0, TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalColorOveragePrice__c / TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalColorVolume__c ,
+If(TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalCPCColorLineItem__c &gt; 0, TSGCFG__CPC_Consolidation__r.TSGCFG__WideSumofCPCOverageColor__c / TSGCFG__CPC_Consolidation__r.TSGCFG__WideTotalCPCColorLineItem__c, 0)))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Wide Color Overage Rate</label>
     <precision>18</precision>

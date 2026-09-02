@@ -4,7 +4,6 @@
     <defaultValue>false</defaultValue>
     <deprecated>false</deprecated>
     <description>&quot;Co-Terminous&quot; lease/addendum</description>
-    <externalId>false</externalId>
     <inlineHelpText>&quot;Co-Terminous&quot; lease/addendum</inlineHelpText>
     <label>Co-Term</label>
     <trackFeedHistory>false</trackFeedHistory>

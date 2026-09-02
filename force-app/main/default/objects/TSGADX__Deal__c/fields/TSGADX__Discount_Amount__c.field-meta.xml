@@ -4,7 +4,6 @@
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
     <description>Do not use with the configurator to add a discount to a deal. Use a line item in the price book to add a discount.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Discount Amount $</inlineHelpText>
     <label>Discount Amount</label>
     <precision>18</precision>

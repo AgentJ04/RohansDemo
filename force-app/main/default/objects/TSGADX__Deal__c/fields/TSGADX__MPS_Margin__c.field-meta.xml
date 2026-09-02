@@ -3,7 +3,6 @@
     <fullName>TSGADX__MPS_Margin__c</fullName>
     <deprecated>false</deprecated>
     <description>MPS Margin</description>
-    <externalId>false</externalId>
     <inlineHelpText>MPS Margin</inlineHelpText>
     <label>MPS Margin $</label>
     <precision>18</precision>

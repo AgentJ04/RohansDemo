@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Lease_Buyout_BT__c</fullName>
-    <externalId>false</externalId>
     <formula>LBO_Payment_BT__c * LBO_Term_BT__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <inlineHelpText>Total of Lease Buyout ( LBO Payment * LBO Term)</inlineHelpText>

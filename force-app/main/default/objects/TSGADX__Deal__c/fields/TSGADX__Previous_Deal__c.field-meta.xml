@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>Enter Previous Deal.  This allows you to link this deal to previously won or lost deal.  A trigger on a lost to competition deal will auto update this field.</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Previously won or lost Deal for this customer.  This allows you to link this deal to previously won or lost deal.</inlineHelpText>
     <label>Previous Deal</label>
     <referenceTo>TSGADX__Deal__c</referenceTo>

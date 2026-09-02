@@ -4,7 +4,6 @@
     <defaultValue>0</defaultValue>
     <deprecated>false</deprecated>
     <description>Total Quota Revenue = Achieved Price + Finance</description>
-    <externalId>false</externalId>
     <inlineHelpText>Total Quota Revenue = Achieved Price + Finance</inlineHelpText>
     <label>TQR $</label>
     <precision>18</precision>

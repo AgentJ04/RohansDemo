@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Recurring_Last_Paid__c</fullName>
-    <externalId>false</externalId>
     <inlineHelpText>Date of last time recurring commission was paid to rep.</inlineHelpText>
     <label>Recurring Last Paid</label>
     <required>false</required>

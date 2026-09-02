@@ -4,7 +4,6 @@
     <deleteConstraint>SetNull</deleteConstraint>
     <deprecated>false</deprecated>
     <description>Enter Main Contact.  The email, phone, and mobile are pulled by workflow and updated by</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Main Contact</inlineHelpText>
     <label>Deal Contact</label>
     <referenceTo>Contact</referenceTo>

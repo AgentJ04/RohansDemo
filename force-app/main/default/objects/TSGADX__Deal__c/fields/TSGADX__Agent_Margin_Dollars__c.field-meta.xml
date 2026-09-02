@@ -3,7 +3,6 @@
     <fullName>TSGADX__Agent_Margin_Dollars__c</fullName>
     <deprecated>false</deprecated>
     <description>Enter Agent Margin</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter Agent Margin</inlineHelpText>
     <label>Agent Margin $</label>
     <precision>18</precision>

@@ -14,8 +14,13 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
         <object>TSGADX__Deal__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <pageAccesses>
+        <apexPage>TSGADX__FieldUsage</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
     <recordTypeVisibilities>
         <recordType>TSGADX__Deal__c.Equipment_QuickQuote</recordType>
         <visible>true</visible>
@@ -50,6 +55,10 @@
     </recordTypeVisibilities>
     <tabSettings>
         <tab>TSGADX__Field_Assignments</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>TSGADX__Field_Usage</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <userPermissions>

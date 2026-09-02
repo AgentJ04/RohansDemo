@@ -3,7 +3,6 @@
     <fullName>Business__c</fullName>
     <deleteConstraint>Restrict</deleteConstraint>
     <description>Business</description>
-    <externalId>false</externalId>
     <inlineHelpText>Enter the name of the Business</inlineHelpText>
     <label>Business</label>
     <referenceTo>Account</referenceTo>
